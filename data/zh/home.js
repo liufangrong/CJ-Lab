@@ -19,8 +19,8 @@ window.PAGE_DATA.zh["home"] = {
           "label": "主要研究方向"
         },
         {
-          "value": "30+",
-          "label": "组内成员"
+          "value": "31",
+          "label": "在组成员"
         },
         {
           "value": "192",

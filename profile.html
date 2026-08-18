@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>人员详情 - CJ Lab</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    #person-profile-detail > .section-title:empty {
+      display: none;
+    }
+
+    #person-profile-detail .notice-box {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    }
+
+    .profile-detail-wrap {
+      padding: 10px 0 30px;
+    }
+
+    .profile-detail-top {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 120px;
+      min-height: 430px;
+    }
+
+    .profile-detail-photo-box {
+      background: #fff;
+      padding: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .18);
+    }
+
+    .profile-detail-photo-box img {
+      width: 340px;
+      display: block;
+    }
+
+    .profile-detail-info {
+      padding-top: 60px;
+    }
+
+    .profile-detail-name {
+      font-size: 30px;
+      color: #2f66b3;
+      font-weight: bold;
+    }
+
+    .profile-detail-title {
+      margin-top: 10px;
+      font-size: 20px;
+      font-style: italic;
+      color: #222;
+    }
+
+    .profile-detail-major {
+      margin-top: 30px;
+      color: #222;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .profile-detail-email {
+      margin-top: 30px;
+      color: #222;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    /* 只让“专业：”“邮箱：”这几个字变蓝 */
+    .profile-detail-major .major-label,
+    .profile-detail-email .email-label {
+      color: #2f66b3;
+      font-weight: 700;
+    }
+
+    .profile-detail-research {
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #222;
+    }
+
+    .profile-detail-research strong {
+      color: #2f66b3 !important;
+      font-weight: 700;
+    }
+
+    .profile-detail-line {
+      margin-top: 55px;
+      border-top: 1px solid #222;
+    }
+
+    .profile-detail-section {
+      margin-top: 50px;
+    }
+
+    .profile-detail-section-title {
+      color: #2f66b3;
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .profile-detail-content {
+      font-size: 18px;
+      line-height: 1.9;
+      color: #222;
+      text-align: justify;
+    }
+
+    /* ===== 人员详情页专用：隐藏 Hero 横幅和右侧栏 ===== */
+    .profile-page .hero {
+      display: none !important;
+    }
+
+    .profile-page aside {
+      display: none !important;
+    }
+
+    .profile-page .page-layout {
+      display: block !important;
+    }
+
+    .profile-page .content-panel {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    .profile-page .main {
+      padding-top: 45px;
+    }
+
+    /* 不想要外层白色大卡片的话，保留下面这段 */
+    .profile-page .content-panel {
+      background: transparent !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+    }
+
+    @media (max-width: 900px) {
+      .profile-detail-top {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .profile-detail-info {
+        padding-top: 0;
+      }
+
+      .profile-detail-photo-box img {
+        width: 260px;
+      }
+    }
+  </style>
+</head>
+
+<body data-page="people" class="profile-page">
+
+<div id="app"></div>
+
+<!-- 网站公共数据 -->
+<script src="data/zh/site.js"></script>
+<script src="data/en/site.js"></script>
+
+<!-- 中英文人员详情数据 -->
+<script src="data/zh/person-details.js"></script>
+<script src="data/en/person-details.js"></script>
+
+<!-- 导航配置 -->
+<script src="js/site-config.js"></script>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const personId = params.get("id");
+
+  window.PAGE_DATA = window.PAGE_DATA || {};
+  window.PAGE_DATA.zh = window.PAGE_DATA.zh || {};
+  window.PAGE_DATA.en = window.PAGE_DATA.en || {};
+
+  function buildProfilePage(lang) {
+    const personData =
+            window.PERSON_DETAIL &&
+            window.PERSON_DETAIL[lang] &&
+            window.PERSON_DETAIL[lang][personId];
+
+    const isZh = lang === "zh";
+
+    if (!personData) {
+      return {
+        title: isZh ? "人员详情" : "Profile",
+        desc: isZh ? "未找到该成员信息" : "Profile not found",
+        mainTitle: "",
+        sections: [
+          {
+            id: "person-profile-detail",
+            type: "notice",
+            title: isZh ? "提示" : "Notice",
+            text: isZh
+                    ? "未找到该成员信息，请检查链接中的 id 是否正确。"
+                    : "Profile not found. Please check whether the id in the link is correct."
+          }
+        ]
+      };
+    }
+
+    return {
+      title: personData.name,
+      desc: personData.title || "",
+      mainTitle: "",
+      sections: [
+        {
+          id: "person-profile-detail",
+          type: "notice",
+          title: "",
+          text: `
+            <div class="profile-detail-wrap">
+
+              <div class="profile-detail-top">
+
+                <div class="profile-detail-photo-box">
+                  <img src="${personData.image}" alt="${personData.name}">
+                </div>
+
+                <div class="profile-detail-info">
+                  <div class="profile-detail-name">${personData.name}</div>
+
+                  <div class="profile-detail-title">${personData.title || ""}</div>
+
+                  <div class="profile-detail-major">${personData.major ? `<span class="major-label">${isZh ? "专业：" : "Major："}</span>${personData.major}` : ""}</div>
+
+                  <div class="profile-detail-email">${personData.email ? `<span class="email-label">${isZh ? "邮箱：" : "Email："}</span>${personData.email}` : ""}</div>
+
+                  <div class="profile-detail-research">
+                    <strong>${isZh ? "研究兴趣：" : "Research Interests:"}</strong>
+                    ${personData.research || ""}
+                  </div>
+                </div>
+
+              </div>
+<div class="profile-detail-line"></div>
+<div class="profile-detail-section">
+  <div class="profile-detail-section-title">
+    ${personData.bioTitle || (isZh ? "个人简介" : "Biography")}
+  </div>
+
+  <div class="profile-detail-content">
+    ${personData.bio || ""}
+  </div>
+</div>
+
+
+<div class="profile-detail-section">
+  <div class="profile-detail-section-title">
+    ${personData.awardsTitle || (isZh ? "获奖情况" : "Awards")}
+  </div>
+
+  <div class="profile-detail-content">
+    ${
+              personData.awards && personData.awards.length
+                  ? '<ol class="profile-detail-list">' +
+                  personData.awards.map(item => '<li>' + item + '</li>').join('') +
+                  '</ol>'
+                  : (isZh ? "暂无" : "None")
+          }
+  </div>
+</div>
+
+
+<div class="profile-detail-section">
+  <div class="profile-detail-section-title">
+    ${personData.resultsTitle || (isZh ? "科研成果" : "Research Achievements")}
+  </div>
+
+  <div class="profile-detail-content">
+    ${
+              personData.results && personData.results.length
+                  ? '<ol class="profile-detail-list">' +
+                  personData.results.map(item => '<li>' + item + '</li>').join('') +
+                  '</ol>'
+                  : (isZh ? "暂无" : "None")
+          }
+  </div>
+</div>
+
+            </div>
+          `
+        }
+      ]
+    };
+  }
+
+  window.PAGE_DATA.zh.people = buildProfilePage("zh");
+  window.PAGE_DATA.en.people = buildProfilePage("en");
+
+  const currentLang = localStorage.getItem("site-lang") || "zh";
+  const currentData = window.PAGE_DATA[currentLang].people;
+  document.title = currentData.title + " - CJ Lab";
+</script>
+
+<!-- 最后加载 app.js -->
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

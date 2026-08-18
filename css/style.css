@@ -60,7 +60,7 @@ button, input, textarea { font: inherit; }
   position: relative;
   overflow: hidden;
 }
-.site-header::after {
+/* .site-header::after {
   content: "";
   position: absolute;
   inset: auto -80px -80px auto;
@@ -68,7 +68,7 @@ button, input, textarea { font: inherit; }
   height: 240px;
   border-radius: 50%;
   background: rgba(255,255,255,0.08);
-}
+} */
 .header-main {
   display: flex;
   justify-content: space-between;

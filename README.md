@@ -71,4 +71,4 @@ profileUrl: 'https://your-link.com/profile'
 ## 注意
 
 这版是基于你原来的项目包改的，其他栏目样式和页面框架尽量保持不动，只把内容拆分方式和 `People` 页的展示方式改成更方便维护的版本。
-update1
+update2

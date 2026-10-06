@@ -5,38 +5,159 @@ window.PAGE_DATA.en["publications"] = {
   "desc": "Representative research papers from the laboratory, systematically presenting research progress, innovative highlights, and academic contributions.",
   "sections": [
     {
-      "type": "publications",
-      "title": "Major Publications",
+      "type": "books",
+      "title": "Published Books",
+      "items": [
+        {
+          "image": "assets/books/book4.png",
+          "title": "Amphibians of the Qinghai–Tibet Plateau",
+          "author": "Jing Che, Chen-Qi Lu",
+          "publisher": "Science Press",
+          "year": "2026"
+        },
+        {
+          "image": "assets/books/book2.png",
+          "title": "Lizards of the Qinghai–Tibet Plateau",
+          "author": "Jing Che, Kai Wang",
+          "publisher": "Science Press",
+          "year": "2026"
+        },
+        {
+          "image": "assets/books/book3.png",
+          "title": "Snakes of the Qinghai–Tibet Plateau",
+          "author": "Peng Guo, Jing Che",
+          "publisher": "Science Press",
+          "year": "2024"
+        },
+        {
+          "image": "assets/books/book1.webp",
+          "title": "Amphibians and Reptiles of Tibet: Diversity and Evolution",
+          "author": "Jing Che, Ke Jiang, Fang Yan, Ya-Ping Zhang",
+          "publisher": "Science Press",
+          "year": "2020"
+        },
+        {
+          "image": "assets/books/book5.png",
+          "title": "Amphibians of the Gaoligong Mountains",
+          "author": "Jing Che, Zhong-Bin Yu",
+          "publisher": "Yunnan Science Press",
+          "year": "2025–2026"
+        },
+        {
+          "image": "assets/books/book6.png",
+          "title": "Key Protected Amphibians and Reptiles of Yunnan",
+          "author": "Kai Wang, Jing Che",
+          "publisher": "Yunnan Science Press",
+          "year": "2025"
+        }
+      ]
+    },
+
+    // ==================== Awards ====================
+    {
+      "type": "awards",
+      "title": "Major Awards",
       "groups": [
         {
-          "year": "2026",
           "items": [
             {
-              "title": "China's underestimated, characteristic herpetofauna pet trade highlights the importance of global efforts in conservation.",
-              "text": "Biological Conservation, 2026, 317: 111788.",
-              "meta": "Kai Wang#*, Chen-Qi Lu#, ......, Jing Che*.",
-              "url": "https://doi.org/10.1016/j.biocon.2026.111788"
+              "achievement": "Integrative multi-taxon analyses reveal divergent patterns of terrestrial vertebrate diversity evolution in the Hengduan Mountains",
+              "award": "Top Ten Research Advances of the Kunming Institute of Zoology, Chinese Academy of Sciences, 2025",
+              "people": "Chenqi Lu, Wenna Ding, Wei Xu, Quan Li, Shuiwang He, Fei Wu, Wenjie Dong, Jie-Qiong Jin, Feng Dong, Xuelong Jiang, Kai Wang, Peng Guo, Robert W. Murphy, Ya-Ping Zhang, Jing Che",
+              "date": "2026.01",
+              "image": "assets/publications/award2.png"
             },
-          ]
-        },
-        {
-          "year": "2025",
-          "items": [
             {
-              "title": "Contrasting evolutionary trajectories of terrestrial vertebrates in the Hengduan Mountains hotspot.",
-              "text": "National Science Review, 2025, 12(8): nwaf157.",
-              "meta": "Chen-Qi Lu#, Wen-Na Ding#, Wei Xu#, ......, Ya-Ping Zhang*, Jing Che*.",
-              "url": "https://doi.org/10.1093/nsr/nwaf157"
+              "achievement": "Formation of amphibian and reptile diversity and environmental adaptation in the mountainous regions of Southwest China",
+              "award": "Yunnan Provincial Science and Technology Award (First Prize, Natural Science Award)",
+              "people": "Jing Che",
+              "date": "2025.05",
+              "image": "assets/publications/award1.png"
             }
           ]
-        },
+        }
+      ]
+    },
+
+
+
+
+    {
+      "type": "paperPublications",
+      "title": "Research Papers",
+      "listTitle": "Representative Publications",
+      "legend": "#: co-first authors; *: corresponding authors; <strong>bold</strong>: laboratory members;",
+      "labMembers": [
+        "Jing Che",
+        "车静",
+        "Jing Chai",
+        "柴静",
+        "Wei Gao",
+        "高伟",
+        "Kai Wang",
+        "王剀",
+        "Chenqi Lu",
+        "Chen-Qi Lu",
+        "卢宸祺",
+        "Alex Plimo Karuno",
+        "Alex P. Karuno",
+        "Jie-Qiong Jin",
+        "金洁琼",
+        "Wenjie Dong",
+        "Wen-Jie Dong",
+        "Wei Xu",
+        "Yun-He Wu",
+        "Wei-Wei Zhou",
+        "Bao-Lin Zhang",
+        "Jin-Min Chen",
+        "Fang Yan",
+        "Zhi-Yong Yuan",
+        "Ting-Ting Fu",
+        "Chuan-Xin Yu",
+        "Xue Mi",
+        "Yi Zhang",
+        "Jun-Xiao Yang",
+        "Shao-Bing Hou",
+        "Zhong-Bin Yu",
+        "Zhongbin Yu",
+        "Hao Xun",
+        "Ling Li",
+        "Han Wan",
+        "Yin Haoping",
+        "Asmit Subba",
+        "Manh Van Le",
+        "Manh Le Van",
+        "Ru-Jun Cao",
+        "Zhuo-Yu Lu",
+        "Mu-Rong Yi",
+        "Felista Kasyoka Kilunda",
+        "Kasyoka Kilunda Felista",
+        "Lotanna M. Nneji",
+        "Md Mizanur Rahman",
+        "Sang Ngoc Nguyen",
+        "Sang N. Nguyen",
+        "于中斌",
+        "吴云鹤",
+        "陈进民",
+        "颜芳",
+        "袁智勇",
+        "付婷婷",
+        "徐伟",
+        "张毅",
+        "侯绍兵",
+        "余传鑫",
+        "冯小刚",
+        "尹浩萍",
+        "易木荣"
+      ],
+      "groups": [
         {
           "year": "2025",
           "items": [
             {
               "title": "Contrasting evolutionary trajectories of terrestrial vertebrates in the Hengduan Mountains hotspot.",
+              "meta": "Chenqi Lu#, Wenna Ding#, Wei Xu#, Quan Li, Shui-Wang He, Fei Wu, Wenjie Dong, Jie-Qiong Jin, Feng Dong, Xue-Long Jiang, Kai Wang, Peng Guo, Robert W. Murphy, Ya-Ping Zhang*, Jing Che*.",
               "text": "National Science Review, 2025, 12(8): nwaf157.",
-              "meta": "Xiaogang Feng#, Wei Gao#*, ......,Jing Che.",
               "url": "https://doi.org/10.1093/nsr/nwaf157"
             }
           ]
@@ -46,8 +167,8 @@ window.PAGE_DATA.en["publications"] = {
           "items": [
             {
               "title": "Hidden hotspots of amphibian biodiversity in China.",
+              "meta": "Wei Xu#, Yun-He Wu#, Wei-Wei Zhou, Hong-Man Chen, Bao-Lin Zhang, Jin-Min Chen, Wei-Hua Xu, Ding-Qi Rao, Hai-Peng Zhao, Fang Yan, Zhi-Yong Yuan, Ke Jiang, Jie-Qiong Jin, Mian Hou, Da-Hu Zou, Li-Jun Wang, Yu-Chi Zheng, Jia-Tang Li, Jian-Ping Jiang, Xiao-Mao Zeng, You-Hua Chen, Zi-Yan Liao, Cheng Li, Xue-You Li, Wei Gao, Kai Wang, Dong-Ru Zhang, Chen-Qi Lu, Ting-Ting Yin, Zhao-Li Ding, Gui-Gang Zhao, Jing Chai, Wen-Ge Zhao, Ya-Ping Zhang, John J. Wiens*, Jing Che*.",
               "text": "PNAS, 2024, 121(20): e2320674121.",
-              "meta": "Wei Xu#, Yun-He Wu#, ......, John J. Wiens*, Jing Che*.",
               "url": "https://doi.org/10.1073/pnas.2320674121"
             }
           ]
@@ -56,16 +177,10 @@ window.PAGE_DATA.en["publications"] = {
           "year": "2023",
           "items": [
             {
-              "title": "Impacts of climate change on Herpetofauna diversity in Qinghai-Tibetan Plateau.",
+              "title": "Impacts of climate change on herpetofauna diversity in the Qinghai-Tibetan Plateau.",
+              "meta": "Alex Plimo Karuno, Xue Mi, You-Hua Chen, Da-Hu Zou, Wei Gao, Bao-Lin Zhang, Wei Xu, Jie-Qiong Jin, Wen-Jing Shen, Song Huang, Wei-Wei Zhou*, Jing Che*.",
               "text": "Conservation Biology, 2023, 37(6): e14155.",
-              "meta": "Alex Plimo Karuno, ......, Wei-Wei Zhou*, Jing Che*.",
               "url": "https://doi.org/10.1111/cobi.14155"
-            },
-            {
-              "title": "DNA barcoding of Chinese snakes reveals hidden diversity and conservation needs.",
-              "text": "Molecular Ecology Resources, 2023, 23(5): 1124-1141.",
-              "meta": "Yun-He Wu#, Shao-Bing Hou#, Zhi-Yong Yuan#, Ke Jiang#, Ru-Yi Huang#, Kai Wang#, ......, Song Huang*, Peng Guo*, Ya-Ping Zhang*, Jing Che*.",
-              "url": "https://doi.org/10.1111/1755-0998.13784"
             }
           ]
         },
@@ -74,21 +189,15 @@ window.PAGE_DATA.en["publications"] = {
           "items": [
             {
               "title": "The highest-elevation frog provides insights into mechanisms and evolution of defenses against high UV radiation.",
+              "meta": "Ting-Ting Fu#, Yan-Bo Sun#, Wei Gao#, Cheng-Bo Long, Chun-Hua Yang, Xin-Wang Yang, Yi Zhang, Xin-Qiang Lan, Song Huang, Jie-Qiong Jin, Robert W. Murphy, Yun Zhang*, Ren Lai*, David M. Hillis*, Ya-Ping Zhang*, Jing Che*.",
               "text": "PNAS, 2022, 119(46): e2212406119.",
-              "meta": "Ting-Ting Fu#, Yan-Bo Sun#, Wei Gao#, ......, Yun Zhang*, Ren Lai*, David M. Hillis*, Ya-Ping Zhang*, Jing Che*.",
               "url": "https://doi.org/10.1073/pnas.2212406119"
             },
             {
               "title": "Species persistence with hybridization in toad-headed lizards driven by divergent selection and low recombination.",
+              "meta": "Wei Gao#, Chuan-Xin Yu#, Wei-Wei Zhou#, Bao-Lin Zhang, E. Anne Chambers, Hollis A. Dahn, Jie-Qiong Jin, Robert W. Murphy, Ya-Ping Zhang*, Jing Che*.",
               "text": "Molecular Biology and Evolution, 2022, 39(4): msac064.",
-              "meta": "Wei Gao#, Chuan-Xin Yu#, Wei-Wei Zhou#, ......, Ya-Ping Zhang*, Jing Che*.",
               "url": "https://doi.org/10.1093/molbev/msac064"
-            },
-            {
-              "title": "Discovery of a wild, genetically pure Chinese giant salamander creates new conservation opportunities.",
-              "text": "Zoological Research, 2022, 43(3): 469-480.",
-              "meta": "Jing Chai#, Chen-Qi Lu#, Mu-Rong Yi#, ......, Robert W. Murphy*, Ya-Ping Zhang*, Jing Che*.",
-              "url": "https://doi.org/10.24272/j.issn.2095-8137.2022.101"
             }
           ]
         },
@@ -97,8 +206,8 @@ window.PAGE_DATA.en["publications"] = {
           "items": [
             {
               "title": "Herpetological phylogeographic analyses support a Miocene focal point of Himalayan uplift and biological diversification.",
+              "meta": "Wei Xu, Wen-Jie Dong, Ting-Ting Fu, Wei Gao, Chen-Qi Lu, Fang Yan, Yun-He Wu, Ke Jiang, Jie-Qiong Jin, Hong-Man Chen, Ya-Ping Zhang, David M. Hillis*, Jing Che*.",
               "text": "National Science Review, 2021, 8(9): nwaa263.",
-              "meta": "Wei Xu, ......, David M. Hillis*, Jing Che*.",
               "url": "https://doi.org/10.1093/nsr/nwaa263"
             }
           ]
@@ -108,31 +217,9 @@ window.PAGE_DATA.en["publications"] = {
           "items": [
             {
               "title": "Giant salamanders: Farmed yet endangered.",
+              "meta": "Chen-Qi Lu, Jing Chai, Robert W. Murphy, Jing Che*.",
               "text": "Science, 2020, 367(6481): 989.",
-              "meta": "Chen-Qi Lu, ......, Jing Che*.",
               "url": "https://doi.org/10.1126/science.abb2375"
-            }
-          ]
-        },
-        {
-          "year": "2019",
-          "items": [
-            {
-              "title": "Genomic and transcriptomic investigations of the evolutionary transition from oviparity to viviparity.",
-              "text": "PNAS, 2019, 116(9): 3646-3655",
-              "meta": "Wei Gao, ......, Jing Che*.",
-              "url": "https://doi.org/10.1073/pnas.1816086116"
-            }
-          ]
-        },
-        {
-          "year": "2019",
-          "items": [
-            {
-              "title": "Elizabeth Prendini. Natatanuran frogs used the Indian Plate to step-stone disperse and radiate across the Indian Ocean.",
-              "text": "National Science Review, 2019, 6(1), 10-14",
-              "meta": "Zhi-Yong Yuan#, ......, Jing Che*,",
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8294181/"
             }
           ]
         },
@@ -140,74 +227,111 @@ window.PAGE_DATA.en["publications"] = {
           "year": "2018",
           "items": [
             {
-              "title": "Species groups distributed across elevational gradients reveal convergent and continuous genetic adaptation to high elevations.",
-              "text": "PNAS, 2018, 115(45), E10634-E10641.",
-              "meta": "Yan-Bo Sun#, ......, Jing Che*,",
-              "url": "\n" +
-                  "https://doi.org/10.1073/pnas.181359311"
+              "title": "The Chinese giant salamander exemplifies the hidden extinction of cryptic species.",
+              "meta": "Fang Yan, Jing-Cai Lü, Bao-Lin Zhang, Zhi-Yong Yuan, Hai-Peng Zhao, Song Huang, Gang Wei, Xue Mi, Da-Hu Zou, Wei Xu, Shu Chen, Jie Wang, Feng Xie, Min-Yao Wu, Han-Bin Xiao, Zhi-Qiang Liang, Jie-Qiong Jin, Shi-Fang Wu, Cun-Shuan Xu, Benjamin Tapley, Samuel T. Turvey, Theodore J. Papenfuss, Andrew A. Cunningham, Robert W. Murphy*, Ya-Ping Zhang*, Jing Che*.",
+              "text": "Current Biology, 2018, 28(10): R590–R592.",
+              "url": "https://doi.org/10.1016/j.cub.2018.04.004"
             }
           ]
         },
-      ]
-    },
-// ==================== Published Books ====================
-    {
-      "type": "publications",
-      "title": "Published Books",
-      "groups": [
         {
+          "year": "2012",
           "items": [
             {
-              "meta": "Jing Che, Chen-Qi Lu.",
-              "title": "Amphibians of the Qinghai–Tibet Plateau.",
-              "text": "2026. Science Press."
-            },
+              "title": "Universal COI primers for DNA barcoding amphibians.",
+              "meta": "Jing Che#, Hong-Man Chen#, Jun-Xiao Yang, Jie-Qiong Jin, Ke Jiang, Zhi-Yong Yuan, Robert W. Murphy*, Ya-Ping Zhang*.",
+              "text": "Molecular Ecology Resources, 2012, 12(2): 247–258.",
+              "url": "https://doi.org/10.1111/j.1755-0998.2011.03090.x"
+            }
+          ]
+        },
+        {
+          "year": "2010",
+          "items": [
             {
-              "meta": "Jing Che, Kai Wang.",
-              "title": "Lizards of the Qinghai–Tibet Plateau.",
-              "text": "2026. Science Press."
-            },
-            {
-              "meta": "Peng Guo, Jing Che.",
-              "title": "Snakes of the Qinghai–Tibet Plateau.",
-              "text": "2024. Science Press."
-            },
-            {
-              "meta": "Jing Che, Ke Jiang, Fang Yan, Ya-Ping Zhang.",
-              "title": "Amphibians and Reptiles of Tibet: Diversity and Evolution.",
-              "text": "2020. Science Press."
-            },
-            {
-              "meta": "Jing Che, Zhong-Bin Yu.",
-              "title": "Amphibians of the Gaoligong Mountains.",
-              "text": "2025 \"2026\". Yunnan Science Press."
-            },
-            {
-              "meta": "Kai Wang, Jing Che.",
-              "title": "Key Protected Amphibians and Reptiles of Yunnan.",
-              "text": "2025. Yunnan Science Press."
+              "title": "Spiny frogs (Paini) illuminate the history of the Himalayan region and Southeast Asia.",
+              "meta": "Jing Che, Wei-Wei Zhou, Jian-Sheng Hu, Fang Yan, Theodore J. Papenfuss, David B. Wake*, Ya-Ping Zhang*.",
+              "text": "PNAS, 2010, 107(31): 13765–13770.",
+              "url": "https://doi.org/10.1073/pnas.1008415107"
             }
           ]
         }
       ]
     },
-
-// ==================== Popular Science Books ====================
     {
-      "type": "publications",
-      "title": "Popular Science Books",
-      "groups": [
-        {
-          "items": [
-            {
-              "title": "Plateau Elves Popular Science Series — Amphibians and Reptiles.",
-              "text": "2024. Qinghai People's Publishing House.",
-              "meta": "Jing Che, Chen-Qi Lu.",
-              "url": ""
-            }
-          ]
-        }
-      ]
+      "type": "allPublications",
+      "title": "More Publications",
+      "intro": "",
+      "labMembers": [
+        "Jing Che",
+        "车静",
+        "Jing Chai",
+        "柴静",
+        "Wei Gao",
+        "高伟",
+        "Kai Wang",
+        "王剀",
+        "Chenqi Lu",
+        "Chen-Qi Lu",
+        "卢宸祺",
+        "Alex Plimo Karuno",
+        "Alex P. Karuno",
+        "Jie-Qiong Jin",
+        "金洁琼",
+        "Wenjie Dong",
+        "Wen-Jie Dong",
+        "Wei Xu",
+        "Yun-He Wu",
+        "Wei-Wei Zhou",
+        "Bao-Lin Zhang",
+        "Jin-Min Chen",
+        "Fang Yan",
+        "Zhi-Yong Yuan",
+        "Ting-Ting Fu",
+        "Chuan-Xin Yu",
+        "Xue Mi",
+        "Yi Zhang",
+        "Jun-Xiao Yang",
+        "Shao-Bing Hou",
+        "Zhong-Bin Yu",
+        "Zhongbin Yu",
+        "Hao Xun",
+        "Ling Li",
+        "Han Wan",
+        "Yin Haoping",
+        "Asmit Subba",
+        "Manh Van Le",
+        "Manh Le Van",
+        "Ru-Jun Cao",
+        "Zhuo-Yu Lu",
+        "Mu-Rong Yi",
+        "Felista Kasyoka Kilunda",
+        "Kasyoka Kilunda Felista",
+        "Lotanna M. Nneji",
+        "Md Mizanur Rahman",
+        "Sang Ngoc Nguyen",
+        "Sang N. Nguyen",
+        "于中斌",
+        "吴云鹤",
+        "陈进民",
+        "颜芳",
+        "袁智勇",
+        "付婷婷",
+        "徐伟",
+        "张毅",
+        "侯绍兵",
+        "余传鑫",
+        "冯小刚",
+        "尹浩萍",
+        "易木荣"
+      ],
+      "groups": []
     }
   ]
 };
+// Reuse the same complete publication dataset as the Chinese layout.
+window.PAGE_DATA.en["publications"].sections.forEach(function (section) {
+  if (section.type === "allPublications") {
+    section.groups = window.CHE_LAB_ALL_PUBLICATIONS || [];
+  }
+});

@@ -1,0 +1,780 @@
+/* PUBLICATIONS PAGE
+   Load common.css before this file.
+*/
+
+/* =========================================================
+   代表性论文 / 全部论文：基础样式
+   ========================================================= */
+
+.pub-modern-legend {
+  margin: 14px 0 0;
+  padding: 14px 16px;
+  color: #596b7e;
+  font-size: 15px;
+  line-height: 1.6;
+  background: #f6faf9;
+}
+
+.pub-modern-list {
+  width: 100%;
+}
+
+.pub-modern-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: start;
+  padding: 20px 4px;
+  border-bottom: 1px solid #e2e8ec;
+}
+
+.pub-modern-item:last-child {
+  border-bottom: none;
+}
+
+.pub-modern-title {
+  margin: 0 0 9px;
+  color: #18222d;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.pub-modern-authors {
+  margin-bottom: 9px;
+  color: #627183;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.pub-lab-member,
+.lab-member-name {
+  color: #18222d;
+  font-weight: 700;
+}
+
+.pub-modern-journal,
+.all-pub-journal,
+.pub-representative-journal {
+  color: #078b62;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* =========================================================
+   DOI 按钮
+   ========================================================= */
+
+.pub-doi-button {
+  min-width: 54px;
+  padding: 7px 12px;
+  box-sizing: border-box;
+  color: #148866;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #148866;
+  border-radius: 4px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.pub-doi-button:hover {
+  color: #fff;
+  background: #148866;
+}
+
+
+/* =========================================================
+   代表性论文：单行文献样式
+   ========================================================= */
+
+.pub-representative-citation {
+  min-width: 0;
+  color: #435267;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.pub-representative-authors,
+.pub-representative-title,
+.pub-representative-source {
+  display: inline;
+}
+
+.pub-representative-title {
+  color: #24364a;
+}
+
+.pub-modern-item .pub-doi-button {
+  align-self: start;
+  min-width: 48px;
+  padding: 7px 11px;
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   更多论文 / 全部论文
+   ========================================================= */
+
+.all-pub-groups {
+  margin-top: 18px;
+}
+
+.all-pub-year-block {
+  margin: 0 0 34px;
+}
+
+.all-pub-year-title {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 0;
+  padding: 10px 0;
+  color: var(--primary-dark);
+  font-size: 25px;
+  font-weight: 700;
+  border-bottom: 2px solid #5fc58c;
+}
+
+.all-pub-year-title small {
+  color: #758396;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.all-pub-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: start;
+  padding: 16px 4px;
+  color: #435267;
+  font-size: 15px;
+  line-height: 1.75;
+  border-bottom: 1px solid #e7ecef;
+}
+
+.all-pub-item:last-child {
+  border-bottom: 0;
+}
+
+.all-pub-citation {
+  min-width: 0;
+}
+
+.all-pub-doi-button {
+  align-self: start;
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   旧版论文列表兼容
+   ========================================================= */
+
+.pub-year-block {
+  margin-top: 18px;
+}
+
+.pub-year-title {
+  margin: 10px 0 12px;
+  color: #1f4e79;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pub-inline-list {
+  margin: 0;
+  padding-left: 28px;
+}
+
+.pub-inline-item {
+  margin-bottom: 14px;
+  line-height: 1.9;
+}
+
+.pub-inline-link {
+  margin-left: 6px;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   侧栏代表性专著
+   ========================================================= */
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-items: stretch;
+}
+
+.info-book-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 260px;
+  padding: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #f5f7fb;
+  border: 1px solid #d7e3f3;
+  border-radius: 16px;
+}
+
+.info-book-img {
+  width: 100%;
+  height: 170px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.info-book-title {
+  display: -webkit-box;
+  height: 42px;
+  margin-top: 10px;
+  overflow: hidden;
+  color: #1f4d8f;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+
+/* =========================================================
+   出版著作：3 列卡片
+   ========================================================= */
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #dce5ee;
+  border-radius: 10px;
+}
+
+.book-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.book-cover img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.book-info {
+  width: 100%;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.book-info h4 {
+  margin: 0 0 10px;
+  color: #1f2d3d;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.book-author {
+  margin: 0 0 6px;
+  color: #4f6276;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.book-publisher {
+  margin: 0;
+  color: #6b7a8c;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   出版著作 / 发表论文
+   居中标题 + 下方深蓝色短横线
+   ========================================================= */
+
+.pub-center-title,
+.section-books > .section-title,
+.section-publications > .section-title,
+.section-paperPublications > .section-title {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 0 30px !important;
+  padding: 0 18px 17px !important;
+  border: 0 !important;
+  color: #075b57 !important;
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+}
+
+.pub-center-title::before,
+.section-books > .section-title::before,
+.section-publications > .section-title::before,
+.section-paperPublications > .section-title::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: 0 !important;
+  display: block !important;
+  width: 58px !important;
+  height: 2px !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #1767aa !important;
+  transform: translateX(-50%) !important;
+}
+
+.pub-center-title::after,
+.section-books > .section-title::after,
+.section-publications > .section-title::after,
+.section-paperPublications > .section-title::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* =========================================================
+   主要获奖标题
+   居中标题 + 下方深蓝色短横线
+   ========================================================= */
+
+.section-awards > .section-title {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 0 30px !important;
+  padding: 0 18px 17px !important;
+  border: 0 !important;
+  color: #075b57 !important;
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+}
+
+.section-awards > .section-title::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 0 !important;
+  width: 58px !important;
+  height: 2px !important;
+  background: #1767aa !important;
+  transform: translateX(-50%) !important;
+}
+
+.section-awards > .section-title::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* =========================================================
+   代表性论文 + 更多论文
+   左对齐 + 左侧红蓝竖条
+   ========================================================= */
+
+.representative-title-wrap {
+  width: 100% !important;
+  margin: 24px 0 18px !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+.representative-left-title,
+.page-main-title,
+.section-allPublications > .section-title,
+.pub-list-title {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  width: 100% !important;
+  margin: 0 0 24px 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  color: #083f73 !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  line-height: 1.45 !important;
+  text-align: left !important;
+}
+
+.representative-left-title::before,
+.page-main-title::before,
+.section-allPublications > .section-title::before,
+.pub-list-title::before {
+  content: "" !important;
+  position: static !important;
+  display: block !important;
+  flex: 0 0 4px !important;
+  width: 4px !important;
+  height: 22px !important;
+  margin: 0 10px 0 0 !important;
+  border: 0 !important;
+  border-radius: 2px !important;
+  background: linear-gradient(
+          to bottom,
+          #d83a3a 0%,
+          #d83a3a 45%,
+          #1767aa 45%,
+          #1767aa 100%
+  ) !important;
+  transform: none !important;
+}
+
+.representative-left-title::after,
+.page-main-title::after,
+.section-allPublications > .section-title::after,
+.pub-list-title::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* =========================================================
+   普通 publications 内容
+   ========================================================= */
+
+.section-publications .pub-inline-list {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.section-publications .pub-inline-item {
+  display: block !important;
+  margin: 0 0 14px 0 !important;
+  padding: 0 !important;
+  color: #24364a !important;
+  font-size: 16px !important;
+  line-height: 1.9 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.section-publications .pub-inline-text {
+  display: inline !important;
+  color: #24364a !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+
+/* =========================================================
+   更多论文：折叠 / 展开
+   ========================================================= */
+
+.all-pub-details {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.all-pub-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  color: #083f73;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.45;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+
+.all-pub-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.all-pub-toggle::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 22px;
+  margin-right: 6px;
+  border-radius: 2px;
+  background: linear-gradient(
+          to bottom,
+          #d83a3a 0%,
+          #d83a3a 45%,
+          #1767aa 45%,
+          #1767aa 100%
+  );
+}
+
+.all-pub-arrow {
+  display: inline-block;
+  color: #083f73;
+  font-size: 24px;
+  font-weight: 400;
+  transition: transform 0.25s ease;
+}
+
+.all-pub-details[open] .all-pub-arrow {
+  transform: rotate(90deg);
+}
+
+.all-pub-details .all-pub-groups {
+  margin-top: 28px;
+}
+
+
+/* =========================================================
+   主要获奖内容
+   左侧证书 + 右侧信息
+   日期放最下面
+   ========================================================= */
+
+.award-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  margin: 4px 0 0;
+  padding: 0;
+}
+
+.award-card {
+  display: grid;
+
+  grid-template-columns: 155px minmax(0, 1fr);
+
+  gap: 38px;
+
+  align-items: center;
+
+  width: 100%;
+
+  padding: 24px 28px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe8ef;
+  border-radius: 12px;
+}
+
+.award-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(18, 55, 88, 0.08);
+}
+
+
+/* 左侧证书 */
+
+.award-card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 160px;
+  height: 200px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+.award-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
+}
+
+
+/* 右侧内容 */
+
+.award-card-content {
+  min-width: 0;
+}
+
+.award-achievement {
+  margin: 0 0 10px;
+  color: #083f73;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.award-achievement {
+  margin: 0 0 10px;
+  color: #111111;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.award-name {
+  display: block;
+  margin: 0 0 10px;
+  padding: 0;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+  background: none;
+  border-radius: 0;
+}
+
+.award-contributors {
+  margin: 0;
+  color: #111111;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.award-contributors-label {
+  color: #111111;
+  font-weight: 600;
+}
+
+.award-contributors-names {
+  color: #111111;
+}
+
+.award-contributors .lab-member-name {
+  color: #111111 !important;
+  font-weight: 700 !important;
+}
+
+.award-date {
+  margin-top: 12px;
+  margin-bottom: 0;
+  color: #111111;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   响应式
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .book-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .award-card {
+    grid-template-columns: 95px minmax(0, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .award-card-image {
+    width: 95px;
+    height: 125px;
+  }
+
+  .award-achievement {
+    font-size: 16px;
+  }
+
+  .award-name {
+    font-size: 14px;
+  }
+
+  .award-contributors {
+    font-size: 13px;
+  }
+
+  .award-date {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .pub-modern-item {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+  }
+
+  .pub-representative-citation {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .pub-modern-item .pub-doi-button {
+    min-width: 44px;
+    padding: 6px 8px;
+  }
+
+  .all-pub-item {
+    gap: 12px;
+  }
+
+  .all-pub-doi-button {
+    min-width: 46px;
+    padding: 6px 9px;
+  }
+
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-cover {
+    height: 280px;
+  }
+
+  .pub-center-title,
+  .section-books > .section-title,
+  .section-publications > .section-title,
+  .section-paperPublications > .section-title,
+  .section-awards > .section-title {
+    font-size: 23px !important;
+  }
+
+  .representative-left-title,
+  .page-main-title,
+  .section-allPublications > .section-title,
+  .pub-list-title,
+  .all-pub-toggle {
+    font-size: 20px !important;
+  }
+}

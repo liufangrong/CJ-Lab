@@ -87,12 +87,12 @@
   function createSidebar(lang) {
     const side = getSiteBundle(lang).sidebar;
 
-  //   const latest = (side.latest || []).map(item => `
-  //   <li class="latest-slide-item">
-  //     <div class="latest-slide-title">${item.title}</div>
-  //     <small class="latest-slide-date">${item.date}</small>
-  //   </li>
-  // `).join('');
+    //   const latest = (side.latest || []).map(item => `
+    //   <li class="latest-slide-item">
+    //     <div class="latest-slide-title">${item.title}</div>
+    //     <small class="latest-slide-date">${item.date}</small>
+    //   </li>
+    // `).join('');
     const latest = (side.latest || []).map(item => `
   <li class="latest-slide-item">
     ${item.link
@@ -255,7 +255,7 @@
   // }
   function renderPeopleGrid(section, lang) {
     const contactFields = section.contactFields || ["research", 'phone', 'email'];
-    const isFormerMembers = section.title === (lang === 'zh' ? '已毕业/出站成员' : 'Former members');
+    const isFormerMembers = section.title === (lang === 'zh' ? '已毕业/出站成员' : 'Alumni & Former Postdocs');
 
     const cards = (section.items || []).map(item => {
       const nameHtml = item.profileUrl
@@ -389,8 +389,41 @@
       });
     });
   }
+
+  /* =========================================================
+   实验室成员姓名自动加粗
+   所有 section 都可以调用
+   ========================================================= */
+
+  function boldLabMemberNames(value) {
+    if (!value) return "";
+
+    const names = [...(window.CHE_LAB_MEMBER_NAMES || [])]
+        .filter(Boolean)
+        .sort((a, b) => b.length - a.length);
+
+    if (!names.length) {
+      return String(value);
+    }
+
+    const escapeRegExp = text =>
+        String(text).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+    const regex = new RegExp(
+        `(${names.map(escapeRegExp).join("|")})`,
+        "g"
+    );
+
+    return String(value).replace(
+        regex,
+        '<strong class="lab-member-name">$1</strong>'
+    );
+  }
+
+
   function renderSection(section, lang) {
     const sectionId = section.id ? ` id="${section.id}"` : '';
+    const sectionTypeClass = section.type ? ` section-${section.type}` : '';
     let body = '';
 
     if (section.type === 'leaderProfile') {
@@ -409,11 +442,55 @@
         </div>`).join('')}</div>`;
     }
 
+    if (section.type === 'home-intro') {
+      const paragraphs = (section.paragraphs || [])
+          .filter(text => text && String(text).trim())
+          .map(text => `<p>${text}</p>`)
+          .join('');
+
+      body = `<div class="home-intro-copy">${paragraphs}</div>`;
+    }
+
+    if (section.type === 'image-gallery') {
+      const galleryItems = (section.items || []).map(item => {
+        const image = `
+          <img src="${item.image}"
+               alt="${item.alt || item.caption || ''}"
+               loading="lazy"
+               decoding="async">`;
+        const media = item.href
+            ? `<a class="home-image-link" href="${item.href}" target="_blank" rel="noopener noreferrer">${image}</a>`
+            : image;
+
+        return `
+          <figure class="home-image-item">
+            ${media}
+            ${item.caption ? `<figcaption>${item.caption}</figcaption>` : ''}
+          </figure>`;
+      }).join('');
+
+      body = `<div class="home-image-grid">${galleryItems}</div>`;
+    }
+
+    if (section.type === 'logo-links') {
+      const logoItems = (section.items || []).map(item => {
+        const content = `
+          <img src="${item.image}" alt="${item.alt || item.title || ''}" loading="lazy" decoding="async" onerror="this.hidden=true">
+          ${item.title ? `<span>${item.title}</span>` : ''}`;
+
+        return item.href
+            ? `<a class="home-logo-card" href="${item.href}" target="_blank" rel="noopener noreferrer" aria-label="${item.title || item.alt || ''}">${content}</a>`
+            : `<div class="home-logo-card">${content}</div>`;
+      }).join('');
+
+      body = `<div class="home-logo-grid">${logoItems}</div>`;
+    }
+
     if (section.type === 'cards') {
       body = `<div class="card-grid">${section.items.map(item => `
         <div class="card">
           <h4>${item.title}</h4>
-          <p>${item.text}</p>
+          ${item.text && String(item.text).trim() ? `<p>${item.text}</p>` : ''}
           ${item.meta ? `<div class="card-meta">${item.meta}</div>` : ''}
         </div>`).join('')}</div>`;
     }
@@ -448,41 +525,64 @@
         </div>`).join('')}</div>`;
     }
 
-    // if (section.type === 'projects') {
-    //   body = `<div class="project-list">${section.items.map(item => `
-    //     <div class="project-card">
-    //       <h4>${item.title}</h4>
-    //       <p>${item.text}</p>
-    //       ${item.bullets ? `<ul>${item.bullets.map(b => `<li>${b}</li>`).join('')}</ul>` : ''}
-    //       ${item.meta ? `<div class="project-meta">${item.meta}</div>` : ''}
-    //     </div>`).join('')}</div>`;
-    // }
-    if (section.type === 'projects') {
+
+    //   if (section.type === 'projects') {
+    //     body = `
+    //   <div class="project-list">
+    //     ${(section.items || []).map(item => `
+    //       <div class="project-card">
+    //
+    //         <div class="project-content ${item.reverse ? 'project-reverse' : ''}">
+    //
+    //           ${item.image ? `
+    //             <div class="project-card-photo">
+    //               <img src="${item.image}" alt="${section.title || ''}">
+    //             </div>
+    //           ` : ''}
+    //
+    //           <div class="project-card-text">
+    //             ${item.title ? `<h4>${item.title}</h4>` : ''}
+    //             ${item.text ? `<p>${item.text}</p>` : ''}
+    //             ${item.bullets
+    //         ? `<ul>${item.bullets.map(b => `<li>${b}</li>`).join('')}</ul>`
+    //         : ''}
+    //           </div>
+    //
+    //         </div>
+    //
+    //       </div>
+    //     `).join('')}
+    //   </div>
+    // `;
+    //   }
+
+    if (section.type === "projects") {
       body = `
     <div class="project-list">
       ${(section.items || []).map(item => `
         <div class="project-card">
-
-          <div class="project-content ${item.reverse ? 'project-reverse' : ''}">
+          <div class="project-content">
 
             ${item.image ? `
-              <div class="project-card-photo">
-                <img src="${item.image}" alt="${section.title || ''}">
+              <div class="project-card-photo ${item.reverse ? 'is-right' : 'is-left'}">
+                <img src="${item.image}" alt="${section.title || ""}">
               </div>
-            ` : ''}
+            ` : ""}
 
             <div class="project-card-text">
-              ${item.title ? `<h4>${item.title}</h4>` : ''}
-              ${item.text ? `<p>${item.text}</p>` : ''}
-              ${item.bullets
-          ? `<ul>${item.bullets.map(b => `<li>${b}</li>`).join('')}</ul>`
-          : ''}
+              ${item.title ? `<h4>${item.title}</h4>` : ""}
+              ${item.text ? `<p>${item.text}</p>` : ""}
+
+              ${item.bullets ? `
+                <ul>
+                  ${item.bullets.map(text => `<li>${text}</li>`).join("")}
+                </ul>
+              ` : ""}
             </div>
 
           </div>
-
         </div>
-      `).join('')}
+      `).join("")}
     </div>
   `;
     }
@@ -499,15 +599,235 @@
     //       ${item.meta ? `<div class="pub-meta">${item.meta}</div>` : ''}
     //     </div>`).join('')}</div>`;
     // }
-    if (section.type === "publications") {
+    if (section.type === "paperPublications" || section.type === "allPublications") {
+      const escapeRegExp = value =>
+          String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+      const boldLabMembers = value => {
+        return (section.labMembers || []).reduce((result, name) => {
+          return result.replace(
+              new RegExp(escapeRegExp(name), "g"),
+              `<strong class="pub-lab-member">${name}</strong>`
+          );
+        }, value || "");
+      };
+
+      // const renderRepresentativeItems = items => `
+      //   <div class="pub-modern-list">
+      //     ${(items || []).map(item => `
+      //       <article class="pub-modern-item">
+      //         <div class="pub-modern-content">
+      //           <h4 class="pub-modern-title">${item.title || ""}</h4>
+      //           ${item.meta ? `
+      //             <div class="pub-modern-authors">
+      //               ${boldLabMembers(item.meta)}
+      //             </div>
+      //           ` : ""}
+      //           ${item.text ? `
+      //             <div class="pub-modern-journal">${item.text}</div>
+      //           ` : ""}
+      //         </div>
+      //
+      //         ${item.url ? `
+      //           <a class="pub-doi-button"
+      //              href="${item.url}"
+      //              target="_blank"
+      //              rel="noopener noreferrer">DOI</a>
+      //         ` : ""}
+      //       </article>
+      //     `).join("")}
+      //   </div>
+      // `;
+      const formatRepresentativeJournal = value => {
+        const text = String(value || "").trim();
+
+        if (!text) return "";
+
+        const commaIndex = text.indexOf(",");
+
+        if (commaIndex === -1) {
+          return `<em class="pub-representative-journal">${text}</em>`;
+        }
+
+        const journal = text.slice(0, commaIndex);
+        const details = text.slice(commaIndex);
+
+        return `
+    <em class="pub-representative-journal">${journal}</em>${details}
+  `;
+      };
+
+      const renderRepresentativeItems = items => `
+  <div class="pub-modern-list">
+
+    ${(items || []).map(item => `
+      <article class="pub-modern-item">
+
+        <div class="pub-representative-citation">
+
+          ${item.meta ? `
+            <span class="pub-representative-authors">
+              ${boldLabMembers(item.meta)}
+            </span>
+          ` : ""}
+
+          ${item.title ? `
+            <span class="pub-representative-title">
+              ${item.title}
+            </span>
+          ` : ""}
+
+          ${item.text ? `
+            <span class="pub-representative-source">
+              ${formatRepresentativeJournal(item.text)}
+            </span>
+          ` : ""}
+
+        </div>
+
+        ${item.url ? `
+          <a
+            class="pub-doi-button"
+            href="${item.url}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >DOI</a>
+        ` : ""}
+
+      </article>
+    `).join("")}
+
+  </div>
+`;
+
+
+      if (section.type === "paperPublications") {
+        const items = (section.groups || []).flatMap(group => group.items || []);
+
+        body = `
+    ${section.legend ? `
+      <div class="pub-modern-legend">
+        ${section.legend}
+      </div>
+    ` : ""}
+
+    ${section.listTitle ? `
+      <div class="representative-title-wrap">
+        <h3 class="section-title representative-left-title">
+          ${section.listTitle}
+        </h3>
+      </div>
+    ` : ""}
+
+    ${renderRepresentativeItems(items)}
+  `;
+      }
+
+      //   if (section.type === "allPublications") {
+      //     body = `
+      //       <div class="all-pub-groups">
+      //         ${(section.groups || []).map(group => `
+      //           <section class="all-pub-year-block">
+      //             <h4 class="all-pub-year-title">
+      //               <span>${group.year || ""}</span>
+      //               <small>${(group.items || []).length}篇</small>
+      //             </h4>
+      //             <div class="all-pub-list">
+      //               ${(group.items || []).map(item => `
+      //                 <article class="all-pub-item">
+      //                   ${boldLabMembers(item.citation || "")}
+      //                 </article>
+      //               `).join("")}
+      //             </div>
+      //           </section>
+      //         `).join("")}
+      //       </div>
+      //     `;
+      //   }
+      // }
+
+
+      if (section.type === "allPublications") {
+        body = `
+    <details class="all-pub-details">
+
+      <summary class="all-pub-toggle">
+        <span>${section.title || (lang === "zh" ? "更多论文" : "More Publications")}</span>
+        <span class="all-pub-arrow">→</span>
+      </summary>
+
+      <div class="all-pub-groups">
+        ${(section.groups || []).map(group => `
+          <section class="all-pub-year-block">
+
+            <h4 class="all-pub-year-title">
+              <span>${group.year || ""}</span>
+              <small>${(group.items || []).length}篇</small>
+            </h4>
+
+            <div class="all-pub-list">
+              ${(group.items || []).map(item => `
+                <article class="all-pub-item">
+
+                  <div class="all-pub-citation">
+                    ${boldLabMembers(item.citation || "")}
+                  </div>
+
+                  ${item.doi
+            ? '<a class="pub-doi-button all-pub-doi-button"' +
+            ' href="https://doi.org/' + item.doi + '"' +
+            ' target="_blank"' +
+            ' rel="noopener noreferrer">DOI</a>'
+            : ""
+        }
+
+                </article>
+              `).join("")}
+            </div>
+
+          </section>
+        `).join("")}
+      </div>
+
+    </details>
+  `;
+      }
+    }
+
+
+    function boldLabMemberNames(text) {
+      if (!text) return "";
+
+      const names = [...(window.CHE_LAB_MEMBER_NAMES || [])]
+          .sort((a, b) => b.length - a.length);
+
+      if (!names.length) return text;
+
+      const escapedNames = names.map(name =>
+          name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+      );
+
+      const regex = new RegExp(`(${escapedNames.join("|")})`, "g");
+
+      return text.replace(
+          regex,
+          '<strong class="lab-member-name">$1</strong>'
+      );
+    }
+
+
+    if (section.type === "books") {
       const items = (section.groups || []).flatMap(group => group.items || []);
 
       body = `
     <ol class="pub-inline-list">
       ${items.map(item => `
         <li class="pub-inline-item">
+
           <span class="pub-inline-text">
-            ${item.meta || ""} ${item.title || ""} ${item.text || ""}
+            ${boldLabMemberNames(item.meta || "")}
+            ${item.title || ""}
+            ${item.text || ""}
           </span>
 
           ${item.url ? `
@@ -516,6 +836,7 @@
                rel="noopener noreferrer"
                class="pub-inline-link">🔗</a>
           ` : ""}
+
         </li>
       `).join("")}
     </ol>
@@ -536,7 +857,7 @@
 
           <div class="book-info">
             <h4>《${item.title}》</h4>
-            <p class="book-author">${item.author}</p>
+            <p class="book-author">${boldLabMemberNames(item.author || "")}</p>
             <p class="book-publisher">${item.publisher}，${item.year}</p>
           </div>
 
@@ -546,14 +867,139 @@
   `;
     }
 
+    /* =========================================================
+    主要获奖
+    左侧证书图片 + 右侧文字
+    日期放最下面
+    ========================================================= */
+
+    if (section.type === "awards") {
+      const items = (section.groups || [])
+          .flatMap(group => group.items || []);
+
+      body = `
+    <div class="award-list">
+
+      ${items.map(item => `
+        <article class="award-card">
+
+          <div class="award-card-image">
+            ${item.image ? `
+              <img
+                src="${item.image}"
+                alt="${item.award || item.achievement || ""}"
+                loading="lazy"
+                decoding="async"
+              >
+            ` : ""}
+          </div>
+
+          <div class="award-card-content">
+
+            ${item.achievement ? `
+              <div class="award-achievement">
+                ${item.achievement}
+              </div>
+            ` : ""}
+
+            ${item.award ? `
+              <div class="award-name">
+                ${item.award}
+              </div>
+            ` : ""}
+
+            ${item.people ? `
+              <div class="award-contributors">
+                <span class="award-contributors-label">
+                  ${lang === "zh" ? "主要完成人：" : "Contributors: "}
+                </span>
+
+                <span class="award-contributors-names">
+                  ${boldLabMemberNames(item.people)}
+                </span>
+              </div>
+            ` : ""}
+
+            ${item.date ? `
+              <div class="award-date">
+                ${item.date}
+              </div>
+            ` : ""}
+
+          </div>
+
+        </article>
+      `).join("")}
+
+    </div>
+  `;
+    }
+
 
     if (section.type === 'news') {
-      body = `<div class="news-grid">${section.items.map(item => `
-        <div class="news-card">
-          <h4>${item.title}</h4>
-          <p>${item.text}</p>
-          ${item.meta ? `<div class="news-meta">${item.meta}</div>` : ''}
-        </div>`).join('')}</div>`;
+      body = `
+    <div class="research-news-list">
+
+      ${(section.items || []).map(item => `
+        <article class="research-news-item">
+
+          ${item.image ? `
+            <div class="research-news-cover">
+              ${item.url ? `
+                <a href="${item.url}"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  <img
+                    src="${item.image}"
+                    alt="${item.title || ''}"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </a>
+              ` : `
+                <img
+                  src="${item.image}"
+                  alt="${item.title || ''}"
+                  loading="lazy"
+                  decoding="async"
+                >
+              `}
+            </div>
+          ` : ''}
+
+          <div class="research-news-content">
+
+            <h4 class="research-news-title">
+              ${item.url ? `
+                <a href="${item.url}"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  ${item.title || ''}
+                </a>
+              ` : `
+                ${item.title || ''}
+              `}
+            </h4>
+
+            ${item.text ? `
+              <p class="research-news-text">
+                ${item.text}
+              </p>
+            ` : ''}
+
+            ${item.meta ? `
+              <div class="research-news-meta">
+                ${item.meta}
+              </div>
+            ` : ''}
+
+          </div>
+
+        </article>
+      `).join('')}
+
+    </div>
+  `;
     }
 
     /* home 代表性成果  图片设置  */
@@ -571,7 +1017,7 @@
 
             ${item.image ? `
               <div class="timeline-photo">
-                <img src="${item.image}" alt="${item.title || ""}">
+                <img src="${item.image}" alt="${item.title || ""}" loading="lazy" decoding="async">
               </div>
             ` : ""}
 
@@ -586,7 +1032,6 @@
     </div>
   `;
     }
-
 
 
     // if (section.type === 'activities') {
@@ -609,8 +1054,7 @@
       `).join('')}
     </div>
   `;
-    }
-    else if (section.type === 'paper-grid') {
+    } else if (section.type === 'paper-grid') {
       body = `
     <div class="paper-grid">
       ${(section.items || []).map(item => `
@@ -621,8 +1065,7 @@
       `).join('')}
     </div>
   `;
-    }
-    else if (section.type === 'video-grid') {
+    } else if (section.type === 'video-grid') {
       body = `
     <div class="paper-grid">
       ${(section.items || []).map(item => `
@@ -643,13 +1086,33 @@
   `;
     }
 
+    const centerPublicationTitles = [
+      "出版著作",
+      "主要获奖",
+      "发表论文",
+
+      "Published Books",
+      "Major Awards",
+      "Publications",
+      "Published Papers"
+    ];
+
+    const sectionTitleClass =
+        centerPublicationTitles.includes(section.title)
+            ? "section-title pub-center-title"
+            : "section-title";
+
     return `
-      <section class="section"${sectionId}>
-        <h3 class="section-title">${section.title}</h3>
-        ${section.intro ? `<p class="section-intro">${section.intro}</p>` : ''}
-        ${body}
-      </section>
-    `;
+  <section class="section${sectionTypeClass}"${sectionId}>
+    ${
+        section.title && section.type !== "allPublications"
+            ? `<h3 class="section-title">${section.title}</h3>`
+            : ''
+    }
+    ${section.intro ? `<p class="section-intro">${section.intro}</p>` : ''}
+    ${body}
+  </section>
+`;
   }
 
 
@@ -665,7 +1128,62 @@
   //     </main>
   //   `;
   // }
+  function getProfileId() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('id') || '';
+  }
+
+  function createProfileMain(lang) {
+    const id = getProfileId();
+    const person =
+        window.PERSON_DETAIL &&
+        window.PERSON_DETAIL[lang] &&
+        window.PERSON_DETAIL[lang][id];
+
+    if (!person) {
+      return `
+        <main class="main container">
+          <div class="panel content-panel">
+            <div class="profile-message">
+              ${lang === 'zh' ? '未找到该人员的详细信息。' : 'Person information was not found.'}
+            </div>
+          </div>
+        </main>
+      `;
+    }
+
+    const bio = String(person.bio || '')
+        .replace(/\r/g, '')
+        .split('\n')
+        .map(line => line.trim())
+        .filter(Boolean)
+        .join(' ');
+
+    return `
+      <main class="main container">
+        <div class="panel content-panel">
+          <section class="profile-simple">
+            <div class="profile-simple-photo">
+              ${person.image
+        ? `<img src="${person.image}" alt="${person.name || ''}">`
+        : `<div class="profile-photo-placeholder"></div>`}
+            </div>
+
+            <div class="profile-simple-info">
+              <h1 class="profile-simple-name">${person.name || ''}</h1>
+              <p class="profile-simple-bio">${bio}</p>
+            </div>
+          </section>
+        </div>
+      </main>
+    `;
+  }
+
   function createMain(lang, pageKey) {
+    if (pageKey === 'profile') {
+      return createProfileMain(lang);
+    }
+
     const page = getPageBundle(lang, pageKey);
     const mainTitle = page.mainTitle
         ? `<h2 class="page-main-title">${page.mainTitle}</h2>`
@@ -675,12 +1193,9 @@
 
     return `
     <main class="main container">
-      <div class="page-layout">
-        <div class="panel content-panel">
-          ${mainTitle}
-          ${sections}
-        </div>
-        ${createSidebar(lang)}
+      <div class="panel content-panel">
+        ${mainTitle}
+        ${sections}
       </div>
     </main>
   `;
@@ -784,17 +1299,17 @@
   function render(lang) {
     const pageKey = getPageKey();
     const pageBundle = getPageBundle(lang, pageKey);
-    if (!pageBundle) {
+
+    if (pageKey !== 'profile' && !pageBundle) {
       document.getElementById('app').innerHTML = '<div style="padding:40px;font-size:18px;">Page data not found.</div>';
       return;
     }
+
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
     const navItem = (window.SITE_NAV || []).find(n => n.key === pageKey);
     document.title = `${getSiteBundle(lang).site.name} - ${navItem ? navItem[lang] : pageKey}`;
     document.getElementById('app').innerHTML = [
-      createTopbar(lang),
       createHeader(lang, pageKey),
-      createHero(lang, pageKey),
       createMain(lang, pageKey),
       createFooter(lang),
       '<button class="back-top" id="backTop" aria-label="back to top">↑</button>'

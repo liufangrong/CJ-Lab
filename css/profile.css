@@ -1,0 +1,114 @@
+/* =========================================================
+   Profile page
+   只保留：人物照片 + 姓名 + 个人简介
+   ========================================================= */
+
+body[data-page="profile"] .main {
+  margin-top: 42px;
+  margin-bottom: 56px;
+}
+
+body[data-page="profile"] .content-panel {
+  padding: 36px 40px 42px;
+}
+
+/* 整体：左图右文 */
+.profile-simple {
+  display: grid;
+  grid-template-columns:  300px minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
+}
+
+/* 左侧照片 */
+.profile-simple-photo {
+  width: 100%;
+}
+
+.profile-simple-photo img {
+  display: block;
+  width: 100%;
+  max-width:  300px;
+  height: auto;
+  object-fit: cover;
+  object-position: center top;
+  background: #fff;
+}
+
+/* 没有照片时的空占位 */
+.profile-photo-placeholder {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 3 / 4;
+  background: #eef3f7;
+}
+
+/* 右侧文字 */
+.profile-simple-info {
+  min-width: 0;
+  padding-top: 14px;
+}
+
+/* 姓名 */
+.profile-simple-name {
+  margin: 0 0 24px;
+  color: #1767aa;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+/* 个人简介正文 */
+.profile-simple-bio {
+  margin: 0;
+  color: #33485d;
+  font-size: 17px;
+  line-height: 2;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+/* 错误/缺失提示 */
+.profile-message {
+  padding: 48px 20px;
+  text-align: center;
+  color: #6b7a8c;
+  font-size: 16px;
+}
+
+/* 手机端 */
+@media (max-width: 760px) {
+  body[data-page="profile"] .content-panel {
+    padding: 26px 20px 30px;
+  }
+
+  .profile-simple {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .profile-simple-photo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-simple-photo img,
+  .profile-photo-placeholder {
+    max-width: 250px;
+  }
+
+  .profile-simple-info {
+    padding-top: 0;
+  }
+
+  .profile-simple-name {
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 27px;
+  }
+
+  .profile-simple-bio {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+}

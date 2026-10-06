@@ -1,0 +1,189 @@
+/* RESEARCH / PROJECTS PAGE
+   Split from original style.css. Load common.css before this file.
+*/
+
+
+/* =========================================================
+   研究方向 projects —— 最终布局
+   reverse:true  -> 图片右边
+   reverse:false -> 图片左边
+   ========================================================= */
+
+
+/* 每一个研究方向内容区域 */
+.project-content {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+}
+
+
+/* 清除 float，使外层卡片自动撑开 */
+.project-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* =========================================================
+   图片容器
+   ========================================================= */
+
+.project-card-photo {
+  display: block !important;
+
+  width: 400px !important;
+  max-width: 50% !important;
+
+  height: 240px !important;
+
+  overflow: hidden !important;
+
+  flex: none !important;
+}
+
+
+/* reverse:true —— 图片右边 */
+.project-card-photo.is-right {
+  float: right !important;
+
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 12px !important;
+  margin-left: 28px !important;
+}
+
+
+/* reverse:false —— 图片左边 */
+.project-card-photo.is-left {
+  float: left !important;
+
+  margin-top: 0 !important;
+  margin-right: 28px !important;
+  margin-bottom: 12px !important;
+  margin-left: 0 !important;
+}
+
+
+/* 实际图片 */
+.project-card-photo img {
+  display: block !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: contain !important;
+
+  margin: 0 !important;
+}
+
+
+/* =========================================================
+   文字
+   ========================================================= */
+
+.project-card-text {
+  display: block !important;
+
+  width: auto !important;
+  max-width: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: visible !important;
+
+  flex: none !important;
+
+  /* 正文字号 */
+  font-size: 18px !important;
+
+  /* 正文颜色：恢复原来的灰蓝色 */
+  color: #4f6276 !important;
+
+  /* 行距 */
+  line-height: 1.85 !important;
+}
+
+
+/* bullet 列表 */
+.project-card-text ul {
+  display: block !important;
+
+  margin: 0 !important;
+  padding-left: 22px !important;
+
+  color: #4f6276 !important;
+}
+
+
+/* 每一个 bullet */
+.project-card-text li {
+  display: list-item !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-size: 20px !important;
+  line-height: 1.85 !important;
+
+  color: #000000 !important;
+}
+
+
+/* =========================================================
+   外层卡片
+   ========================================================= */
+
+.project-card,
+.project-card-inner,
+.project-card-body {
+  display: block !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+
+  overflow: visible !important;
+}
+
+
+/* =========================================================
+   手机端
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .project-card-photo,
+  .project-card-photo.is-left,
+  .project-card-photo.is-right {
+    float: none !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+
+    margin: 0 0 18px 0 !important;
+  }
+
+
+  .project-card-photo img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+
+  .project-card-text {
+    font-size: 16px !important;
+    line-height: 1.85 !important;
+  }
+
+
+  .project-card-text li {
+    font-size: 16px !important;
+    line-height: 1.85 !important;
+  }
+}

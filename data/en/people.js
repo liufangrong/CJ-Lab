@@ -1,86 +1,53 @@
 window.PAGE_DATA = window.PAGE_DATA || { zh: {}, en: {} };
-
 window.PAGE_DATA.en["people"] = {
   "badge": "Lab Members",
-  "title": "Interdisciplinary teams collaborate to advance experimental and computational research",
-  "desc": "The laboratory focuses on amphibian and reptile diversity, speciation, adaptive evolution, and the conservation " +
-      "of endangered species. By integrating methods such as field surveys, morphology, ecology, genomics, and bioinformatics, " +
-      "it conducts systematic research ranging from species identification and evolutionary history to environmental adaptation " +
-      "and conservation mechanisms, with the aim of uncovering the patterns underlying the formation and evolution of amphibian and reptile diversity.",
+  "title": "",
+  "desc": "",
   "sections": [
     {
-      "type": "leaderProfile",
-      "title": "Principal Investigator",
-      "contactFields": ["room", "phone", "email"],
-      "person": {
-        "name": "CHE Jing",
-        "title": "Research Professor",
-        "phone": "+86-871-68125516",
-        "email": "chej@mail.kiz.ac.cn",
-        "image": "assets/people/image/车静 2.jpg",
-        "profileUrl": "https://kiz.cas.cn/sourcedb_kiz_cas/zw/zjrc/yjy/201212/t20121218_3722492.html",
-        "experienceTitle": "Education and Work Experience",
-        "experiences": [
-          "B.S., Southwest Normal University (Southwest University), 1996.09-2000.06",
-          "M.S., Southwest Normal University (Southwest University), 2000.09-2003.06",
-          "Ph.D., Sichuan University, 2003.09-2006.12",
-          "Assistant Research Professor, Kunming Institute of Zoology, CAS, 2006.12-2008.09",
-          "Associate Research Professor, Kunming Institute of Zoology, CAS, 2008.10-2012.11",
-          "PI / Research Professor, Kunming Institute of Zoology, CAS, 2012.12-present"
-        ],
-        "interestTitle": "Research Areas",
-        "interests": [
-          "Discovery of cryptic species diversity and systematics",
-          "Speciation, divergence, and the evolution of biodiversity patterns",
-          "Adaptive evolution",
-          "Conservation biology of endangered species"
-        ]
-      }
-    },
-    {
       "type": "peopleGrid",
-      "title": "Research Staff",
-      "contactFields": ["research", "email"],
+      "title": "Research Team",
+      "contactFields": [
+        "research",
+        "phone",
+        "email"
+      ],
       "items": [
+        {
+          "name": "CHE Jing",
+          "title": "Research Professor (Principal Investigator)",
+          "email": "chej@mail.kiz.ac.cn",
+          "image": "assets/people/image/车静 1.png",
+          "profileUrl": "https://english.kiz.ac.cn/Scientists/Scientists/202609/t20260909_1195043.html"
+        },
         {
           "name": "CHAI Jing",
           "title": "Associate Research Professor",
-          "research": "Animal genetics and evolution, and conservation of endangered species",
           "email": "chaijing@mail.kiz.ac.cn",
           "image": "assets/people/image/柴静 1.jpg",
-          "profileUrl": "https://www.kiz.cas.cn/yjsjy/yjsds/ss/202208/t20220819_6501765.html"
+          "profileUrl": "profile.html?id=cj"
         },
         {
           "name": "GAO Wei",
           "title": "Associate Research Professor",
           "email": "gaowei@mail.kiz.ac.cn",
-          "research":"Mechanisms underlying the formation of animal diversity and phenotypic evolution",
           "image": "assets/people/image/高伟 1.jpg",
-          "profileUrl": "https://kiz.cas.cn/yjsjy/yjsds/ss/202405/t20240514_7160717.html"
+          "profileUrl": "profile.html?id=gw"
         },
         {
           "name": "WANG Kai",
           "title": "Assistant Research Professor",
           "email": "wangkai@mail.kiz.ac.cn",
-          "research":"xxx",
           "image": "assets/people/image/王剀 2.jpg",
-          "profileUrl": "http://www.swild.cn/team-view/746"
+          "profileUrl": "profile.html?id=wk"
         },
         {
           "name": "KARUNO Alex Plimo",
           "title": "Postdoctoral Researcher",
-          "research":"xxx",
           "email": "alexplimo@hotmail.com",
           "image": "assets/people/image/Alex 2.jpg",
           "profileUrl": "profile.html?id=Alex"
-        }
-      ]
-    },
-    {
-      "type": "peopleGrid",
-      "title": "Support Staff",
-      "contactFields": ["room", "research", "email"],
-      "items": [
+        },
         {
           "name": "JIN Jieqiong",
           "title": "Senior Laboratory Manager",
@@ -107,7 +74,11 @@ window.PAGE_DATA.en["people"] = {
     {
       "type": "peopleGrid",
       "title": "Current Students",
-      "contactFields": ["lab", "research", "email"],
+      "contactFields": [
+        "lab",
+        "research",
+        "email"
+      ],
       "items": [
         {
           "name": "LU Chenqi",
@@ -176,7 +147,7 @@ window.PAGE_DATA.en["people"] = {
           "name": "SUBBA Asmit",
           "title": "Ph.D. Candidate",
           "email": "limbuasmit83@mails.ucas.ac.cn",
-          "image": "assets/people/image/Asmit 2.jpg",
+          "image": "assets/people/image/Asmit 3.png",
           "profileUrl": "profile.html?id=asmit"
         },
         {
@@ -196,7 +167,7 @@ window.PAGE_DATA.en["people"] = {
         {
           "name": "LIU Fangrong",
           "title": "Ph.D. Candidate (Co-supervision with Yunnan University)",
-          "email": "liufangrong@swfu.edu.cn",
+          "email": "liufangrong@stu.ynu.edu.cn",
           "image": "assets/people/image/lfr3.png",
           "profileUrl": "profile.html?id=lfr"
         },
@@ -262,21 +233,45 @@ window.PAGE_DATA.en["people"] = {
           "email": "zfydhr@126.com",
           "image": "assets/people/image/郑方圆1.jpg",
           "profileUrl": "profile.html?id=zfy"
-        },
+        }
       ]
     },
+
+
     {
       "type": "peopleGrid",
-      "title": "Former members",
-      "contactFields": ["lab", "research", "email"],
+      "title": "Alumni & Former Postdocs",
+      "contactFields": [
+        "lab",
+        "research",
+        "email"
+      ],
       "items": [
         {
           "name": "CHEN Yijing",
           "title": "Postdoc (Co-supervision with Yunnan University)",
           "lab": "",
           "research": "",
-          "email": "chenyijing0325@163.com",
+          "email": "",
           "image": "assets/people/image/member01.jpg",
+          "profileUrl": "#"
+        },
+        {
+          "name": "WU Yunhe",
+          "title": "Ph.D.",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": "assets/people/image/member14.jpg",
+          "profileUrl": "#"
+        },
+        {
+          "name": "YUAN Zhiyong",
+          "title": "Ph.D.",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": "assets/people/image/member07.jpg",
           "profileUrl": "#"
         },
         {
@@ -284,7 +279,7 @@ window.PAGE_DATA.en["people"] = {
           "title": "Ph.D",
           "lab": "",
           "research": "",
-          "email": "dongwenjie@mail.kiz.ac.cn",
+          "email": "",
           "image": "assets/people/image/董文捷 1.jpg",
           "profileUrl": "#"
         },
@@ -316,24 +311,6 @@ window.PAGE_DATA.en["people"] = {
           "profileUrl": "#"
         },
         {
-          "name": "DING Limin",
-          "title": "M.S. (Co-supervision with Yunnan University)",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member04.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "TU Xiaolong",
-          "title": "M.S.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member05.jpg",
-          "profileUrl": "#"
-        },
-        {
           "name": "YANG Junxiao",
           "title": "Ph.D.",
           "lab": "",
@@ -342,15 +319,7 @@ window.PAGE_DATA.en["people"] = {
           "image": "assets/people/image/member06.jpg",
           "profileUrl": "#"
         },
-        {
-          "name": "YUAN Zhiyong",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member07.jpg",
-          "profileUrl": "#"
-        },
+
         {
           "name": "CHEN Jinmin",
           "title": "Ph.D.",
@@ -379,39 +348,12 @@ window.PAGE_DATA.en["people"] = {
           "profileUrl": "#"
         },
         {
-          "name": "MI Xue",
-          "title": "M.S.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member11.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "XU Kai",
-          "title": "M.S.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member12.jpg",
-          "profileUrl": "#"
-        },
-        {
           "name": "RAHMAN Md Mizanur",
           "title": "Ph.D.",
           "lab": "",
           "research": "",
           "email": "",
           "image": "assets/people/image/member13.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "WU Yunhe",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member14.jpg",
           "profileUrl": "#"
         },
         {
@@ -451,6 +393,51 @@ window.PAGE_DATA.en["people"] = {
           "profileUrl": "#"
         },
         {
+          "name": "KILUNDA Felista Kasyoka",
+          "title": "Ph.D.",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": "assets/people/image/member23.jpg",
+          "profileUrl": "#"
+        },
+        {
+          "name": "YI Murong",
+          "title": "Ph.D.",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": "assets/people/image/member24.jpg",
+          "profileUrl": "#"
+        },
+        {
+          "name": "TU Xiaolong",
+          "title": "M.S.",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": "assets/people/image/member05.jpg",
+          "profileUrl": "#"
+        },
+        {
+          "name": "MI Xue",
+          "title": "M.S.",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": "assets/people/image/member11.jpg",
+          "profileUrl": "#"
+        },
+        {
+          "name": "XU Kai",
+          "title": "M.S.",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": "assets/people/image/member12.jpg",
+          "profileUrl": "#"
+        },
+        {
           "name": "YU Zhongbin",
           "title": "M.S.",
           "lab": "",
@@ -487,24 +474,15 @@ window.PAGE_DATA.en["people"] = {
           "profileUrl": "#"
         },
         {
-          "name": "KILUNDA Felista Kasyoka",
-          "title": "Ph.D.",
+          "name": "DING Limin",
+          "title": "M.S. (Co-supervision with Yunnan University)",
           "lab": "",
           "research": "",
           "email": "",
-          "image": "assets/people/image/member23.jpg",
+          "image": "assets/people/image/member04.jpg",
           "profileUrl": "#"
         },
-        {
-          "name": "YI Murong",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member24.jpg",
-          "profileUrl": "#"
-        }
       ]
-    },
+    }
   ]
 };

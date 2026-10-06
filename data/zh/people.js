@@ -1,44 +1,20 @@
 window.PAGE_DATA = window.PAGE_DATA || { zh: {}, en: {} };
 
 window.PAGE_DATA.zh["people"] = {
-  "badge": "实验室成员",
-  "title": "跨学科融合推进两栖爬行动物多样性与进化研究",
-  "desc": "实验室聚焦两栖爬行动物多样性、物种形成、适应性进化与濒危物种保护，综合野外调查、形态学、生态学、基因组学与生物信息学等方法，开展从物种鉴定、演化历史到环境适应与保护机制的系统研究，揭示两栖爬行动物多样性形成与演化的规律。",
   "sections": [
     {
-      "type": "leaderProfile",
-      "title": "实验室负责人",
-      "contactFields": ["room", "phone", "email"],
-      "person": {
-        "name": "车静",
-        "title": "研究员",
-        "phone": "+86-871-68125516",
-        "email": "chej@mail.kiz.ac.cn",
-        "image": "assets/people/image/车静 2.jpg",
-        "profileUrl": "https://kiz.cas.cn/sourcedb_kiz_cas/zw/zjrc/yjy/201212/t20121218_3722492.html",
-        "experienceTitle": "教育与工作经历",
-        "experiences": [
-          "1996.09-2000.06：学士，西南师范大学（西南大学）",
-          "2000.09-2003.06：硕士，西南师范大学（西南大学）",
-          "2003.09-2006.12：博士，四川大学",
-          "2006.12-2008.09：助理研究员，中科院昆明动物研究所",
-          "2008.10-2012.11：副研究员，中科院昆明动物研究所",
-          "2012.12-至今：PI / 研究员，中科院昆明动物研究所"
-        ],
-        "interestTitle": "研究方向",
-        "interests": [
-          "隐存物种多样性发掘和系统分类学",
-          "物种形成与分化及生物多样性格局的演变",
-          "适应性进化研究",
-          "濒危物种保护生物学研究"
-        ]
-      }
-    },
-    {
       "type": "peopleGrid",
-      "title": "科研人员",
-      "contactFields": ["research", "email"],
+      "title": "研究队伍",
+      "contactFields": ["research", "phone", "email"],
       "items": [
+        {
+          "name": "车静",
+          "title": "研究员（学科组负责人）",
+          "research": "隐存物种多样性发掘和系统分类学",
+          "email": "chej@mail.kiz.ac.cn",
+          "image": "assets/people/image/车静 1.png",
+          "profileUrl": "https://kiz.cas.cn/sourcedb_kiz_cas/zw/zjrc/yjy/201212/t20121218_3722492.html"
+        },
         {
           "name": "柴静",
           "title": "副研究员",
@@ -64,22 +40,6 @@ window.PAGE_DATA.zh["people"] = {
           "profileUrl": "http://www.swild.cn/team-view/746"
         },
         {
-          "name": "Alex Plimo Karuno",
-          "title": "博士后",
-          "research": "xxx",
-          "email": "alexplimo@hotmail.com",
-          "image": "assets/people/image/Alex 2.jpg",
-          "profileUrl": "profile.html?id=Alex"
-        }
-      ]
-    },
-
-    {
-      "type": "peopleGrid",
-      "title": "工作人员",
-      "contactFields": ["room", "research", "email"],
-      "items": [
-        {
           "name": "金洁琼",
           "title": "高级实验室管理员",
           "email": "jinjq@mail.kiz.ac.cn",
@@ -99,7 +59,15 @@ window.PAGE_DATA.zh["people"] = {
           "email": "luzhuoyu@mail.kiz.ac.cn",
           "image": "assets/people/image/陆卓雨 1.png",
           "profileUrl": "profile.html?id=lzy"
-        }
+        },
+        {
+          "name": "Alex Plimo Karuno",
+          "title": "博士后",
+          "research": "",
+          "email": "alexplimo@hotmail.com",
+          "image": "assets/people/image/Alex 2.jpg",
+          "profileUrl": "profile.html?id=Alex"
+        },
       ]
     },
 
@@ -175,7 +143,7 @@ window.PAGE_DATA.zh["people"] = {
           "name": "Asmit Subba",
           "title": "2025级博士研究生",
           "email": "limbuasmit83@mails.ucas.ac.cn",
-          "image": "assets/people/image/Asmit 2.jpg",
+          "image": "assets/people/image/Asmit 3.png",
           "profileUrl": "profile.html?id=asmit"
         },
         {
@@ -195,7 +163,7 @@ window.PAGE_DATA.zh["people"] = {
         {
           "name": "刘方荣",
           "title": "2026级博士研究生（云大联合培养）",
-          "email": "liufangrong@swfu.edu.cn",
+          "email": "liufangrong@stu.ynu.edu.cn",
           "image": "assets/people/image/lfr3.png",
           "profileUrl": "profile.html?id=lfr"
         },
@@ -280,6 +248,24 @@ window.PAGE_DATA.zh["people"] = {
           "profileUrl": "profile.html?id=cyj"
         },
         {
+          "name": "吴云鹤",
+          "title": "博士毕业生",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": "",
+          "profileUrl": "#"
+        },
+        {
+          "name": "袁智勇",
+          "title": "博士毕业生",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": "",
+          "profileUrl": "#"
+        },
+        {
           "name": "董文捷",
           "title": "博士毕业生",
           "lab": "",
@@ -316,34 +302,7 @@ window.PAGE_DATA.zh["people"] = {
           "profileUrl": "#"
         },
         {
-          "name": "丁力民",
-          "title": "硕士毕业生（联合培养）",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "",
-          "profileUrl": "#"
-        },
-        {
-          "name": "涂小龙",
-          "title": "硕士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "",
-          "profileUrl": "#"
-        },
-        {
           "name": "杨军校",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "",
-          "profileUrl": "#"
-        },
-        {
-          "name": "袁智勇",
           "title": "博士毕业生",
           "lab": "",
           "research": "",
@@ -388,25 +347,7 @@ window.PAGE_DATA.zh["people"] = {
           "profileUrl": "#"
         },
         {
-          "name": "徐凯",
-          "title": "硕士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "",
-          "profileUrl": "#"
-        },
-        {
           "name": "Md Mizanur Rahman",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "",
-          "profileUrl": "#"
-        },
-        {
-          "name": "吴云鹤",
           "title": "博士毕业生",
           "lab": "",
           "research": "",
@@ -451,6 +392,42 @@ window.PAGE_DATA.zh["people"] = {
           "profileUrl": "#"
         },
         {
+          "name": "Felista Kasyoka Kilunda",
+          "title": "博士毕业生",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": "",
+          "profileUrl": "#"
+        },
+        {
+          "name": "易木荣",
+          "title": "博士毕业生",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": "",
+          "profileUrl": "#"
+        },
+        {
+          "name": "徐凯",
+          "title": "硕士毕业生",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": "",
+          "profileUrl": "#"
+        },
+        {
+          "name": "涂小龙",
+          "title": "硕士毕业生",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": "",
+          "profileUrl": "#"
+        },
+        {
           "name": "于中斌",
           "title": "硕士毕业生",
           "lab": "",
@@ -487,23 +464,14 @@ window.PAGE_DATA.zh["people"] = {
           "profileUrl": "#"
         },
         {
-          "name": "Felista Kasyoka Kilunda",
-          "title": "博士毕业生",
+          "name": "丁力民",
+          "title": "硕士毕业生（云大联合培养）",
           "lab": "",
           "research": "",
           "email": "",
           "image": "",
           "profileUrl": "#"
         },
-        {
-          "name": "易木荣",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "",
-          "profileUrl": "#"
-        }
       ]
     },
 

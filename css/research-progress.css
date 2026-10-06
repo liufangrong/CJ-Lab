@@ -1,0 +1,201 @@
+/* RESEARCH PROGRESS PAGE
+   Split from original style.css. Load common.css before this file.
+*/
+
+/* 2026科研进展*/
+
+.pub-inline-list {
+  margin: 16px 0 0;
+  padding-left: 22px;
+}
+
+.pub-inline-item {
+  margin-bottom: 14px;
+  line-height: 1.9;
+  color: #111;
+}
+
+.pub-inline-text {
+  display: inline;
+}
+
+.pub-inline-link {
+  margin-left: 6px;
+  text-decoration: none;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.pub-inline-link:hover {
+  opacity: 0.8;
+}
+
+
+
+
+/* 研究进展页面：新闻改成一列 */
+body[data-page="research-progress"] .news-grid {
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 18px;
+}
+
+/* 每条新闻占满整行 */
+body[data-page="research-progress"] .news-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+
+/* =========================================================
+   科研动态列表
+   左侧封面 + 右侧标题/摘要/日期
+   ========================================================= */
+
+.research-news-list {
+  width: 100%;
+}
+
+
+/* 每一条新闻 */
+.research-news-item {
+  display: grid;
+
+  grid-template-columns: 190px minmax(0, 1fr);
+
+  gap: 26px;
+
+  align-items: start;
+
+  padding: 24px 0;
+
+  border-bottom: 1px solid #e2e8ee;
+}
+
+
+/* 第一条不要太大上边距 */
+.research-news-item:first-child {
+  padding-top: 8px;
+}
+
+
+/* =============================
+   左侧图片
+   ============================= */
+
+.research-news-cover {
+  width: 190px;
+  height: 125px;
+
+  overflow: hidden;
+
+  background: #f4f6f8;
+}
+
+.research-news-cover a {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+.research-news-cover img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition: transform 0.25s ease;
+}
+
+
+/* 鼠标经过图片轻微放大 */
+.research-news-cover:hover img {
+  transform: scale(1.035);
+}
+
+
+/* =============================
+   右侧内容
+   ============================= */
+
+.research-news-content {
+  min-width: 0;
+
+  padding-top: 2px;
+}
+
+
+/* 标题 */
+.research-news-title {
+  margin: 0 0 12px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.45;
+
+  color: #083f73;
+}
+
+.research-news-title a {
+  color: #083f73;
+
+  text-decoration: none;
+}
+
+.research-news-title a:hover {
+  color: #1767aa;
+}
+
+
+/* 摘要 */
+.research-news-text {
+  margin: 0 0 14px;
+
+  color: #52667b;
+
+  font-size: 15px;
+  line-height: 1.8;
+
+  text-align: justify;
+}
+
+
+/* 日期和类型 */
+.research-news-meta {
+  color: #7a8898;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   手机
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .research-news-item {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .research-news-cover {
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 16 / 9;
+  }
+
+  .research-news-title {
+    font-size: 18px;
+  }
+
+}

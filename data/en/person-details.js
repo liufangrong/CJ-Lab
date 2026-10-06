@@ -1,6 +1,43 @@
 window.PERSON_DETAIL = window.PERSON_DETAIL || {};
 
 window.PERSON_DETAIL.en = {
+    cj: {
+        name: "CHAI Jing",
+        title: "Associate Research Professor",
+        major: "To be updated",
+        email: "chaijing@mail.kiz.ac.cn",
+        image: "assets/people/image/柴静 3.jpg",
+        research: "To be updated",
+        bioTitle: "Biography",
+        bio: `
+      CHAI Jing is XXX.
+    `
+    },
+    gw: {
+        name: "GAO Wei",
+        title: "Associate Research Professor",
+        major: "To be updated",
+        email: "gaowei@mail.kiz.ac.cn",
+        image: "assets/people/image/高伟 1.jpg",
+        research: "To be updated",
+        bioTitle: "Biography",
+        bio: `
+      GAO Wei is xxx.
+    `
+    },
+    wk: {
+        name: "WANG Kai",
+        title: "Senior Laboratory Administrator",
+        major: "To be updated",
+        email: "wangkai@mail.kiz.ac.cn",
+        image: "assets/people/image/王剀 1.jpg",
+        research: "To be updated",
+        bioTitle: "Biography",
+        bio: `
+      Jin Jieqiong is a senior laboratory administrator. She is mainly responsible for laboratory daily management,
+      research support, and coordination of related administrative affairs.
+    `
+    },
     jjq: {
         name: "Jin Jieqiong",
         title: "Senior Laboratory Administrator",

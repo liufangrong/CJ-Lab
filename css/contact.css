@@ -1,0 +1,68 @@
+/* CONTACT PAGE
+   The original style.css does not contain a separate contact-page block.
+   Contact-specific link styling (.contact-link) remains in common.css because it was grouped
+   with a shared link rule in the original stylesheet. Add future contact-only styles here.
+*/
+/* =========================
+   Contact Page
+========================= */
+
+/* =========================================================
+   Contact page: info left + map right
+   ========================================================= */
+
+body[data-page="contact"] .section-table {
+    display: grid;
+    grid-template-columns: minmax(0, 1.65fr) minmax(320px, 0.85fr);
+    grid-template-areas:
+    "title title"
+    "info map";
+    column-gap: 24px;
+    row-gap: 18px;
+    align-items: stretch;
+}
+
+body[data-page="contact"] .section-table > .section-title {
+    grid-area: title;
+    margin-bottom: 0;
+}
+
+body[data-page="contact"] .section-table > .table-like {
+    grid-area: info;
+    min-width: 0;
+}
+
+/* 右侧地图 */
+body[data-page="contact"] .section-table::after {
+    content: "";
+    grid-area: map;
+    display: block;
+    min-height: 390px;
+    border: 1px solid #dbe7f2;
+    border-radius: 14px;
+    background: #eef4f8 url("../assets/dt.png") center center / cover no-repeat;
+    box-shadow: 0 4px 14px rgba(14, 69, 115, 0.08);
+}
+
+body[data-page="contact"] .section-table .table-row {
+    grid-template-columns: 140px minmax(0, 1fr);
+}
+
+body[data-page="contact"] .section-table .table-row .value {
+    overflow-wrap: anywhere;
+}
+
+/* 手机端 */
+@media (max-width: 900px) {
+    body[data-page="contact"] .section-table {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+      "title"
+      "info"
+      "map";
+    }
+
+    body[data-page="contact"] .section-table::after {
+        min-height: 420px;
+    }
+}

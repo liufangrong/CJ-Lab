@@ -19,15 +19,27 @@ window.SITE_NAV = [
   },
   {
     "key": "publications",
-    "zh": "科研动态",
+    "zh": "科研成果",
     "en": "Publications",
     "href": "publications.html"
+  },
+  {
+    "key": "research-progress",
+    "zh": "研究进展",
+    "en": "News",
+    "href": "research-progress.html"
   },
   {
     "key": "activities",
     "zh": "实验室活动",
     "en": "Activities",
     "href": "activities.html"
+  },
+  {
+    "key": "contact",
+    "zh": "联系我们",
+    "en": "Contact Us",
+    "href": "contact.html"
   }
 ];
 window.HERO_ARTS = {
@@ -35,5 +47,7 @@ window.HERO_ARTS = {
   "people": "assets/TD.png",
   "projects": "assets/yj2.png",
   "publications": "assets/pb.png",
-  "activities": "assets/activities/xs1.png"
+  "activities": "assets/activities/xs1.png",
+  "research-progress": "assets/yj2.png",
+  "contact": "assets/yjfx.png"
 };

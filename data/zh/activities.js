@@ -27,6 +27,10 @@ window.PAGE_DATA.zh["activities"] = {
           image: "assets/activities/hd5.jpg",
           caption: "实验室到版纳植物园交流学习合影 (2025)"
         },
+        {
+          image: "assets/activities/TD.png",
+          caption: "实验室集体合影 (2026)"
+        },
       ]
     },
     {
@@ -34,14 +38,14 @@ window.PAGE_DATA.zh["activities"] = {
       title: "学术交流",
       items: [
         {
-          image: "assets/activities/cj1.jpeg",
-          caption: "车静老师参加第四届全国动物声学科学与应用大会做报告 (2026.08)"
-        },
-        {
           image: "assets/activities/cj2.jpeg",
-          caption: "车静老师参加第四届全国动物声学科学与应用大会做报告 (2026.08)"
+          caption: "车静老师参加第四届全国动物声学科学与应用大会做报告 (2026.04)"
         },
         {
+          image: "assets/activities/xshd1.jpg",
+          caption: "亚洲两栖爬行动物学国际前沿论坛-与实验室交流合影(2026.06)"
+        },
+          {
           image: "assets/activities/xshd2.png",
           caption: "亚洲两栖爬行动物学国际前沿论坛-实验室在专题报告与墙报交流现场(2026.06)"
         },
@@ -50,13 +54,9 @@ window.PAGE_DATA.zh["activities"] = {
           caption: "亚洲两栖爬行动物学国际前沿论坛-研究所实地参观考察(2026.06)"
         },
         {
-          image: "assets/activities/xshd1.jpg",
-          caption: "亚洲两栖爬行动物学国际前沿论坛-与实验室交流合影(2026.06)"
-        },
-        {
           image: "assets/activities/xsbg4.png",
           caption: "亚洲两栖爬行动物学国际前沿论坛-大会报告现场掠影(2026.06)"
-        }
+        },
       ]
     },
     // {

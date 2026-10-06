@@ -1,0 +1,808 @@
+/* HOME PAGE
+   Split from original style.css. Load common.css before this file.
+*/
+
+/* home 滑动窗口*/
+.side-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.latest-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.latest-btn {
+  width: 26px;
+  height: 26px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  line-height: 1;
+  font-size: 18px;
+}
+
+.latest-btn:hover {
+  background: #f5f7fb;
+}
+
+.latest-slider-window {
+  overflow: hidden;
+  position: relative;
+}
+
+.latest-slider-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.45s ease;
+  will-change: transform;
+}
+
+.latest-slide-item {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+}
+
+.latest-slide-item:last-child {
+  border-bottom: none;
+}
+
+.latest-slide-title {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #1f2d3d;
+  margin-bottom: 4px;
+}
+
+.latest-slide-date {
+  display: inline-block;
+  font-size: 12px;
+  color: #7a869a;
+}
+
+
+
+/* news card*/
+.latest-slide-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.latest-slide-link:hover .latest-slide-title {
+  color: #0b7a17;
+  text-decoration: underline;
+}
+
+.latest-slide-link:hover {
+  background: #f6faf7;
+}
+
+
+
+
+/* ==================== 代表性成果 Timeline ==================== */
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 每一个成果卡片 */
+.timeline-item {
+  position: relative;
+  background: linear-gradient(180deg, #fff, #fbfdff);
+  border: 1px solid #e2ebf5;
+  border-radius: 16px;
+  padding: 22px 28px;
+  box-sizing: border-box;
+}
+
+/* 左上角蓝色圆点 */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 14px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2385d8;
+}
+
+/* 标题 */
+.timeline-title {
+  width: 100%;
+  margin: 0 0 16px;
+  font-size: 19px;
+  line-height: 1.8;
+  font-weight: 700;
+  color: var(--primary-dark);
+  text-align: left;
+}
+
+/* ==================== 正文区域 ==================== */
+
+/*
+  这里不要使用 grid / flex。
+  block + float 才能让文字绕图片，
+  从而填充图片下方的空白区域。
+*/
+.timeline-content {
+  display: block;
+  width: 100%;
+}
+
+/* 清除 float，避免影响下一张卡片 */
+.timeline-content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 正文 */
+.timeline-content p {
+  margin: 0;
+  color: #4f6276;
+  font-size: 18px;
+  line-height: 1.9;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ==================== 图片 ==================== */
+
+/* 默认：第一条成果，图片放右上角 */
+.timeline-photo {
+  float: right;
+  width: 360px;
+  height: 270px;
+  margin: 0 0 5px 15px;
+  padding: 5px;
+  box-sizing: border-box;
+  background: #f7fafc;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.timeline-reverse .timeline-photo {
+  float: left;
+  margin: 0 15px 5px 0;
+}
+
+/* 图片本身 */
+.timeline-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+/* ==================== 第二条：图片放左侧 ==================== */
+
+.timeline-reverse .timeline-photo {
+  float: left;
+  margin: 0 15px 5px 0;
+}
+
+/* ==================== 英文页面 ==================== */
+
+html[lang="en"] .timeline-content p {
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: left;
+
+  hyphens: auto;
+  word-break: normal;
+  overflow-wrap: normal;
+
+  line-height: 1.85;
+}
+
+/* 英文标题仍然左对齐，不建议强制两端对齐 */
+html[lang="en"] .timeline-title {
+  text-align: left;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+/* ==================== 响应式 ==================== */
+
+@media (max-width: 900px) {
+  .timeline-photo,
+  .timeline-reverse .timeline-photo {
+    width: 320px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 700px) {
+  .timeline-item {
+    padding: 18px;
+  }
+
+  /*
+    手机端取消 float，
+    图片直接放在标题和正文之间
+  */
+  .timeline-photo,
+  .timeline-reverse .timeline-photo {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin: 0 0 18px 0;
+  }
+
+  .timeline-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .timeline-title {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .timeline-content p {
+    font-size: 15px;
+    line-height: 1.85;
+  }
+}
+
+
+/* =========================================================
+   Home page: clean institutional layout
+   ========================================================= */
+
+body[data-page="home"] {
+  background: #f3f6f9;
+}
+
+body[data-page="home"] .main {
+  margin-top: 32px;
+  margin-bottom: 56px;
+}
+
+body[data-page="home"] .content-panel {
+  padding: 38px 42px 44px;
+  border: 1px solid #dce5ee;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(22, 65, 105, 0.07);
+}
+
+body[data-page="home"] .section {
+  margin-bottom: 42px;
+}
+
+body[data-page="home"] .section:last-child {
+  margin-bottom: 0;
+}
+
+body[data-page="home"] .section-title {
+  gap: 10px;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dfe7ef;
+  font-size: 22px;
+  line-height: 1.45;
+  color: #083f73;
+}
+
+body[data-page="home"] .section-title::before {
+  width: 4px;
+  height: 22px;
+  border-radius: 1px;
+  background: #176db5;
+}
+
+body[data-page="home"] .section-intro {
+  margin: 0 0 22px;
+  color: #43566a;
+  font-size: 16px;
+  line-height: 2;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+/* Lab snapshot */
+body[data-page="home"] .section-stats .stats-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+body[data-page="home"] .section-stats .stat-card {
+  position: relative;
+  min-height: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 14px 18px;
+  border: 1px solid #d8e4ef;
+  border-radius: 10px;
+  background: #f9fbfd;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+body[data-page="home"] .section-stats .stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #176db5;
+}
+
+body[data-page="home"] .section-stats .stat-value {
+  margin-bottom: 7px;
+  color: #0b5da6;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+body[data-page="home"] .section-stats .stat-label {
+  color: #50657a;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Major award */
+body[data-page="home"] .section-cards .card-grid {
+  gap: 14px;
+}
+
+body[data-page="home"] .section-cards .card {
+  position: relative;
+  padding: 20px 24px 20px 28px;
+  border: 1px solid #d8e4ef;
+  border-left: 4px solid #176db5;
+  border-radius: 8px;
+  background: #f9fbfd;
+  box-shadow: none;
+}
+
+body[data-page="home"] .section-cards .card h4 {
+  margin: 0;
+  color: #124f84;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+/* Representative achievements */
+body[data-page="home"] .section-timeline .timeline {
+  gap: 24px;
+}
+
+body[data-page="home"] .section-timeline .timeline-item {
+  padding: 26px 28px 28px;
+  border: 1px solid #d8e4ef;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 5px 18px rgba(22, 65, 105, 0.05);
+}
+
+body[data-page="home"] .section-timeline .timeline-item::before {
+  left: -6px;
+  top: 28px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #ffffff;
+  background: #176db5;
+  box-shadow: 0 0 0 1px #176db5;
+}
+
+body[data-page="home"] .section-timeline .timeline-title {
+  margin: 0 0 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e6edf4;
+  color: #0a477c;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+body[data-page="home"] .section-timeline .timeline-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 40%);
+  gap: 26px;
+  align-items: start;
+}
+
+body[data-page="home"] .section-timeline .timeline-content::after {
+  display: none;
+}
+
+body[data-page="home"] .section-timeline .timeline-photo,
+body[data-page="home"] .section-timeline .timeline-reverse .timeline-photo {
+  float: none;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e1e8ef;
+  border-radius: 8px;
+  background: #eef3f7;
+  box-shadow: none;
+}
+
+body[data-page="home"] .section-timeline .timeline-content:not(.timeline-reverse) .timeline-photo {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+body[data-page="home"] .section-timeline .timeline-content:not(.timeline-reverse) p {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+body[data-page="home"] .section-timeline .timeline-reverse .timeline-photo {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+body[data-page="home"] .section-timeline .timeline-reverse p {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+body[data-page="home"] .section-timeline .timeline-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+body[data-page="home"] .section-timeline .timeline-content p {
+  color: #43566a;
+  font-size: 16px;
+  line-height: 1.95;
+  text-align: justify;
+}
+
+html[lang="en"] body[data-page="home"] .section-intro,
+html[lang="en"] body[data-page="home"] .section-timeline .timeline-content p {
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+@media (max-width: 960px) {
+  body[data-page="home"] .content-panel {
+    padding: 32px 30px 38px;
+  }
+
+  body[data-page="home"] .section-stats .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-page="home"] .section-timeline .timeline-content {
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 22px;
+  }
+}
+
+@media (max-width: 760px) {
+  body[data-page="home"] .main {
+    margin-top: 20px;
+    margin-bottom: 34px;
+  }
+
+  body[data-page="home"] .content-panel {
+    padding: 24px 20px 28px;
+    border-radius: 10px;
+  }
+
+  body[data-page="home"] .section {
+    margin-bottom: 32px;
+  }
+
+  body[data-page="home"] .section-title {
+    font-size: 20px;
+  }
+
+  body[data-page="home"] .section-intro {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  body[data-page="home"] .section-timeline .timeline-content,
+  body[data-page="home"] .section-timeline .timeline-content:not(.timeline-reverse),
+  body[data-page="home"] .section-timeline .timeline-reverse {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  body[data-page="home"] .section-timeline .timeline-photo,
+  body[data-page="home"] .section-timeline .timeline-reverse .timeline-photo {
+    order: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  body[data-page="home"] .section-timeline .timeline-content p,
+  body[data-page="home"] .section-timeline .timeline-reverse p {
+    order: 1;
+    font-size: 15px;
+    line-height: 1.9;
+  }
+}
+
+@media (max-width: 480px) {
+  body[data-page="home"] .content-panel {
+    padding: 20px 15px 24px;
+  }
+
+  body[data-page="home"] .section-stats .stats-grid {
+    gap: 10px;
+  }
+
+  body[data-page="home"] .section-stats .stat-card {
+    min-height: 100px;
+    padding: 16px 8px 14px;
+  }
+
+  body[data-page="home"] .section-stats .stat-value {
+    font-size: 27px;
+  }
+
+  body[data-page="home"] .section-stats .stat-label {
+    font-size: 13px;
+  }
+
+  body[data-page="home"] .section-cards .card,
+  body[data-page="home"] .section-timeline .timeline-item {
+    padding: 20px 16px;
+  }
+
+  body[data-page="home"] .section-cards .card {
+    padding-left: 20px;
+  }
+
+  body[data-page="home"] .section-cards .card h4,
+  body[data-page="home"] .section-timeline .timeline-title {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================================
+   Home page: introduction -> image gallery -> linked logos
+   ========================================================= */
+
+body[data-page="home"] {
+  background: #ffffff;
+}
+
+body[data-page="home"] .main {
+  margin-top: 0;
+  margin-bottom: 56px;
+}
+
+body[data-page="home"] .content-panel {
+  padding: 52px 0 12px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+body[data-page="home"] .section {
+  margin-bottom: 58px;
+}
+
+body[data-page="home"] .section:last-child {
+  margin-bottom: 0;
+}
+
+body[data-page="home"] .section-home-intro .section-title,
+body[data-page="home"] .section-image-gallery .section-title,
+body[data-page="home"] .section-logo-links .section-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30px;
+  padding: 0 18px 17px;
+  border: 0;
+  color: #075b57;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+body[data-page="home"] .section-home-intro .section-title::before,
+body[data-page="home"] .section-image-gallery .section-title::before,
+body[data-page="home"] .section-logo-links .section-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 72px;
+  height: 2px;
+  border-radius: 0;
+  background: #8bcda8;
+  transform: translateX(-50%);
+}
+
+/* Introduction */
+body[data-page="home"] .home-intro-copy {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+body[data-page="home"] .home-intro-copy p {
+  margin: 0 0 18px;
+  color: #263746;
+  font-size: 20px;
+  line-height: 2;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+body[data-page="home"] .home-intro-copy p:last-child {
+  margin-bottom: 0;
+}
+
+/* Research image gallery */
+body[data-page="home"] .home-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+body[data-page="home"] .home-image-item {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #dce5e7;
+  border-radius: 7px;
+  background: #ffffff;
+}
+
+body[data-page="home"] .home-image-item > img,
+body[data-page="home"] .home-image-link {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+body[data-page="home"] .home-image-link {
+  display: block;
+  overflow: hidden;
+}
+
+body[data-page="home"] .home-image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+body[data-page="home"] .home-image-link:hover img {
+  transform: scale(1.025);
+}
+
+body[data-page="home"] .home-image-item figcaption {
+  padding: 14px 16px 15px;
+  color: #28495b;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.65;
+  text-align: center;
+}
+
+/* Linked research-platform logos */
+body[data-page="home"] .section-logo-links {
+  padding: 38px 34px 40px;
+  border: 1px solid #dfe8e8;
+  border-radius: 10px;
+  background: #f7faf9;
+}
+
+body[data-page="home"] .section-logo-links .section-title {
+  margin-bottom: 16px;
+  font-size: 26px;
+}
+
+body[data-page="home"] .section-logo-links .section-intro {
+  margin: 0 0 26px;
+  color: #5b6b73;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+body[data-page="home"] .home-logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+body[data-page="home"] .home-logo-card {
+  width: min(100%, 340px);
+  min-height: 136px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 24px;
+  border: 1px solid #d6e2e3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #175a62;
+  text-align: center;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+body[data-page="home"] a.home-logo-card:hover,
+body[data-page="home"] a.home-logo-card:focus-visible {
+  border-color: #68a99c;
+  box-shadow: 0 8px 22px rgba(24, 91, 90, 0.10);
+  transform: translateY(-2px);
+}
+
+body[data-page="home"] .home-logo-card img {
+  width: auto;
+  max-width: 260px;
+  height: 72px;
+  object-fit: contain;
+}
+
+body[data-page="home"] .home-logo-card span {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+html[lang="en"] body[data-page="home"] .home-intro-copy p {
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+@media (max-width: 760px) {
+  body[data-page="home"] .content-panel {
+    padding-top: 36px;
+  }
+
+  body[data-page="home"] .section {
+    margin-bottom: 42px;
+  }
+
+  body[data-page="home"] .section-home-intro .section-title,
+  body[data-page="home"] .section-image-gallery .section-title,
+  body[data-page="home"] .section-logo-links .section-title {
+    margin-bottom: 24px;
+    font-size: 25px;
+  }
+
+  body[data-page="home"] .home-intro-copy p {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  body[data-page="home"] .home-image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body[data-page="home"] .section-logo-links {
+    padding: 30px 18px 32px;
+  }
+
+  body[data-page="home"] .section-logo-links .section-title {
+    font-size: 23px;
+  }
+}
+
+

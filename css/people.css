@@ -1,0 +1,224 @@
+/* =========================================================
+   People page
+   从 style(1).css 中整理出的人员页面样式
+   ========================================================= */
+
+
+/* ===== People page enhancement ===== */
+
+.section-title-centered {
+  justify-content: center;
+}
+
+.people-section .section-intro {
+  text-align: center;
+}
+
+
+/* =========================================================
+   实验室负责人布局
+   ========================================================= */
+
+.leader-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.leader-side {
+  text-align: center;
+}
+
+.leader-avatar,
+.person-avatar {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 10px;
+  border: 1px solid #0b7a17;
+  background: #fff;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+.leader-avatar {
+  width: 150px;
+  height: 180px;
+  margin: 0 auto 14px;
+}
+
+.leader-name,
+.person-name {
+  margin-top: 8px;
+  font-weight: 700;
+  color: #243447;
+}
+
+.person-name-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.person-name-link:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.leader-title,
+.person-title {
+  color: #58697b;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.leader-contact,
+.person-contact {
+  margin-top: 8px;
+  color: #5f6f81;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.leader-block-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+.leader-exp-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #4f6276;
+}
+
+.leader-exp-list li {
+  margin-bottom: 6px;
+}
+
+.leader-interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.leader-interest {
+  display: inline-flex;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #eef6ff;
+  border: 1px solid #d4e6f7;
+  color: #4a6786;
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   人员网格
+   ========================================================= */
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px 22px;
+}
+
+.person-card {
+  text-align: center;
+}
+
+.person-avatar-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.person-avatar {
+  width: 150px;
+  height: 180px;
+}
+
+
+/* =========================================================
+   人员页面模块标题：居中 + 下方绿色短横线
+   ========================================================= */
+
+body[data-page="people"] .people-section > .section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 100%;
+  margin: 0 0 35px;
+  padding: 0 0 12px;
+
+  text-align: center;
+  color: #00605b;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+
+/* 去掉 common.css 中标题左侧的红蓝竖线 */
+body[data-page="people"] .people-section > .section-title::before {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* 标题下方绿色短横线 */
+body[data-page="people"] .people-section > .section-title::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #62c58a;
+}
+
+
+/* =========================================================
+   各人员模块之间的距离
+   ========================================================= */
+
+body[data-page="people"] .content-panel > div + div {
+  padding-top: 50px !important;
+}
+
+body[data-page="people"] .people-section {
+  margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   响应式
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .people-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .leader-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .people-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body[data-page="people"] .people-section > .section-title {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+
+  body[data-page="people"] .people-section > .section-title::after {
+    width: 60px;
+  }
+}

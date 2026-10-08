@@ -197,6 +197,21 @@ window.PAGE_DATA.zh["publications"] = {
           ]
         },
         {
+          "year": "2019",
+          "items": [
+            {
+              "title": "Genomic and transcriptomic investigations of the evolutionary transition from oviparity to viviparity.",
+              "meta": "Wei Gao#, Yan-Bo Sun#, Wei-Wei Zhou#, Zi-Jun Xiong#, Luo-Nan Chen, Hong Li, Ting-Ting Fu, Kai Xu, Wei Xu, Li Ma, Yi-Jing Chen, Xue-Yan Xiang, Long Zhou, Tao Zeng, Si Zhang, Jie-Qiong Jin, Hong-Man Chen, Guo-Jie Zhang, David M. Hillis*, Xiang Ji*, Ya-Ping Zhang*, Jing Che*.",
+              "text": "PNAS, 2019, 116(9), 3646-3655.",
+              "url": "https://doi.org/10.1073/pnas.1816086116"
+            }
+          ]
+        },
+        {
+        "citation": "Wei Gao#, Yan-Bo Sun#, Wei-Wei Zhou#, Zi-Jun Xiong#, Luo-Nan Chen, Hong Li, Ting-Ting Fu, Kai Xu, Wei Xu, Li Ma, Yi-Jing Chen, Xue-Yan Xiang, Long Zhou, Tao Zeng, Si Zhang, Jie-Qiong Jin, Hong-Man Chen, Guo-Jie Zhang, David M. Hillis*, Xiang Ji*, Ya-Ping Zhang*, Jing Che*. Genomic and transcriptomic investigations of the evolutionary transition from oviparity to viviparity, <em class=\"all-pub-journal\">Proceedings of the National Academy of Sciences of the United States of America</em>, 2019, 116(9), 3646-3655.",
+        "doi": "10.1073/pnas.1816086116"
+      },
+        {
           "year": "2018",
           "items": [
             {

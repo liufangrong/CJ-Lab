@@ -197,17 +197,17 @@ window.PAGE_DATA.zh["publications"] = {
           ]
         },
         {
-          "year": "2019",
-          "items": [
-            {
-              "title": "Genomic and transcriptomic investigations of the evolutionary transition from oviparity to viviparity.",
-              "meta": "Wei Gao#, Yan-Bo Sun#, Wei-Wei Zhou#, Zi-Jun Xiong#, Luo-Nan Chen, Hong Li, Ting-Ting Fu, Kai Xu, Wei Xu, Li Ma, Yi-Jing Chen, Xue-Yan Xiang, Long Zhou, Tao Zeng, Si Zhang, Jie-Qiong Jin, Hong-Man Chen, Guo-Jie Zhang, David M. Hillis*, Xiang Ji*, Ya-Ping Zhang*, Jing Che*.",
-              "text": "PNAS, 2019, 116(9), 3646-3655.",
-              "url": "https://doi.org/10.1073/pnas.1816086116"
-            }
-          ]
-        },
-  
+          "title": "Genomic and transcriptomic investigations of the evolutionary transition from oviparity to viviparity.",
+          "meta": "Wei Gao#, Yan-Bo Sun#, Wei-Wei Zhou#, Zi-Jun Xiong#, Luo-Nan Chen, Hong Li, Ting-Ting Fu, Kai Xu, Wei Xu, Li Ma, Yi-Jing Chen, Xue-Yan Xiang, Long Zhou, Tao Zeng, Si Zhang, Jie-Qiong Jin, Hong-Man Chen, Guo-Jie Zhang, David M. Hillis*, Xiang Ji*, Ya-Ping Zhang*, Jing Che*.",
+         "text": "PNAS, 2019, 116(9): 3646–3655.",
+         "url": "https://doi.org/10.1073/pnas.1816086116"
+    },
+    {
+      "title": "Natatanuran frogs used the Indian Plate to step-stone disperse and radiate across the Indian Ocean.",
+      "meta": "Zhi-Yong Yuan#, Bao-Lin Zhang#, Christopher J. Raxworthy, David W. Weisrock, Paul M. Hime, Jie-Qiong Jin, Emily M. Lemmon, Alan R. Lemmon, Sean D. Holland, Michelle L. Kortyna, Wei-Wei Zhou, Min-Sheng Peng, Jing Che*, Elizabeth Prendini.",
+      "text": "National Science Review, 2019, 6(1): 10–14.",
+      "url": "https://doi.org/10.1093/nsr/nwy092"
+    },    
         {
           "year": "2018",
           "items": [
@@ -216,7 +216,19 @@ window.PAGE_DATA.zh["publications"] = {
               "meta": "Fang Yan, Jing-Cai Lü, Bao-Lin Zhang, Zhi-Yong Yuan, Hai-Peng Zhao, Song Huang, Gang Wei, Xue Mi, Da-Hu Zou, Wei Xu, Shu Chen, Jie Wang, Feng Xie, Min-Yao Wu, Han-Bin Xiao, Zhi-Qiang Liang, Jie-Qiong Jin, Shi-Fang Wu, Cun-Shuan Xu, Benjamin Tapley, Samuel T. Turvey, Theodore J. Papenfuss, Andrew A. Cunningham, Robert W. Murphy*, Ya-Ping Zhang*, Jing Che*.",
               "text": "Current Biology, 2018, 28(10): R590–R592.",
               "url": "https://doi.org/10.1016/j.cub.2018.04.004"
-            }
+            },
+            {
+              "title": "Species groups distributed across elevational gradients reveal convergent and continuous genetic adaptation to high elevations.",
+              "meta": "Yan-Bo Sun#, Ting-Ting Fu#, Jie-Qiong Jin, Robert W. Murphy, David M. Hillis*, Ya-Ping Zhang*, Jing Che*.",
+              "text": "PNAS, 2018, 115(45): E10634–E10641.",
+              "url": "https://doi.org/10.1073/pnas.1813593115"
+            },
+           {
+            "title": "Selection and environmental adaptation along a path to speciation in the Tibetan frog Nanorana parkeri.",
+            "meta": "Guo-Dong Wang#, Bao-Lin Zhang#, Wei-Wei Zhou, Yong-Xin Li, Jie-Qiong Jin, Yong Shao, He-chuan Yang, Yan-Hu Liu, Fang Yan, Hong-Man Chen, Li Jin, Feng Gao, Yao-Guang Zhang, Hai-Peng Li, Bing-Yu Mao, Robert W. Murphy, David B. Wake*, Ya-Ping Zhang*, Jing Che*.",
+            "text": "PNAS, 2018, 115(22): E5056–E5065.",
+            "url": "https://doi.org/10.1073/pnas.1800954115"
+          },
           ]
         },
         {

@@ -36,7 +36,7 @@ window.PAGE_DATA.en["people"] = {
         },
         {
           "name": "WANG Kai",
-          "title": "Assistant Research Professor",
+          "title": "Associate Research Professor",
           "email": "wangkai@mail.kiz.ac.cn",
           "image": "assets/people/image/王剀 2.jpg",
           "profileUrl": "profile.html?id=wk"

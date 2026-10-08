@@ -33,7 +33,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "王剀",
-          "title": "助理研究员",
+          "title": "副研究员",
           "research": "xxx",
           "email": "wangkai@mail.kiz.ac.cn",
           "image": "assets/people/image/王剀 2.jpg",

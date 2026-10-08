@@ -196,18 +196,22 @@ window.PAGE_DATA.zh["publications"] = {
             }
           ]
         },
-        {
-          "title": "Genomic and transcriptomic investigations of the evolutionary transition from oviparity to viviparity.",
-          "meta": "Wei Gao#, Yan-Bo Sun#, Wei-Wei Zhou#, Zi-Jun Xiong#, Luo-Nan Chen, Hong Li, Ting-Ting Fu, Kai Xu, Wei Xu, Li Ma, Yi-Jing Chen, Xue-Yan Xiang, Long Zhou, Tao Zeng, Si Zhang, Jie-Qiong Jin, Hong-Man Chen, Guo-Jie Zhang, David M. Hillis*, Xiang Ji*, Ya-Ping Zhang*, Jing Che*.",
-         "text": "PNAS, 2019, 116(9): 3646–3655.",
-         "url": "https://doi.org/10.1073/pnas.1816086116"
-    },
-    {
-      "title": "Natatanuran frogs used the Indian Plate to step-stone disperse and radiate across the Indian Ocean.",
-      "meta": "Zhi-Yong Yuan#, Bao-Lin Zhang#, Christopher J. Raxworthy, David W. Weisrock, Paul M. Hime, Jie-Qiong Jin, Emily M. Lemmon, Alan R. Lemmon, Sean D. Holland, Michelle L. Kortyna, Wei-Wei Zhou, Min-Sheng Peng, Jing Che*, Elizabeth Prendini.",
-      "text": "National Science Review, 2019, 6(1): 10–14.",
-      "url": "https://doi.org/10.1093/nsr/nwy092"
-    },    
+        "year": "2019",
+          "items": [
+      {
+        "title": "Genomic and transcriptomic investigations of the evolutionary transition from oviparity to viviparity.",
+        "meta": "Wei Gao#, Yan-Bo Sun#, Wei-Wei Zhou#, Zi-Jun Xiong#, Luo-Nan Chen, Hong Li, Ting-Ting Fu, Kai Xu, Wei Xu, Li Ma, Yi-Jing Chen, Xue-Yan Xiang, Long Zhou, Tao Zeng, Si Zhang, Jie-Qiong Jin, Hong-Man Chen, Guo-Jie Zhang, David M. Hillis*, Xiang Ji*, Ya-Ping Zhang*, Jing Che*.",
+        "text": "PNAS, 2019, 116(9): 3646–3655.",
+        "url": "https://doi.org/10.1073/pnas.1816086116"
+      },
+      {
+        "title": "Natatanuran frogs used the Indian Plate to step-stone disperse and radiate across the Indian Ocean.",
+        "meta": "Zhi-Yong Yuan#, Bao-Lin Zhang#, Christopher J. Raxworthy, David W. Weisrock, Paul M. Hime, Jie-Qiong Jin, Emily M. Lemmon, Alan R. Lemmon, Sean D. Holland, Michelle L. Kortyna, Wei-Wei Zhou, Min-Sheng Peng, Jing Che*, Elizabeth Prendini.",
+        "text": "National Science Review, 2019, 6(1): 10–14.",
+        "url": "https://doi.org/10.1093/nsr/nwy092"
+      },
+          ]
+        },    
         {
           "year": "2018",
           "items": [

@@ -11,7 +11,7 @@ window.PAGE_DATA.en["home"] = {
       "paragraphs": [
         "Che Lab was established in 2012 and focuses on the origin and evolutionary mechanisms of biodiversity. Centered on the Tibetan Plateau and the mountainous regions of southwestern China, our research primarily uses amphibians and reptiles as model systems to investigate the origin, evolution, and environmental adaptation of species diversity.\n" +
         "\n" +
-        "We integrate field surveys, systematics, genomics, phenomics, and experimental biology to study species diversity, adaptive evolution, and the conservation of endangered species. The lab currently has five major research areas and 31 members, and has published 192 scientific papers, six academic monographs, and one popular science book."
+        "We integrate field surveys, systematics, genomics, phenomics, and experimental biology to study species diversity, adaptive evolution, and the conservation of endangered species. The lab currently has four major research areas and 31 members, and has published 192 scientific papers, six academic monographs, and one popular science book."
       ]
     },
     {

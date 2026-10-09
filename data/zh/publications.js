@@ -100,14 +100,14 @@ window.PAGE_DATA.zh["publications"] = {
               "award": "中国科学院昆明动物研究所2025年度十大进展",
               "people": "卢宸祺、丁文娜、徐伟、李权、何水旺、吴飞、董文捷、金洁琼、董锋、蒋学龙、王剀、郭鹏、Robert W. Murphy、张亚平、车静",
               "date": "2026.01",
-              "image": "assets/publications/"
+              "image": ""
             },
             {
               "achievement": "中国西南山区两栖爬行动物多样性形成与环境适应",
               "award": "云南省科学技术奖（自然科学奖一等奖）",
               "people": "车静",
               "date": "2025.05",
-              "image": "assets/publications/"
+              "image": ""
             }
           ]
         }

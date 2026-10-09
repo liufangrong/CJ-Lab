@@ -60,25 +60,7 @@ window.PAGE_DATA.en["projects"] = {
     },
     {
       "type": "projects",
-      "title": "Area 4: Evolutionary Developmental Biology of Amphibians: Body Axis Patterning and Growth",
-      "intro": "",
-      "items": [
-        {
-          "title": "",
-          "text": "",
-          "bullets": [
-            "Integrating developmental dynamic and spatiotemporal multi-omics, " +
-            "we utilize caudate indeterminate growth and Megophryidae supernumerary vertebrae as models to decipher the evolutionary developmental (Evo-Devo) mechanisms underlying axial patterning and sustained growth in amphibians.",
-          ],
-          "image": "assets/projects/fx2.png",
-          "meta": "",
-          "reverse": false
-        }
-      ]
-    },
-    {
-      "type": "projects",
-      "title": "Area 5: Conservation Evolutionary Biology of Endangered Species",
+      "title": "Area 4: Conservation Evolutionary Biology of Endangered Species",
       "intro": "",
       "items": [
         {

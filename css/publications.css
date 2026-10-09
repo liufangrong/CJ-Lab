@@ -560,7 +560,7 @@
 
 /* =========================================================
    主要获奖内容
-   左侧证书 + 右侧信息
+   纯文字展示，不显示左侧证书
    日期放最下面
    ========================================================= */
 
@@ -573,25 +573,19 @@
   padding: 0;
 }
 
+/* 获奖卡片 */
 .award-card {
-  display: grid;
-
-  grid-template-columns: 155px minmax(0, 1fr);
-
-  gap: 38px;
-
-  align-items: center;
-
+  display: block;
   width: 100%;
-
   padding: 24px 28px;
-
   box-sizing: border-box;
 
   background: #ffffff;
-
   border: 1px solid #dfe8ef;
   border-radius: 12px;
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
 }
 
 .award-card:hover {
@@ -599,46 +593,18 @@
   box-shadow: 0 8px 24px rgba(18, 55, 88, 0.08);
 }
 
-
-/* 左侧证书 */
-
+/* 隐藏证书图片 */
 .award-card-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 0px;
-  height: 0px;
-
-  overflow: hidden;
-
-  background: #ffffff;
+  display: none !important;
 }
 
-.award-card-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-  background: #ffffff;
-}
-
-
-/* 右侧内容 */
-
+/* 文字内容占满宽度 */
 .award-card-content {
+  width: 100%;
   min-width: 0;
 }
 
-.award-achievement {
-  margin: 0 0 10px;
-  color: #083f73;
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 1.55;
-}
-
+/* 获奖成果 */
 .award-achievement {
   margin: 0 0 10px;
   color: #111111;
@@ -647,18 +613,22 @@
   line-height: 1.55;
 }
 
+/* 奖项名称 */
 .award-name {
   display: block;
   margin: 0 0 10px;
   padding: 0;
+
   color: #111111;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.7;
+
   background: none;
   border-radius: 0;
 }
 
+/* 获奖人员 */
 .award-contributors {
   margin: 0;
   color: #111111;
@@ -680,36 +650,24 @@
   font-weight: 700 !important;
 }
 
+/* 日期放最下面 */
 .award-date {
   margin-top: 12px;
   margin-bottom: 0;
+
   color: #111111;
   font-size: 13px;
   font-weight: 400;
   line-height: 1.5;
 }
 
-
 /* =========================================================
    响应式
    ========================================================= */
 
-@media (max-width: 900px) {
-  .book-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 768px) {
   .award-card {
-    grid-template-columns: 95px minmax(0, 1fr);
-    gap: 16px;
     padding: 16px;
-  }
-
-  .award-card-image {
-    width: 95px;
-    height: 125px;
   }
 
   .award-achievement {
@@ -726,55 +684,5 @@
 
   .award-date {
     font-size: 12px;
-  }
-}
-
-@media (max-width: 640px) {
-  .pub-modern-item {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 10px;
-  }
-
-  .pub-representative-citation {
-    font-size: 15px;
-    line-height: 1.75;
-  }
-
-  .pub-modern-item .pub-doi-button {
-    min-width: 44px;
-    padding: 6px 8px;
-  }
-
-  .all-pub-item {
-    gap: 12px;
-  }
-
-  .all-pub-doi-button {
-    min-width: 46px;
-    padding: 6px 9px;
-  }
-
-  .book-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .book-cover {
-    height: 280px;
-  }
-
-  .pub-center-title,
-  .section-books > .section-title,
-  .section-publications > .section-title,
-  .section-paperPublications > .section-title,
-  .section-awards > .section-title {
-    font-size: 23px !important;
-  }
-
-  .representative-left-title,
-  .page-main-title,
-  .section-allPublications > .section-title,
-  .pub-list-title,
-  .all-pub-toggle {
-    font-size: 20px !important;
   }
 }

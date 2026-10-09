@@ -65,14 +65,14 @@ window.PAGE_DATA.en["publications"] = {
               "award": "Top Ten Research Advances of the Kunming Institute of Zoology, Chinese Academy of Sciences, 2025",
               "people": "Chenqi Lu, Wenna Ding, Wei Xu, Quan Li, Shuiwang He, Fei Wu, Wenjie Dong, Jie-Qiong Jin, Feng Dong, Xuelong Jiang, Kai Wang, Peng Guo, Robert W. Murphy, Ya-Ping Zhang, Jing Che",
               "date": "2026.01",
-              "image": "assets/publications/award2.png"
+              "image": ""
             },
             {
               "achievement": "Formation of amphibian and reptile diversity and environmental adaptation in the mountainous regions of Southwest China",
               "award": "Yunnan Provincial Science and Technology Award (First Prize, Natural Science Award)",
               "people": "Jing Che",
               "date": "2025.05",
-              "image": "assets/publications/award1.png"
+              "image": ""
             }
           ]
         }

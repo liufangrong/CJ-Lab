@@ -61,18 +61,16 @@ window.PAGE_DATA.en["publications"] = {
         {
           "items": [
             {
-              "achievement": "Integrative multi-taxon analyses reveal divergent patterns of terrestrial vertebrate diversity evolution in the Hengduan Mountains",
-              "award": "Top Ten Research Advances of the Kunming Institute of Zoology, Chinese Academy of Sciences, 2025",
+              "achievement": "1.Top Ten Research Advances of the Kunming Institute of Zoology, Chinese Academy of Sciences, 2025",
+              "award": "Integrative multi-taxon analyses reveal divergent patterns of terrestrial vertebrate diversity evolution in the Hengduan Mountains",
               "people": "Chenqi Lu, Wenna Ding, Wei Xu, Quan Li, Shuiwang He, Fei Wu, Wenjie Dong, Jie-Qiong Jin, Feng Dong, Xuelong Jiang, Kai Wang, Peng Guo, Robert W. Murphy, Ya-Ping Zhang, Jing Che",
               "date": "2026.01",
-              "image": ""
             },
             {
-              "achievement": "Formation of amphibian and reptile diversity and environmental adaptation in the mountainous regions of Southwest China",
-              "award": "Yunnan Provincial Science and Technology Award (First Prize, Natural Science Award)",
+              "achievement": "2. Yunnan Provincial Science and Technology Award (First Prize, Natural Science Award)",
+              "award": "Formation of amphibian and reptile diversity and environmental adaptation in the mountainous regions of Southwest China",
               "people": "Jing Che",
               "date": "2025.05",
-              "image": ""
             }
           ]
         }

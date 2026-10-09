@@ -57,24 +57,7 @@ window.PAGE_DATA.zh["projects"] = {
     },
     {
       "type": "projects",
-      "title": "方向四：两栖类进化发育生物学（体轴发育与生长）",
-      "intro": "",
-      "items": [
-        {
-          "title": "",
-          "text": "",
-          "bullets": [
-            "关注世界范围内大尺度区域物种多样性形成和格局演变这一重要问题，致力于开展多物种类群的比较研究，通过宏、微观结合，研究普遍的成种机制和模式，揭示多样性分布格局形成的重要规律和历史环境因素，为生物多样性可持续保护提供科学性指导。",
-          ],
-          "image": "assets/projects/fx2.png",
-          "meta": "",
-          "reverse": false
-        }
-      ]
-    },
-    {
-      "type": "projects",
-      "title": "方向五：濒危物种的保护演化生物学研究",
+      "title": "方向四：濒危物种的保护演化生物学研究",
       "intro": "",
       "items": [
         {

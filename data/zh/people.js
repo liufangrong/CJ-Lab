@@ -9,24 +9,21 @@ window.PAGE_DATA.zh["people"] = {
       "items": [
         {
           "name": "车静",
-          "title": "研究员（学科组负责人）",
-          "research": "隐存物种多样性发掘和系统分类学",
+          "title": "学科组负责人，研究员，博士生导师。当选美国鱼类和两栖爬行动物联合学会（ASIH）终身外籍荣誉会员；世界两栖爬行动物学大会执委（2020—）。中国动物学会常务理事、两栖爬行动物学分会副主任委员；中国生态学学会理事；中华人民共和国濒危物种科学委员会委员；中国人与生物圈（MAB）国家委员会专家咨询委员会委员；中国西南野生生物种质资源库动物分库执行主任；云南省高黎贡山生物多样性重点实验室主任；“中国两栖类”信息系统创建人",
           "email": "chej@mail.kiz.ac.cn",
           "image": "assets/people/image/车静 1.png",
           "profileUrl": "https://kiz.cas.cn/sourcedb_kiz_cas/zw/zjrc/yjy/201212/t20121218_3722492.html"
         },
         {
           "name": "柴静",
-          "title": "副研究员",
-          "research": "动物遗传进化和濒危物种保护",
+          "title": "副研究员，硕士生导师。主要从事动物多样性演化、珍稀濒危动物保护遗传学等研究工作。近年来先后主持国家自然科学基金地区基金、中国博士后科学基金等；作为课题负责人，承担科技部基础资源调查专项；作为研究骨干参加国家自然科学基金重大研究计划及集成项目、中国科学院B类先导科技专项等项目。曾在PNAS, Science Advances, Science Bulletin, Zoological Research等刊物发表SCI收录论文11篇。",
           "email": "chaijing@mail.kiz.ac.cn",
           "image": "assets/people/image/柴静 1.jpg",
           "profileUrl": "https://www.kiz.cas.cn/yjsjy/yjsds/ss/202208/t20220819_6501765.html"
         },
         {
           "name": "高伟",
-          "title": "副研究员",
-          "research": "动物多样性形成与表型演化机制研究",
+          "title": "副研究员，硕士生导师。主要从事动物多样性形成与表型演化机制研究方向。围绕两栖爬行动物开展工作，以第一作者或共同第一作者在PNAS、Molecular Biology and Evolution等高水平期刊发表多篇研究论文。现主持国家自然科学基金青年项目，担任科技部国家重点研发计划、云南省科技厅重点研发计划专题负责人，入选获得中国科学院特别研究助理资助项目、云南省“兴滇英才支持计划” 青年人才专项支持。受邀担任Integrative Zoology杂志青年编委。",
           "email": "gaowei@mail.kiz.ac.cn",
           "image": "assets/people/image/高伟 1.jpg",
           "profileUrl": "https://kiz.cas.cn/yjsjy/yjsds/ss/202405/t20240514_7160717.html"
@@ -36,37 +33,32 @@ window.PAGE_DATA.zh["people"] = {
           "title": "副研究员",
           "research": "xxx",
           "email": "wangkai@mail.kiz.ac.cn",
-          "image": "assets/people/image/王剀 2.jpg",
-          "profileUrl": "http://www.swild.cn/team-view/746"
+          "image": "assets/people/image/王剀 2.jpg"
         },
         {
           "name": "金洁琼",
           "title": "高级实验室管理员",
           "email": "jinjq@mail.kiz.ac.cn",
-          "image": "assets/people/image/金洁琼 1.jpg",
-          "profileUrl": "profile.html?id=jjq"
+          "image": "assets/people/image/金洁琼 1.jpg"
         },
         {
           "name": "朱娜",
           "title": "助理工程师",
           "email": "zhuna@mail.kiz.ac.cn",
-          "image": "assets/people/image/朱娜 1.jpg",
-          "profileUrl": "profile.html?id=zn"
+          "image": "assets/people/image/朱娜 1.jpg"
         },
         {
           "name": "陆卓雨",
           "title": "科研助理",
           "email": "luzhuoyu@mail.kiz.ac.cn",
-          "image": "assets/people/image/陆卓雨 1.png",
-          "profileUrl": "profile.html?id=lzy"
+          "image": "assets/people/image/陆卓雨 1.png"
         },
         {
           "name": "Alex Plimo Karuno",
           "title": "博士后",
           "research": "",
           "email": "alexplimo@hotmail.com",
-          "image": "assets/people/image/Alex 2.jpg",
-          "profileUrl": "profile.html?id=Alex"
+          "image": "assets/people/image/Alex 2.jpg"
         },
       ]
     },
@@ -80,155 +72,133 @@ window.PAGE_DATA.zh["people"] = {
           "name": "卢宸祺",
           "title": "2022级博士研究生",
           "email": "luchenqi1997@163.com",
-          "image": "assets/people/image/卢宸祺 1.jpg",
-          "profileUrl": "profile.html?id=lcq"
+          "image": "assets/people/image/卢宸祺 1.jpg"
         },
         {
           "name": "冯小刚",
           "title": "2022级博士研究生",
           "email": "fengxiaogang@mail.kiz.ac.cn",
-          "image": "assets/people/image/冯小刚 3.png",
-          "profileUrl": "profile.html?id=fxg"
+          "image": "assets/people/image/冯小刚 3.png"
         },
         {
           "name": "万涵",
           "title": "2023级博士研究生",
           "email": "wanhan@mail.kiz.ac.cn",
-          "image": "assets/people/image/万涵 1.jpg",
-          "profileUrl": "profile.html?id=wh"
+          "image": "assets/people/image/万涵 1.jpg"
         },
         {
           "name": "尹浩萍",
           "title": "2023级博士研究生",
           "email": "1453584074@qq.com",
-          "image": "assets/people/image/尹浩萍 3.png",
-          "profileUrl": "profile.html?id=yhp"
+          "image": "assets/people/image/尹浩萍 3.png"
         },
         {
           "name": "荀皓",
           "title": "2024级博士研究生",
           "email": "xunhao@mail.kiz.ac.cn",
-          "image": "assets/people/image/荀皓 3.png",
-          "profileUrl": "profile.html?id=xh"
+          "image": "assets/people/image/荀皓 3.png"
         },
         {
           "name": "Manh Le Van",
           "title": "2024级博士研究生",
           "email": "leemanh94@gmail.com",
-          "image": "assets/people/image/Manh 1.jpg",
-          "profileUrl": "profile.html?id=manh"
+          "image": "assets/people/image/Manh 1.jpg"
         },
         {
           "name": "曹如君",
           "title": "2024级博士研究生",
           "email": "caorj915@foxmail.com",
-          "image": "assets/people/image/曹如君 3.png",
-          "profileUrl": "profile.html?id=crj"
+          "image": "assets/people/image/曹如君 3.png"
         },
         {
           "name": "李凌",
           "title": "2024级博士研究生（云大联合培养）",
           "email": "liling8514@163.com",
-          "image": "assets/people/image/李凌 1.jpg",
-          "profileUrl": "profile.html?id=ll"
+          "image": "assets/people/image/李凌 1.jpg"
         },
         {
           "name": "李柳林",
           "title": "2025级博士研究生",
           "email": "liulinli0412@163.com",
-          "image": "assets/people/image/李柳林 3.png",
-          "profileUrl": "profile.html?id=lll"
+          "image": "assets/people/image/李柳林 3.png"
         },
         {
           "name": "Asmit Subba",
           "title": "2025级博士研究生",
           "email": "limbuasmit83@mails.ucas.ac.cn",
-          "image": "assets/people/image/Asmit 3.png",
-          "profileUrl": "profile.html?id=asmit"
+          "image": "assets/people/image/Asmit 3.png"
         },
         {
           "name": "朱光福",
           "title": "2025级博士研究生（云大联合培养）",
           "email": "1661837506@qq.com",
-          "image": "assets/people/image/朱光福 2.png",
-          "profileUrl": "profile.html?id=zgf"
+          "image": "assets/people/image/朱光福 2.png"
         },
         {
           "name": "毛熠轩",
           "title": "2026级博士研究生",
           "email": "myx_basil@163.com",
-          "image": "assets/people/image/毛熠轩 3.png",
-          "profileUrl": "profile.html?id=myx"
+          "image": "assets/people/image/毛熠轩 3.png"
         },
         {
           "name": "刘方荣",
           "title": "2026级博士研究生（云大联合培养）",
           "email": "liufangrong@stu.ynu.edu.cn",
-          "image": "assets/people/image/lfr3.png",
-          "profileUrl": "profile.html?id=lfr"
+          "image": "assets/people/image/lfr3.png"
         },
         {
           "name": "范志康",
           "title": "2024级硕士研究生",
           "email": "18937342432@163.com",
-          "image": "assets/people/image/范志康.png",
-          "profileUrl": "profile.html?id=fzk"
+          "image": "assets/people/image/范志康.png"
         },
         {
           "name": "王钰文",
           "title": "2024级硕士研究生",
           "email": "yuwen030129@163.com",
-          "image": "assets/people/image/王钰文 3.png",
-          "profileUrl": "profile.html?id=wyw"
+          "image": "assets/people/image/王钰文 3.png"
         },
         {
           "name": "金彦君",
           "title": "2024级硕士研究生（云大联合培养）",
           "email": "jinyj@stu.ynu.edu.cn",
-          "image": "assets/people/image/金彦君 1.jpg",
-          "profileUrl": "profile.html?id=jyj"
+          "image": "assets/people/image/金彦君 1.jpg"
         },
         {
           "name": "高梓硕",
           "title": "2025级硕士研究生",
           "email": "gzs12345678900922@163.com",
-          "image": "assets/people/image/高梓硕 2.png",
-          "profileUrl": "profile.html?id=gzs"
+          "image": "assets/people/image/高梓硕 2.png"
         },
         {
           "name": "范浩然",
           "title": "2025级硕士研究生",
           "email": "fanhaoran25@mails.ucas.ac.cn",
-          "image": "assets/people/image/范浩然 1.jpg",
-          "profileUrl": "profile.html?id=fhr"
+          "image": "assets/people/image/范浩然 1.jpg"
         },
         {
           "name": "王宇晨",
           "title": "2025级硕士研究生（云大联合培养）",
           "email": "ycwang@stu.ynu.edu.cn",
-          "image": "assets/people/image/王宇晨 1.png",
-          "profileUrl": "profile.html?id=wyc"
+          "image": "assets/people/image/王宇晨 1.png"
         },
         {
           "name": "郑雨涵",
           "title": "2026级硕士研究生",
           "email": "zyhzyh_yuhanzheng@163.com",
-          "image": "assets/people/image/郑雨涵1.jpg",
-          "profileUrl": "profile.html?id=zyh"
+          "image": "assets/people/image/郑雨涵1.jpg"
         },
         {
           "name": "龙仪",
           "title": "2026级硕士研究生",
           "email": "longyi_8882026@qq.com",
-          "image": "assets/people/image/龙仪1.jpg",
-          "profileUrl": "profile.html?id=ly"
+          "image": "assets/people/image/龙仪1.jpg"
         },
         {
           "name": "郑方圆",
           "title": "2026级硕士研究生（云大联合培养）",
           "email": "zfydhr@126.com",
-          "image": "assets/people/image/郑方圆1.jpg",
-          "profileUrl": "profile.html?id=zfy"
+          "image": "assets/people/image/郑方圆1.jpg"
         },
       ]
     },
@@ -244,8 +214,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "profile.html?id=cyj"
+          "image": ""
         },
         {
           "name": "吴云鹤",
@@ -253,8 +222,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "袁智勇",
@@ -262,8 +230,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "董文捷",
@@ -271,17 +238,15 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "profile.html?id=dwj"
+          "image": ""
         },
-          {
+        {
           "name": "周炜帏",
           "title": "博士毕业生",
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "颜芳",
@@ -289,8 +254,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "Sang Nguyen Ngoc",
@@ -298,8 +262,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "杨军校",
@@ -307,8 +270,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "陈进民",
@@ -316,8 +278,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "张宝林",
@@ -325,8 +286,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "Lotanna Micah Nneji",
@@ -334,8 +294,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "米雪",
@@ -343,8 +302,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "Md Mizanur Rahman",
@@ -352,8 +310,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "付婷婷",
@@ -361,8 +318,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "徐伟",
@@ -370,8 +326,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "张毅",
@@ -379,8 +334,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "侯绍兵",
@@ -388,8 +342,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "Felista Kasyoka Kilunda",
@@ -397,8 +350,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "易木荣",
@@ -406,8 +358,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "徐凯",
@@ -415,8 +366,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "涂小龙",
@@ -424,8 +374,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "于中斌",
@@ -433,8 +382,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "余传鑫",
@@ -442,8 +390,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "刘逸涵",
@@ -451,8 +398,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "牟皓楠",
@@ -460,8 +406,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
         {
           "name": "丁力民",
@@ -469,8 +414,7 @@ window.PAGE_DATA.zh["people"] = {
           "lab": "",
           "research": "",
           "email": "",
-          "image": "",
-          "profileUrl": "#"
+          "image": ""
         },
       ]
     },

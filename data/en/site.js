@@ -4,6 +4,20 @@ window.SITE_DATA.en = {
     "name": "Che Lab",
     "subtitle": "Herpetological Diversity and Evolution",
     "topbarLeft": "",
+    "topLinks": [
+      {
+        "label": "Kiz",
+        "href": "https://kiz.cas.cn/"
+      },
+      {
+        "label": "UCAS",
+        "href": "https://www.ucas.ac.cn/"
+      },
+      {
+        "label": "YNU",
+        "href": "https://www.ynu.edu.cn/"
+      },
+    ],
     "headerNote": "",
     "footer": [
       "Copyright © 2026 Herpetological Diversity and Evolution. All Rights Reserved.",

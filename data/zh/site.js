@@ -13,4 +13,4 @@ window.SITE_DATA.zh = {
       "邮编：650201, 邮箱：jinjq@mail.kiz.ac.cn"
     ]
   },
-};
+}

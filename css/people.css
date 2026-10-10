@@ -1,27 +1,55 @@
+
 /* =========================================================
-   People page
-   从 style(1).css 中整理出的人员页面样式
+   Che Lab · People 页面
+
+   研究队伍 / 在读学生：
+   横向单列卡片，左侧照片及姓名，右侧简介
+
+   已毕业 / 出站成员：
+   四列文字网格
+
    ========================================================= */
 
 
-/* ===== People page enhancement ===== */
+/* =========================================================
+   01. 全局尺寸参数
+   ========================================================= */
+
+:root {
+  --people-photo-width: 160px;
+  --people-photo-height: 205px;
+
+  --people-card-min-height: 245px;
+  --people-card-gap: 28px;
+
+  --people-paragraph-size: 16px;
+
+  --people-text-color: #111111;
+  --people-email-color: #006c68;
+}
+
+
+/* =========================================================
+   02. 通用设置
+   ========================================================= */
 
 .section-title-centered {
   justify-content: center;
 }
 
+body[data-page="people"]
 .people-section .section-intro {
   text-align: center;
 }
 
 
 /* =========================================================
-   实验室负责人布局
+   03. 单独 leaderProfile 模块
    ========================================================= */
 
 .leader-layout {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 220px minmax(0, 1fr);
   gap: 28px;
   align-items: start;
 }
@@ -30,72 +58,50 @@
   text-align: center;
 }
 
-.leader-avatar,
-.person-avatar {
-  width: 150px;
-  height: 180px;
+.leader-avatar {
+  display: block;
+
+  width: 160px;
+  height: 205px;
+
   object-fit: cover;
   object-position: center top;
-  border-radius: 10px;
-  border: 1px solid #0b7a17;
-  background: #fff;
-  padding: 1px;
-  box-sizing: border-box;
-}
 
-.leader-avatar {
-  width: 150px;
-  height: 180px;
+  border: 1px solid #82bf92;
+  border-radius: 8px;
+
   margin: 0 auto 14px;
 }
 
-.leader-name,
-.person-name {
-  margin-top: 8px;
+.leader-name {
+  font-size: 20px;
   font-weight: 700;
-  color: #243447;
+  color: #173a51;
 }
 
-.person-name-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.person-name-link:hover {
-  color: var(--primary);
-  text-decoration: underline;
-}
-
-.leader-title,
-.person-title {
+.leader-title {
   color: #58697b;
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 10px;
 }
 
-.leader-contact,
-.person-contact {
-  margin-top: 8px;
+.leader-contact {
   color: #5f6f81;
-  font-size: 13px;
-  line-height: 1.9;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-top: 8px;
 }
 
 .leader-block-title {
+  color: var(--primary-dark, #00605b);
   font-size: 18px;
   font-weight: 700;
-  color: var(--primary-dark);
   margin-bottom: 10px;
 }
 
 .leader-exp-list {
-  margin: 0;
   padding-left: 18px;
   color: #4f6276;
-}
-
-.leader-exp-list li {
-  margin-bottom: 6px;
 }
 
 .leader-interests {
@@ -105,120 +111,480 @@
 }
 
 .leader-interest {
-  display: inline-flex;
   padding: 6px 12px;
-  border-radius: 999px;
-  background: #eef6ff;
+
   border: 1px solid #d4e6f7;
+  border-radius: 30px;
+
+  background: #eef6ff;
   color: #4a6786;
-  font-size: 14px;
 }
 
 
 /* =========================================================
-   人员网格
+   04. 人员模块标题
    ========================================================= */
 
-.people-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 30px 22px;
-}
-
-.person-card {
-  text-align: center;
-}
-
-.person-avatar-wrap {
-  display: flex;
-  justify-content: center;
-}
-
-.person-avatar {
-  width: 150px;
-  height: 180px;
-}
-
-
-/* =========================================================
-   人员页面模块标题：居中 + 下方绿色短横线
-   ========================================================= */
-
-body[data-page="people"] .people-section > .section-title {
+body[data-page="people"]
+.people-section > .section-title {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
-  gap: 10px;
+  justify-content: center;
 
   width: 100%;
-  margin: 0 0 35px;
+  gap: 10px;
+
   padding: 0 0 12px;
+  margin: 0 0 32px;
 
   text-align: center;
+
   color: #00605b;
   font-size: 30px;
   font-weight: 700;
   line-height: 1.35;
 }
 
+/* 删除原来的标题左侧装饰线 */
 
-/* 去掉 common.css 中标题左侧的红蓝竖线 */
-body[data-page="people"] .people-section > .section-title::before {
+body[data-page="people"]
+.people-section > .section-title::before {
   content: none !important;
   display: none !important;
 }
 
-
 /* 标题下方绿色短横线 */
-body[data-page="people"] .people-section > .section-title::after {
+
+body[data-page="people"]
+.people-section > .section-title::after {
   content: "";
+
   display: block;
+
   width: 72px;
   height: 2px;
-  margin: 0 auto;
-  background-color: #62c58a;
+
+  background: #62c58a;
 }
 
 
 /* =========================================================
-   各人员模块之间的距离
+   05. 人员模块间距
    ========================================================= */
 
-body[data-page="people"] .content-panel > div + div {
-  padding-top: 50px !important;
+body[data-page="people"]
+.content-panel > div + div {
+  padding-top: 50px;
 }
 
-body[data-page="people"] .people-section {
+body[data-page="people"]
+.people-section {
   margin-bottom: 10px;
 }
 
 
 /* =========================================================
-   响应式
+   06. 研究队伍 / 在读学生
+   单列横向卡片
+   ========================================================= */
+
+body[data-page="people"]
+.people-section.current-members .people-grid {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr);
+
+  gap: 16px;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   07. 人员卡片
+   ========================================================= */
+
+body[data-page="people"]
+.people-section.current-members .person-card {
+  display: grid;
+
+  grid-template-columns:
+    var(--people-photo-width)
+    minmax(0, 1fr);
+
+  column-gap: var(--people-card-gap);
+
+  align-items: start;
+
+  width: 100%;
+  min-height: var(--people-card-min-height);
+
+  padding: 18px 24px;
+
+  box-sizing: border-box;
+  text-align: left;
+
+  background: #ffffff;
+
+  border: 1px solid #e4ece7;
+  border-radius: 11px;
+
+  box-shadow: 0 3px 12px rgba(20, 60, 45, 0.05);
+
+  transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+}
+
+body[data-page="people"]
+.people-section.current-members .person-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 18px rgba(20, 60, 45, 0.10);
+}
+
+
+/* =========================================================
+   08. 左侧照片与姓名
+   ========================================================= */
+
+body[data-page="people"]
+.people-section.current-members .person-personal {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  min-width: 0;
+}
+
+/* 照片容器 */
+
+body[data-page="people"]
+.people-section.current-members .person-avatar-wrap {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: var(--people-photo-width);
+}
+
+/* 照片 */
+
+body[data-page="people"]
+.people-section.current-members .person-avatar {
+  display: block;
+
+  width: var(--people-photo-width);
+  height: var(--people-photo-height);
+
+  max-width: none;
+
+  object-fit: cover;
+  object-position: center top;
+
+  box-sizing: border-box;
+  padding: 0;
+
+  border: 1px solid #82bf92;
+  border-radius: 7px;
+
+  background: #ffffff;
+}
+
+/* 姓名：位于照片正下方 */
+
+body[data-page="people"]
+.people-section.current-members
+.person-personal .person-name {
+  margin: 14px 0 0;
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.5;
+
+  color: #173a51;
+  text-align: center;
+}
+
+/* 姓名链接 */
+
+body[data-page="people"]
+.person-name-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+body[data-page="people"]
+.person-name-link:hover {
+  color: #00605b;
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   09. 右侧内容区域
+   ========================================================= */
+
+body[data-page="people"]
+.people-section.current-members .person-info {
+  display: flex;
+  flex-direction: column;
+
+  align-items: stretch;
+
+  min-width: 0;
+
+  align-self: start;
+
+  padding-top: 8px;
+}
+
+
+/* =========================================================
+   10. 个人简介
+   重点修改：统一为黑色
+   ========================================================= */
+
+body[data-page="people"]
+.people-section.current-members .person-paragraph {
+  margin: 0;
+
+  /* 个人简介正文使用黑色 */
+  color: var(--people-text-color);
+
+  font-size: var(--people-paragraph-size);
+  font-weight: 400;
+
+  line-height: 1.95;
+  text-align: left;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   11. 联系邮箱
+   独立段落
+   ========================================================= */
+
+body[data-page="people"]
+.people-section.current-members .person-email {
+  margin: 16px 0 0;
+
+  /* 联系邮箱标签保留灰蓝色 */
+  color: #526577;
+
+  font-size: var(--people-paragraph-size);
+  line-height: 1.85;
+
+  overflow-wrap: anywhere;
+}
+
+/* 具体邮箱地址：保持绿色 */
+
+body[data-page="people"]
+.people-section.current-members .person-email a {
+  color: var(--people-email-color);
+
+  text-decoration: none;
+}
+
+body[data-page="people"]
+.people-section.current-members .person-email a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   12. 个人主页按钮
+   仅有访问链接的人员显示
+   ========================================================= */
+
+/* 个人主页按钮：透明背景 + 边框 + 超链接颜色 */
+body[data-page="people"]
+.people-section.current-members .person-homepage-button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+
+  margin-top: 22px;
+  padding: 10px 18px;
+
+  /* 保留边框 */
+  border: 1px solid #bde7d5;
+  border-radius: 2px;
+
+  /* 去掉背景颜色 */
+  background: transparent;
+
+  /* 文字使用超链接颜色 */
+  color: #006c68;
+
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 700;
+
+  text-align: center;
+  text-decoration: none;
+
+  transition: border-color 0.2s ease;
+}
+
+/* 鼠标悬停 */
+body[data-page="people"]
+.people-section.current-members .person-homepage-button:hover {
+  background: transparent;
+  color: #006c68;
+  border-color: #006c68;
+  text-decoration: underline;
+}
+
+body[data-page="people"]
+.people-section.current-members .person-homepage-button:hover {
+  background: #e5f5ed;
+  border-color: #69bd9a;
+}
+
+
+/* =========================================================
+   13. 已毕业 / 出站成员
+   保留四列网格
+   ========================================================= */
+
+body[data-page="people"]
+.people-section.former-members .people-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 30px 22px;
+}
+
+body[data-page="people"]
+.people-section.former-members .person-card {
+  text-align: center;
+}
+
+body[data-page="people"]
+.people-section.former-members .person-name {
+  margin-top: 8px;
+
+  font-weight: 700;
+  color: #243447;
+}
+
+body[data-page="people"]
+.people-section.former-members .person-title {
+  margin-top: 10px;
+
+  font-size: 14px;
+  color: #58697b;
+}
+
+
+/* =========================================================
+   14. 平板适配
    ========================================================= */
 
 @media (max-width: 1024px) {
-  .people-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 
   .leader-layout {
     grid-template-columns: 1fr;
   }
+
+  body[data-page="people"]
+  .people-section.former-members .people-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
+
+/* =========================================================
+   15. 手机端适配
+   ========================================================= */
+
 @media (max-width: 640px) {
-  .people-grid {
+
+  /* 人员卡片 */
+
+  body[data-page="people"]
+  .people-section.current-members .person-card {
+    grid-template-columns: 92px minmax(0, 1fr);
+
+    column-gap: 16px;
+
+    min-height: 155px;
+
+    padding: 14px;
+  }
+
+  /* 照片容器 */
+
+  body[data-page="people"]
+  .people-section.current-members .person-avatar-wrap {
+    width: 92px;
+  }
+
+  /* 照片尺寸 */
+
+  body[data-page="people"]
+  .people-section.current-members .person-avatar {
+    width: 92px;
+    height: 118px;
+  }
+
+  /* 姓名 */
+
+  body[data-page="people"]
+  .people-section.current-members
+  .person-personal .person-name {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  /* 简介与邮箱 */
+
+  body[data-page="people"]
+  .people-section.current-members .person-paragraph,
+  body[data-page="people"]
+  .people-section.current-members .person-email {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  /* 个人主页 */
+
+  body[data-page="people"]
+  .people-section.current-members .person-homepage-button {
+    font-size: 15px;
+
+    margin-top: 14px;
+    padding: 9px;
+  }
+
+  /* 毕业成员 */
+
+  body[data-page="people"]
+  .people-section.former-members .people-grid {
     grid-template-columns: 1fr;
   }
 
-  body[data-page="people"] .people-section > .section-title {
+  /* 标题 */
+
+  body[data-page="people"]
+  .people-section > .section-title {
     font-size: 24px;
     margin-bottom: 28px;
   }
 
-  body[data-page="people"] .people-section > .section-title::after {
+  body[data-page="people"]
+  .people-section > .section-title::after {
     width: 60px;
   }
 }
+

@@ -588,3 +588,11 @@ body[data-page="people"]
   }
 }
 
+
+/* 仅英文版个人简介两端对齐 */
+body[data-page="people"]:lang(en)
+.people-section.current-members .person-paragraph {
+  text-align: justify;
+  text-align-last: left;
+}
+

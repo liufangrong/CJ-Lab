@@ -112,3 +112,17 @@ body[data-page="profile"] .content-panel {
     line-height: 1.9;
   }
 }
+
+
+/* =========================================
+   Profile 页面：正文段落两端对齐
+   ========================================= */
+
+body[data-page="profile"] .profile-bio,
+body[data-page="profile"] .profile-bio p,
+body[data-page="profile"] .profile-content p,
+body[data-page="profile"] .profile-text p {
+  text-align: justify;
+  text-align-last: left;
+  line-height: 1.9;
+}

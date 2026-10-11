@@ -9,7 +9,7 @@ window.PAGE_DATA.zh["people"] = {
       "items": [
         {
           "name": "车静",
-          "title": "学科组负责人，研究员，博士生导师。当选美国鱼类和两栖爬行动物联合学会（ASIH）终身外籍荣誉会员；世界两栖爬行动物学大会执委（2020—）。中国动物学会常务理事、两栖爬行动物学分会副主任委员；中国生态学学会理事；中华人民共和国濒危物种科学委员会委员；中国人与生物圈（MAB）国家委员会专家咨询委员会委员；中国西南野生生物种质资源库动物分库执行主任；云南省高黎贡山生物多样性重点实验室主任；“中国两栖类”信息系统创建人",
+          "title": "学科组负责人，研究员，博士生导师。当选美国鱼类和两栖爬行动物联合学会（ASIH）终身外籍荣誉会员；世界两栖爬行动物学大会执委（2020—）。中国动物学会常务理事、两栖爬行动物学分会副主任委员；中国生态学学会理事；中华人民共和国濒危物种科学委员会委员；中国人与生物圈（MAB）国家委员会专家咨询委员会委员；中国西南野生生物种质资源库动物分库执行主任；云南省高黎贡山生物多样性重点实验室主任；“中国两栖类”信息系统创建人。",
           "email": "chej@mail.kiz.ac.cn",
           "image": "assets/people/image/车静 1.png",
           "profileUrl": "https://kiz.cas.cn/sourcedb_kiz_cas/zw/zjrc/yjy/201212/t20121218_3722492.html"
@@ -55,7 +55,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "Alex Plimo Karuno",
-          "title": "博士后",
+          "title": "助理研究员",
           "research": "",
           "email": "alexplimo@hotmail.com",
           "image": "assets/people/image/Alex 2.jpg"
@@ -142,7 +142,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "刘方荣",
-          "title": "2026级博士研究生（云大联合培养）",
+          "title": "2026级生态学博士研究生（云南大学联合培养），软件设计师（中级），主要研究方向为演化生物学、计算生物学、自然语言处理与深度学习等; 以第一作者（含共一）在《BMC Genomics》等期刊发表SCI论文4篇，登记软件著作权7项，主持省教育厅自然科学基金项目1项（研究生类），曾获本科生国家奖学金、研究生国家奖学金等多个荣誉奖项；",
           "email": "liufangrong@stu.ynu.edu.cn",
           "image": "assets/people/image/lfr3.png"
         },

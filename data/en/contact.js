@@ -10,11 +10,11 @@ window.PAGE_DATA.en["contact"] = {
       "rows": [
         {
           "key": "Principal Investigator",
-          "value": "Prof. CHE Jing"
+          "value": "JIN Jieqiong"
         },
         {
           "key": "Email",
-          "value": "<a class=\"contact-link\" href=\"mailto:chej@mail.kiz.ac.cn\">chej@mail.kiz.ac.cn</a>"
+          "value": "<a class=\"contact-link\" href=\"mailto:jinjq@mail.kiz.ac.cn\">jinjq@mail.kiz.ac.cn</a>"
         },
         {
           "key": "Phone",

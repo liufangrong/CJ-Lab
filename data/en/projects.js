@@ -34,7 +34,7 @@ window.PAGE_DATA.en["projects"] = {
           ],
           "image": "assets/projects/fx55.jpg",
           "meta": "",
-          "reverse": false
+          "reverse": true
         }
       ]
     },
@@ -77,7 +77,7 @@ window.PAGE_DATA.en["projects"] = {
           ],
           "image": "assets/projects/fx3.png",
           "meta": "",
-          "reverse": false
+          "reverse": true
         }
       ]
     },

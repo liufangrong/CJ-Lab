@@ -256,8 +256,8 @@
     function renderPeopleGrid(section, lang) {
         const isFormerMembers = /已毕业|出站|former|alumni/i.test(section.title || '');
         // 只有下列三位研究人员保留个人主页入口。
-        const allowedProfiles = new Set(['车静', '柴静', '高伟', 'Jing Che']);
-        const profileLabel = lang === 'zh' ? 'KIZ 个人主页' : 'Personal homepage';
+        const allowedProfiles = new Set(['车静', '柴静', '高伟', 'CHE Jing']);
+        const profileLabel = lang === 'zh' ? 'KIZ 个人主页' : 'KIZ - Personal Homepage';
 
         const cards = (section.items || []).map(item => {
             if (isFormerMembers) {
@@ -278,7 +278,9 @@
                 .replace(/(?:联系邮箱|电子邮箱|邮箱|Email)\s*[：:]\s*[^\s。；;，,]+/gi, '')
                 .replace(/[。；;，,\s]+$/g, '')
                 .trim();
-            const paragraph = summary ? `<p class="person-paragraph">${summary}</p>` : '';
+            const paragraph = summary
+                ? `<p class="person-paragraph">${/[。！？.!?]$/.test(summary.trim()) ? summary.trim() : summary.trim() + (lang === 'en' ? '.' : '。')}</p>`
+                : '';
             const emailParagraph = item.email && String(item.email).trim()
                 ? `<p class="person-email">${lang === 'zh' ? '联系邮箱' : 'Email'}：<a href="mailto:${item.email}">${item.email}</a></p>`
                 : '';
@@ -886,69 +888,38 @@
   `;
         }
 
-        /* =========================================================*
-        主要获奖
-        左侧证书图片 + 右侧文字
-        日期放最下面
-        ========================================================= */
+
+        /* =========================================================
+           主要获奖：纯文字列表
+           年份 + 奖项名称 + 获奖成果
+           ========================================================= */
 
         if (section.type === "awards") {
+
             const items = (section.groups || [])
                 .flatMap(group => group.items || []);
 
             body = `
-    <div class="award-list">
+    <div class="award-simple-list">
 
-      ${items.map(item => `
-        <article class="award-card">
+      ${items.map(item => {
 
-          <div class="award-card-image">
-            ${item.image ? `
-              <img
-                src="${item.image}"
-                alt="${item.award || item.achievement || ""}"
-                loading="lazy"
-                decoding="async"
-              >
-            ` : ""}
+                const year = item.date
+                    ? String(item.date).slice(0, 4)
+                    : "";
+
+                const achievement = item.achievement || "";
+                const award = item.award || "";
+
+                return `
+          <div class="award-simple-item">
+            ${year ? `<span class="award-simple-year">${year}</span>` : ""}
+            ${achievement}
+            ${award ? `（${award}）` : ""}
           </div>
+        `;
 
-          <div class="award-card-content">
-
-            ${item.achievement ? `
-              <div class="award-achievement">
-                ${item.achievement}
-              </div>
-            ` : ""}
-
-            ${item.award ? `
-              <div class="award-name">
-                ${item.award}
-              </div>
-            ` : ""}
-
-            ${item.people ? `
-              <div class="award-contributors">
-                <span class="award-contributors-label">
-                  ${lang === "zh" ? "主要完成人：" : "Contributors: "}
-                </span>
-
-                <span class="award-contributors-names">
-                  ${boldLabMemberNames(item.people)}
-                </span>
-              </div>
-            ` : ""}
-
-            ${item.date ? `
-              <div class="award-date">
-                ${item.date}
-              </div>
-            ` : ""}
-
-          </div>
-
-        </article>
-      `).join("")}
+            }).join("")}
 
     </div>
   `;

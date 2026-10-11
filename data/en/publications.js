@@ -54,6 +54,8 @@ window.PAGE_DATA.en["publications"] = {
     },
 
     // ==================== Awards ====================
+
+    /* ==================== Awards ==================== */
     {
       "type": "awards",
       "title": "Major Awards",
@@ -61,21 +63,20 @@ window.PAGE_DATA.en["publications"] = {
         {
           "items": [
             {
-              "achievement": "1.Top Ten Research Advances of the Kunming Institute of Zoology, Chinese Academy of Sciences, 2025",
-              "award": "Integrative multi-taxon analyses reveal divergent patterns of terrestrial vertebrate diversity evolution in the Hengduan Mountains",
-              "people": "Chenqi Lu, Wenna Ding, Wei Xu, Quan Li, Shuiwang He, Fei Wu, Wenjie Dong, Jie-Qiong Jin, Feng Dong, Xuelong Jiang, Kai Wang, Peng Guo, Robert W. Murphy, Ya-Ping Zhang, Jing Che",
-              "date": "2026.01",
+              "achievement": "Top Ten Research Advances of 2025, Kunming Institute of Zoology, Chinese Academy of Sciences",
+              "award": "Integrative Analyses Across Multiple Taxa Reveal Distinct Patterns of Terrestrial Vertebrate Diversity Evolution in the Hengduan Mountains",
+              "date": "2026.01"
             },
             {
-              "achievement": "2. Yunnan Provincial Science and Technology Award (First Prize, Natural Science Award)",
-              "award": "Formation of amphibian and reptile diversity and environmental adaptation in the mountainous regions of Southwest China",
-              "people": "Jing Che",
-              "date": "2025.05",
+              "achievement": "First Prize, Natural Science Award, Yunnan Provincial Science and Technology Awards",
+              "award": "Biodiversity Formation and Environmental Adaptation of Amphibians and Reptiles in the Mountains of Southwest China",
+              "date": "2025.05"
             }
           ]
         }
       ]
     },
+
 
 
 

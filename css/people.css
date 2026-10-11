@@ -22,7 +22,7 @@
   --people-card-min-height: 245px;
   --people-card-gap: 28px;
 
-  --people-paragraph-size: 16px;
+  --people-paragraph-size: 18px;
 
   --people-text-color: #111111;
   --people-email-color: #006c68;
@@ -377,7 +377,7 @@ body[data-page="people"]
   margin: 16px 0 0;
 
   /* 联系邮箱标签保留灰蓝色 */
-  color: #526577;
+  color: var(--people-text-color);
 
   font-size: var(--people-paragraph-size);
   line-height: 1.85;
@@ -425,7 +425,7 @@ body[data-page="people"]
   /* 文字使用超链接颜色 */
   color: #006c68;
 
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 700;
 
@@ -482,7 +482,7 @@ body[data-page="people"]
 .people-section.former-members .person-title {
   margin-top: 10px;
 
-  font-size: 14px;
+  font-size: 18px;
   color: #58697b;
 }
 
@@ -553,7 +553,7 @@ body[data-page="people"]
   .people-section.current-members .person-paragraph,
   body[data-page="people"]
   .people-section.current-members .person-email {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.8;
   }
 
@@ -561,7 +561,7 @@ body[data-page="people"]
 
   body[data-page="people"]
   .people-section.current-members .person-homepage-button {
-    font-size: 15px;
+    font-size: 18px;
 
     margin-top: 14px;
     padding: 9px;

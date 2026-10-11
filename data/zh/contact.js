@@ -11,11 +11,11 @@ window.PAGE_DATA.zh["contact"] = {
       "rows": [
         {
           "key": "联系人",
-          "value": "车静 研究员"
+          "value": "金洁琼"
         },
         {
           "key": "联系邮箱",
-          "value": "<a class=\"contact-link\" href=\"mailto:chej@mail.kiz.ac.cn\">chej@mail.kiz.ac.cn</a>"
+          "value": "<a class=\"contact-link\" href=\"mailto:jinjq@mail.kiz.ac.cn\">jinjq@mail.kiz.ac.cn</a>"
         },
         {
           "key": "联系电话",

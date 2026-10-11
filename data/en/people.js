@@ -1,21 +1,16 @@
 window.PAGE_DATA = window.PAGE_DATA || { zh: {}, en: {} };
+
 window.PAGE_DATA.en["people"] = {
-  "badge": "Lab Members",
-  "title": "",
-  "desc": "",
+
   "sections": [
     {
       "type": "peopleGrid",
       "title": "Research Team",
-      "contactFields": [
-        "research",
-        "phone",
-        "email"
-      ],
+      "contactFields": ["research", "phone", "email"],
       "items": [
         {
           "name": "CHE Jing",
-          "title": "Research Professor (Principal Investigator)",
+          "title": "Research Group Leader, Research Professor, and Doctoral Supervisor. Elected a Lifetime Honorary Foreign Member of the American Society of Ichthyologists and Herpetologists (ASIH) and serves on the Executive Committee of the World Congress of Herpetology (2020–present). She is a Standing Council Member of the Zoological Society of China, Vice Chair of its Herpetological Society, and a Council Member of the Ecological Society of China. She also serves as a Member of the Scientific Authority for Endangered Species of the People's Republic of China, an Expert Advisory Committee Member of the Chinese National Committee for UNESCO's Man and the Biosphere (MAB) Programme, Executive Director of the Animal Branch of the Germplasm Bank of Wild Species in Southwest China, and Director of the Yunnan Key Laboratory of Biodiversity at Gaoligong Mountain. She is the founder of the AmphibiaChina information system.",
           "email": "chej@mail.kiz.ac.cn",
           "image": "assets/people/image/车静 1.png",
           "profileUrl": "https://english.kiz.ac.cn/Scientists/Scientists/202609/t20260909_1195043.html"
@@ -42,13 +37,6 @@ window.PAGE_DATA.en["people"] = {
           "profileUrl": "profile.html?id=wk"
         },
         {
-          "name": "KARUNO Alex Plimo",
-          "title": "Postdoctoral Researcher",
-          "email": "alexplimo@hotmail.com",
-          "image": "assets/people/image/Alex 2.jpg",
-          "profileUrl": "profile.html?id=Alex"
-        },
-        {
           "name": "JIN Jieqiong",
           "title": "Senior Laboratory Manager",
           "email": "jinjq@mail.kiz.ac.cn",
@@ -68,17 +56,20 @@ window.PAGE_DATA.en["people"] = {
           "email": "luzhuoyu@mail.kiz.ac.cn",
           "image": "assets/people/image/陆卓雨 1.png",
           "profileUrl": "profile.html?id=lzy"
-        }
+        },
+        {
+          "name": "KARUNO Alex Plimo",
+          "title": "Assistant Researcher",
+          "email": "alexplimo@hotmail.com",
+          "image": "assets/people/image/Alex 2.jpg",
+          "profileUrl": "profile.html?id=Alex"
+        },
       ]
     },
     {
       "type": "peopleGrid",
       "title": "Current Students",
-      "contactFields": [
-        "lab",
-        "research",
-        "email"
-      ],
+      "contactFields": ["lab", "research", "email"],
       "items": [
         {
           "name": "LU Chenqi",

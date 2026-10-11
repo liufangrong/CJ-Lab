@@ -558,131 +558,44 @@
 }
 
 
+
 /* =========================================================
-   主要获奖内容
-   纯文字展示，不显示左侧证书
-   日期放最下面
+   主要获奖：简洁纯文字列表
    ========================================================= */
 
-.award-list {
+.award-simple-list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 15px;
+
   width: 100%;
-  margin: 4px 0 0;
+  margin: 10px 0 0;
   padding: 0;
 }
 
-/* 获奖卡片 */
-.award-card {
-  display: block;
-  width: 100%;
-  padding: 24px 28px;
-  box-sizing: border-box;
-
-  background: #ffffff;
-  border: 1px solid #dfe8ef;
-  border-radius: 12px;
-
-  transition: transform 0.2s ease,
-              box-shadow 0.2s ease;
-}
-
-.award-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(18, 55, 88, 0.08);
-}
-
-/* 隐藏证书图片 */
-.award-card-image {
-  display: none !important;
-}
-
-/* 文字内容占满宽度 */
-.award-card-content {
-  width: 100%;
-  min-width: 0;
-}
-
-/* 获奖成果 */
-.award-achievement {
-  margin: 0 0 10px;
+.award-simple-item {
   color: #111111;
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 1.55;
-}
-
-/* 奖项名称 */
-.award-name {
-  display: block;
-  margin: 0 0 10px;
-  padding: 0;
-
-  color: #111111;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.7;
-
-  background: none;
-  border-radius: 0;
-}
-
-/* 获奖人员 */
-.award-contributors {
-  margin: 0;
-  color: #111111;
-  font-size: 14px;
-  line-height: 1.9;
-}
-
-.award-contributors-label {
-  color: #111111;
-  font-weight: 600;
-}
-
-.award-contributors-names {
-  color: #111111;
-}
-
-.award-contributors .lab-member-name {
-  color: #111111 !important;
-  font-weight: 700 !important;
-}
-
-/* 日期放最下面 */
-.award-date {
-  margin-top: 12px;
-  margin-bottom: 0;
-
-  color: #111111;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.85;
+
+  padding: 0;
+  margin: 0;
+
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
-/* =========================================================
-   响应式
-   ========================================================= */
+.award-simple-year {
+  margin-right: 8px;
+  font-weight: 400;
+}
 
-@media (max-width: 768px) {
-  .award-card {
-    padding: 16px;
-  }
-
-  .award-achievement {
+@media (max-width: 640px) {
+  .award-simple-item {
     font-size: 16px;
-  }
-
-  .award-name {
-    font-size: 14px;
-  }
-
-  .award-contributors {
-    font-size: 13px;
-  }
-
-  .award-date {
-    font-size: 12px;
+    line-height: 1.8;
   }
 }
+

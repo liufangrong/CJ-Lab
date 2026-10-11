@@ -1,3 +1,4 @@
+
 window.SITE_DATA = window.SITE_DATA || {};
 
 window.SITE_DATA.zh = {
@@ -5,7 +6,7 @@ window.SITE_DATA.zh = {
     "name": "Che Lab",
     "subtitle": "两栖爬行类多样性与进化研究组",
     "topbarLeft": "",
-
+    "topLinks": [],
     "headerNote": "",
     "footer": [
       "Copyright © 2026 两栖爬行类多样性与进化研究组. 保留所有权利.",

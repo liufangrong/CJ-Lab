@@ -77,7 +77,7 @@ window.PAGE_DATA.en["projects"] = {
           ],
           "image": "assets/projects/fx3.png",
           "meta": "",
-          "reverse": true
+          "reverse": false
         }
       ]
     },

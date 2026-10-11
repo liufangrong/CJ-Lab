@@ -6,14 +6,14 @@ window.PAGE_DATA.en["projects"] = {
   "sections": [
     {
       "type": "projects",
-      "title": "Area 1: Systematic Taxonomy and Exploration of Cryptic Species Diversity",
+      "title": "Area 1:  Discovering Hidden Diversity & Tree of Life",
       "intro": "",
       "items": [
         {
           "title": "",
           "text": "",
           "bullets": [
-            "Utilizing DNA barcoding technology, combined with morphological, ecological, and other data types, we explore the cryptic species diversity of amphibians and reptiles and deeper our understanding of the overall biodiversity of amphibians and reptiles in China and adjacent Southeast Asian regions. Using multi-locus or genomic data, we target taxonomically difficult groups and resolve their phylogenetic relationships and taxonomy.",
+            "We integrate genomic data, morphology, and ecological fieldwork to uncover \"cryptic\" (hidden) amphibian and reptile species across China and adjacent southeast Asia and south Asia. By resolving long-standing evolutionary controversies, we are building a more accurate Tree of Life for these diverse clades.",
           ],
           "image": "assets/projects/fx4.jpg",
           "meta": "",
@@ -23,14 +23,14 @@ window.PAGE_DATA.en["projects"] = {
     },
     {
       "type": "projects",
-      "title": "Area 2: Speciation, Diversification and the Evolution of Biodiversity Patterns",
+      "title": "Area 2: Speciation & Global Biodiversity Patterns",
       "intro": "",
       "items": [
         {
           "title": "",
           "text": "",
           "bullets": [
-            "Research focuses on the formation and evolutionary dynamics of species diversity across large-scale regions worldwide. Through comparative studies across multiple taxonomic groups and the integration of macro- and microevolutionary perspectives, we aim to uncover general mechanisms of speciation, reveal the processes shaping large-scale biodiversity patterns, and identify the historical environmental drivers underlying these patterns, thereby providing scientific guidance for biodiversity conservation. ",
+            "How do new species form, and what shapes their distribution? We investigate the evolutionary mechanisms and historical environmental drivers behind large-scale biodiversity patterns. This \"big picture\" research provides a crucial scientific foundation for sustainable global conservation.",
           ],
           "image": "assets/projects/fx55.jpg",
           "meta": "",
@@ -40,16 +40,14 @@ window.PAGE_DATA.en["projects"] = {
     },
       {
       "type": "projects",
-      "title": "Area 3: Mechanisms of Speciation and Adaptive Trait Evolution",
+      "title": "Area 3:  Adaptive Evolution & Genomics",
       "intro": "",
       "items": [
         {
           "title": "",
           "text": "",
           "bullets": [
-            "Based on genome-wide research, grounded in systematic field observations, and integrating multiple aspects such as ecology, physiology, behavior, and genetics, " +
-            "this study explores the relationship between phenotypic diversity evolution and environmental adaptation in representative herpetofauna species. " +
-            "The focus is on elucidating the genetic basis and evolutionary patterns of key adaptive traits, thereby revealing the genetic mechanisms underlying speciation and adaptive evolution."
+            "We want to know how ectotherms survive and thrive in diverse environments. By combining whole-genome sequencing with behavioral and physiological data, we decode the genetic mechanisms that drive unique physical traits and environmental adaptations in amphibians and reptiles."
           ],
           "image": "assets/projects/fx1.png",
           "meta": "",
@@ -60,20 +58,15 @@ window.PAGE_DATA.en["projects"] = {
     },
     {
       "type": "projects",
-      "title": "Area 4: Conservation Evolutionary Biology of Endangered Species",
+      "title": "Area 4: Conservation Biology of Endangered Species",
       "intro": "",
       "items": [
         {
           "title": "",
           "text": "",
-          "bullets": [
-            "Driven by the major global demand for biodiversity conservation, our research group systematically investigates conservation and evolutionary biology using flagship endangered species like the Chinese giant salamanders. " +
-            "Our multidisciplinary research is structured around two core pillars:" +
-            "<strong>（1）Population Dynamics & Conservation Evaluation:</strong> We integrate field ecology with population omics to track spatio-temporal evolutionary histories and assess the genetic health of vulnerable populations. " +
-            "This framework allows us to scientifically evaluate the efficacy of in situ conservation, captive breeding, and wild restocking programs." +
-            "<strong>（2）Adaptive Evolution & Multi-Omics:</strong> Relying on comparative genomics, metagenomics, and advanced multi-omics platforms, " +
-            "we decode the genomic basis of extraordinary biological traits and mechanisms of adaptation to complex habitats." +
-            "Through this cross-disciplinary integration, we strive to uncover the fundamental laws of life's evolution and deliver systematic, science-driven solutions from China for global endangered species conservation.\n",
+
+          bullets: [
+            "Using the Chinese Giant Salamander as a flagship model, we combine field surveys, ecological monitoring, and genomic data to assess its population status and adaptive potential. These insights directly inform conservation strategies, including in situ habitat protection, captive breeding, and reintroduction programs."
           ],
           "image": "assets/projects/fx3.png",
           "meta": "",

@@ -577,36 +577,62 @@
         // `;
         //   }
 
+
+        /* =========================================================
+           Projects：研究方向
+           左右图文布局 + 自然段落 + 无项目符号
+           ========================================================= */
+
         if (section.type === "projects") {
+
             body = `
-    <div class="project-list">
-      ${(section.items || []).map(item => `
-        <div class="project-card">
-          <div class="project-content">
+      <div class="project-list">
 
-            ${item.image ? `
-              <div class="project-card-photo ${item.reverse ? 'is-right' : 'is-left'}">
-                <img src="${item.image}" alt="${section.title || ""}">
+        ${(section.items || []).map(item => `
+
+          <div class="project-card">
+
+            <div class="project-content">
+
+              ${item.image ? `
+                <div class="project-card-photo ${item.reverse ? 'is-right' : 'is-left'}">
+                  <img
+                    src="${item.image}"
+                    alt="${section.title || ''}"
+                  >
+                </div>
+              ` : ''}
+
+              <div class="project-card-text">
+
+                ${item.title ? `
+                  <h4>${item.title}</h4>
+                ` : ''}
+
+                ${item.text ? `
+                  <p class="project-description">
+                    ${item.text}
+                  </p>
+                ` : ''}
+
+                ${(item.bullets || []).map(text => `
+                  <p class="project-description">
+                    ${text}
+                  </p>
+                `).join('')}
+
               </div>
-            ` : ""}
 
-            <div class="project-card-text">
-              ${item.title ? `<h4>${item.title}</h4>` : ""}
-              ${item.text ? `<p>${item.text}</p>` : ""}
-
-              ${item.bullets ? `
-                <ul>
-                  ${item.bullets.map(text => `<li>${text}</li>`).join("")}
-                </ul>
-              ` : ""}
             </div>
 
           </div>
-        </div>
-      `).join("")}
-    </div>
-  `;
+
+        `).join('')}
+
+      </div>
+    `;
         }
+
 
         if (section.type === 'labels') {
             body = `<div class="label-list">${section.items.map(item => `<span class="label">${item}</span>`).join('')}</div>`;

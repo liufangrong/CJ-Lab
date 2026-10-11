@@ -1,27 +1,37 @@
-/* RESEARCH / PROJECTS PAGE
-   Split from original style.css. Load common.css before this file.
-*/
-
 
 /* =========================================================
-   研究方向 projects —— 最终布局
-   reverse:true  -> 图片右边
-   reverse:false -> 图片左边
+   Che Lab · Research / Projects Page
+   研究方向页面完整样式
+
+   请在 common.css 之后加载 research.css
+
+   reverse: true  -> 图片右边
+   reverse: false -> 图片左边
+
+   正文：
+   20px 黑色
+   中英文两端对齐
+   无项目符号
    ========================================================= */
 
 
-/* 每一个研究方向内容区域 */
-.project-content {
+/* =========================================================
+   01. 每个研究方向的内容区域
+   ========================================================= */
+
+body[data-page="projects"] .project-content {
   display: block !important;
+
   width: 100% !important;
   height: auto !important;
   min-height: 0 !important;
+
   overflow: visible !important;
 }
 
+/* 清除图片浮动，使外层自动撑开 */
 
-/* 清除 float，使外层卡片自动撑开 */
-.project-content::after {
+body[data-page="projects"] .project-content::after {
   content: "";
   display: table;
   clear: both;
@@ -29,25 +39,27 @@
 
 
 /* =========================================================
-   图片容器
+   02. 图片容器
    ========================================================= */
 
-.project-card-photo {
+body[data-page="projects"] .project-card-photo {
   display: block !important;
 
   width: 400px !important;
   max-width: 50% !important;
 
-  height: 240px !important;
+  height: 220px !important;
 
   overflow: hidden !important;
-
   flex: none !important;
 }
 
 
-/* reverse:true —— 图片右边 */
-.project-card-photo.is-right {
+/* =========================================================
+   03. reverse: true，图片位于右侧
+   ========================================================= */
+
+body[data-page="projects"] .project-card-photo.is-right {
   float: right !important;
 
   margin-top: 0 !important;
@@ -57,8 +69,11 @@
 }
 
 
-/* reverse:false —— 图片左边 */
-.project-card-photo.is-left {
+/* =========================================================
+   04. reverse: false，图片位于左侧
+   ========================================================= */
+
+body[data-page="projects"] .project-card-photo.is-left {
   float: left !important;
 
   margin-top: 0 !important;
@@ -68,79 +83,146 @@
 }
 
 
-/* 实际图片 */
-.project-card-photo img {
+/* =========================================================
+   05. 实际图片
+   ========================================================= */
+
+body[data-page="projects"] .project-card-photo img {
   display: block !important;
 
   width: 100% !important;
   height: 100% !important;
 
   object-fit: contain !important;
+  object-position: center center;
 
   margin: 0 !important;
 }
 
 
 /* =========================================================
-   文字
+   06. 文字容器
    ========================================================= */
 
-.project-card-text {
+body[data-page="projects"] .project-card-text {
   display: block !important;
 
   width: auto !important;
   max-width: none !important;
+  min-width: 0;
 
   margin: 0 !important;
   padding: 0 !important;
 
   overflow: visible !important;
-
   flex: none !important;
 
-  /* 正文字号 */
-  font-size: 18px !important;
-
-  /* 正文颜色：恢复原来的灰蓝色 */
-  color: #4f6276 !important;
-
-  /* 行距 */
-  line-height: 1.85 !important;
-}
-
-
-/* bullet 列表 */
-.project-card-text ul {
-  display: block !important;
-
-  margin: 0 !important;
-  padding-left: 22px !important;
-
-  color: #4f6276 !important;
-}
-
-
-/* 每一个 bullet */
-.project-card-text li {
-  display: list-item !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
+  color: #111111 !important;
 
   font-size: 20px !important;
+  font-weight: 400 !important;
   line-height: 1.85 !important;
 
-  color: #000000 !important;
+  text-align: justify;
+  text-align-last: left;
 }
 
 
 /* =========================================================
-   外层卡片
+   07. 普通自然段落
+
+   对应 app.js：
+   <p class="project-description">...</p>
    ========================================================= */
 
-.project-card,
-.project-card-inner,
-.project-card-body {
+body[data-page="projects"] .project-card-text p,
+body[data-page="projects"] .project-card-text p.project-description {
+  display: block !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #111111 !important;
+
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 1.85 !important;
+
+  text-align: justify !important;
+  text-align-last: left !important;
+  text-justify: inter-word;
+
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+
+/* 多个自然段之间的间距 */
+
+body[data-page="projects"] .project-card-text p + p {
+  margin-top: 12px !important;
+}
+
+
+/* =========================================================
+   08. 兼容原来的 ul / li 结构
+
+   如果旧版 app.js 仍生成列表，
+   也不显示黑色圆点。
+   ========================================================= */
+
+body[data-page="projects"] .project-card-text ul,
+body[data-page="projects"] .project-card-text ol {
+  display: block !important;
+
+  list-style: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* 列表正文改成普通段落样式 */
+
+body[data-page="projects"] .project-card-text li {
+  display: block !important;
+
+  list-style: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #111111 !important;
+
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 1.85 !important;
+
+  text-align: justify !important;
+  text-align-last: left !important;
+  text-justify: inter-word;
+
+  overflow-wrap: break-word;
+}
+
+
+/* 隐藏项目符号 */
+
+body[data-page="projects"] .project-card-text li::marker {
+  content: "" !important;
+}
+
+
+/* =========================================================
+   09. 外层研究方向卡片
+
+   保留原来的边框、圆角和内边距；
+   这里只让高度随内容自动变化。
+   ========================================================= */
+
+body[data-page="projects"] .project-card,
+body[data-page="projects"] .project-card-inner,
+body[data-page="projects"] .project-card-body {
   display: block !important;
 
   height: auto !important;
@@ -151,14 +233,27 @@
 
 
 /* =========================================================
-   手机端
+   10. 图片与文字的长内容处理
+   ========================================================= */
+
+body[data-page="projects"] .project-card-text p,
+body[data-page="projects"] .project-card-text li {
+  overflow-wrap: break-word;
+  hyphens: manual;
+}
+
+
+/* =========================================================
+   11. 手机端适配
    ========================================================= */
 
 @media (max-width: 768px) {
 
-  .project-card-photo,
-  .project-card-photo.is-left,
-  .project-card-photo.is-right {
+  /* 图片取消浮动，单独占据一行 */
+
+  body[data-page="projects"] .project-card-photo,
+  body[data-page="projects"] .project-card-photo.is-left,
+  body[data-page="projects"] .project-card-photo.is-right {
     float: none !important;
 
     width: 100% !important;
@@ -169,21 +264,39 @@
     margin: 0 0 18px 0 !important;
   }
 
+  /* 图片自适应 */
 
-  .project-card-photo img {
+  body[data-page="projects"] .project-card-photo img {
     width: 100% !important;
     height: auto !important;
+    object-fit: contain !important;
   }
 
+  /* 手机端文字容器 */
 
-  .project-card-text {
+  body[data-page="projects"] .project-card-text {
     font-size: 16px !important;
     line-height: 1.85 !important;
   }
 
+  /* 手机端普通段落 */
 
-  .project-card-text li {
+  body[data-page="projects"] .project-card-text p,
+  body[data-page="projects"] .project-card-text p.project-description,
+  body[data-page="projects"] .project-card-text li {
+    color: #111111 !important;
+
     font-size: 16px !important;
+    font-weight: 400 !important;
     line-height: 1.85 !important;
+
+    text-align: justify !important;
+    text-align-last: left !important;
+  }
+
+  /* 手机端多个段落间距 */
+
+  body[data-page="projects"] .project-card-text p + p {
+    margin-top: 12px !important;
   }
 }

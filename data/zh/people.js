@@ -261,14 +261,6 @@ window.PAGE_DATA.zh["people"] = {
           "image": ""
         },
         {
-          "name": "Sang Nguyen Ngoc",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
           "name": "杨军校",
           "title": "博士毕业生",
           "lab": "",
@@ -286,22 +278,6 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "张宝林",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "Lotanna Micah Nneji",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "Md Mizanur Rahman",
           "title": "博士毕业生",
           "lab": "",
           "research": "",
@@ -341,7 +317,7 @@ window.PAGE_DATA.zh["people"] = {
           "image": ""
         },
         {
-          "name": "Felista Kasyoka Kilunda",
+          "name": "易木荣",
           "title": "博士毕业生",
           "lab": "",
           "research": "",
@@ -349,7 +325,31 @@ window.PAGE_DATA.zh["people"] = {
           "image": ""
         },
         {
-          "name": "易木荣",
+          "name": "Sang Nguyen Ngoc",
+          "title": "博士毕业生",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": ""
+        },
+        {
+          "name": "Lotanna Micah Nneji",
+          "title": "博士毕业生",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": ""
+        },
+        {
+          "name": "Md Mizanur Rahman",
+          "title": "博士毕业生",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": ""
+        },
+        {
+          "name": "Felista Kasyoka Kilunda",
           "title": "博士毕业生",
           "lab": "",
           "research": "",

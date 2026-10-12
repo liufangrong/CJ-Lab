@@ -37,8 +37,21 @@ window.PAGE_DATA.en["people"] = {
           "profileUrl": "profile.html?id=wk"
         },
         {
+          "name": "KARUNO Alex Plimo",
+          "title": "Assistant Researcher",
+          "email": "alexplimo@hotmail.com",
+          "image": "assets/people/image/Alex 2.jpg",
+          "profileUrl": "profile.html?id=Alex"
+        },
+        {
+          "name": "ZHE Mengqing",
+          "title": "Assistant Researcher",
+          "email": "xxx",
+          "image": "assets/people/image/xxx"
+        },
+        {
           "name": "JIN Jieqiong",
-          "title": "Senior Laboratory Manager",
+          "title": "Senior Engineer",
           "email": "jinjq@mail.kiz.ac.cn",
           "image": "assets/people/image/金洁琼 1.jpg",
           "profileUrl": "profile.html?id=jjq"
@@ -57,13 +70,7 @@ window.PAGE_DATA.en["people"] = {
           "image": "assets/people/image/陆卓雨 1.png",
           "profileUrl": "profile.html?id=lzy"
         },
-        {
-          "name": "KARUNO Alex Plimo",
-          "title": "Assistant Researcher",
-          "email": "alexplimo@hotmail.com",
-          "image": "assets/people/image/Alex 2.jpg",
-          "profileUrl": "profile.html?id=Alex"
-        },
+
       ]
     },
     {

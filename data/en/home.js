@@ -67,13 +67,13 @@ window.PAGE_DATA.en["home"] = {
         },
         {
           "title": "Yunnan Key Laboratory of Gaoligong Mountain Biodiversity and Ecological Security",
-          "image": "",
+          "image": "assets/",
           "alt": "",
           "href": ""
         },
         {
           "title": "Che Lab WeChat Official Account",
-          "image": "assets/wxgzh.jpg",
+          "image": "assets/",
           "alt": "",
           "href": ""
         }

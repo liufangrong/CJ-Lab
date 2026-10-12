@@ -72,7 +72,7 @@ window.PAGE_DATA.zh["home"] = {
         },
         {
           "title": "Che Lab 微信公众号",
-          "image": "assets/wxgzh.jpg",
+          "image": "assets/",
           "alt": "",
           "href": ""
         },

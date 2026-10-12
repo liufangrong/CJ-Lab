@@ -31,13 +31,24 @@ window.PAGE_DATA.zh["people"] = {
         {
           "name": "王剀",
           "title": "副研究员",
-          "research": "xxx",
           "email": "wangkai@mail.kiz.ac.cn",
           "image": "assets/people/image/王剀 2.jpg"
         },
         {
+          "name": "Alex Plimo Karuno",
+          "title": "助理研究员",
+          "email": "alexplimo@hotmail.com",
+          "image": "assets/people/image/Alex 2.jpg"
+        },
+        {
+          "name": "者孟青",
+          "title": "助理研究员",
+          "email": "xxx",
+          "image": "assets/people/image/xxx"
+        },
+        {
           "name": "金洁琼",
-          "title": "高级实验室管理员",
+          "title": "高级工程师",
           "email": "jinjq@mail.kiz.ac.cn",
           "image": "assets/people/image/金洁琼 1.jpg"
         },
@@ -52,13 +63,6 @@ window.PAGE_DATA.zh["people"] = {
           "title": "科研助理",
           "email": "luzhuoyu@mail.kiz.ac.cn",
           "image": "assets/people/image/陆卓雨 1.png"
-        },
-        {
-          "name": "Alex Plimo Karuno",
-          "title": "助理研究员",
-          "research": "",
-          "email": "alexplimo@hotmail.com",
-          "image": "assets/people/image/Alex 2.jpg"
         },
       ]
     },

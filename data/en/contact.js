@@ -30,7 +30,7 @@ window.PAGE_DATA.en["contact"] = {
         },
         {
           "key": "Mailing Address",
-          "value": "Southwest Biodiversity Laboratory, Kunming Institute of Zoology, Chinese Academy of Sciences, No. 21 Qingsong Road, Ciba, Panlong District, Kunming, Yunnan 650201, China"
+          "value": "Southwest Biodiversity Laboratory, Kunming Institute of Zoology, Chinese Academy of Sciences, No. 21 Qingsong Road, Ciba, Panlong District, Kunming, Yunnan, China."
         }
       ]
     }

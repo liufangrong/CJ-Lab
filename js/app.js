@@ -224,35 +224,7 @@
     `;
     }
 
-    // function renderPeopleGrid(section, lang) {
-    //   const contactFields = section.contactFields || ['room', 'phone', 'email'];
-    //
-    //   const cards = (section.items || []).map(item => {
-    //     const nameHtml = item.profileUrl ? `<a class="person-name-link" href="${item.profileUrl}">${item.name}</a>` : item.name;
-    //     const avatar = item.profileUrl
-    //         ? `<a href="${item.profileUrl}"><img class="person-avatar" src="${item.image}" alt="${item.name}" /></a>`
-    //         : `<img class="person-avatar" src="${item.image}" alt="${item.name}" />`;
-    //
-    //     return `
-    //       <div class="person-card">
-    //         <div class="person-avatar-wrap">${avatar}</div>
-    //         <div class="person-name">${nameHtml}</div>
-    //         <div class="person-title">${item.title || ''}</div>
-    //         <div class="person-contact">
-    //           ${buildContactRows(item, contactFields, lang)}
-    //         </div>
-    //       </div>
-    //     `;
-    //   }).join('');
-    //
-    //   return `
-    //     <section class="section people-section section-people-grid">
-    //       <h3 class="section-title section-title-centered">${section.title}</h3>
-    //       ${section.intro ? `<p class="section-intro">${section.intro}</p>` : ''}
-    //       <div class="people-grid">${cards}</div>
-    //     </section>
-    //   `;
-    // }
+
     function renderPeopleGrid(section, lang) {
         const isFormerMembers = /已毕业|出站|former|alumni/i.test(section.title || '');
         // 只有下列三位研究人员保留个人主页入口。
@@ -260,11 +232,19 @@
         const profileLabel = lang === 'zh' ? 'KIZ 个人主页' : 'KIZ - Personal Homepage';
 
         const cards = (section.items || []).map(item => {
+
+            // 已毕业/出站成员：从米雪开始另起一行
+            const breakBefore = isFormerMembers && item.name === "米雪";
+
             if (isFormerMembers) {
-                return `<div class="person-card">
-          <div class="person-name">${item.name}</div>
-          <div class="person-title">${item.title || ''}</div>
-        </div>`;
+                return `
+            ${breakBefore ? '<div class="former-row-break"></div>' : ''}
+
+            <div class="person-card">
+                <div class="person-name">${item.name}</div>
+                <div class="person-title">${item.title || ''}</div>
+            </div>
+        `;
             }
 
             const homepage = allowedProfiles.has(item.name) &&

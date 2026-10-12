@@ -301,14 +301,6 @@ window.PAGE_DATA.zh["people"] = {
           "image": ""
         },
         {
-          "name": "米雪",
-          "title": "硕士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
           "name": "Md Mizanur Rahman",
           "title": "博士毕业生",
           "lab": "",
@@ -359,6 +351,15 @@ window.PAGE_DATA.zh["people"] = {
         {
           "name": "易木荣",
           "title": "博士毕业生",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": ""
+        },
+
+        {
+          "name": "米雪",
+          "title": "硕士毕业生",
           "lab": "",
           "research": "",
           "email": "",

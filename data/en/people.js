@@ -408,15 +408,7 @@ window.PAGE_DATA.en["people"] = {
           "image": "assets/people/image/member24.jpg",
           "profileUrl": "#"
         },
-        {
-          "name": "TU Xiaolong",
-          "title": "M.S.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member05.jpg",
-          "profileUrl": "#"
-        },
+
         {
           "name": "MI Xue",
           "title": "M.S.",
@@ -433,6 +425,15 @@ window.PAGE_DATA.en["people"] = {
           "research": "",
           "email": "",
           "image": "assets/people/image/member12.jpg",
+          "profileUrl": "#"
+        },
+        {
+          "name": "TU Xiaolong",
+          "title": "M.S.",
+          "lab": "",
+          "research": "",
+          "email": "",
+          "image": "assets/people/image/member05.jpg",
           "profileUrl": "#"
         },
         {

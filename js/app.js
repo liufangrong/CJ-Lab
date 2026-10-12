@@ -234,7 +234,8 @@
         const cards = (section.items || []).map(item => {
 
             // 已毕业/出站成员：从米雪开始另起一行
-            const breakBefore = isFormerMembers && item.name === "米雪";
+            const breakBefore = isFormerMembers &&
+                (item.name === "米雪" || item.name === "MI Xue" );
 
             if (isFormerMembers) {
                 return `

@@ -13,23 +13,23 @@ window.PAGE_DATA.zh["activities"] = {
       items: [
         {
           image: "assets/activities/hd2.jpg",
-          caption: "实验室学习交流合影 (2022)"
+          caption: "学习交流 (2022 楚雄)"
         },
         {
           image: "assets/activities/hd3.jpg",
-          caption: "实验室集体合影 (2023)"
+          caption: "学习交流 (2022 楚雄)"
         },
         {
           image: "assets/activities/hd4.jpg",
-          caption: "实验室在教师节与车静老师合影 (2024)"
+          caption: "教师节徒步 (2024 林科院)"
         },
         {
           image: "assets/activities/hd5.jpg",
-          caption: "实验室到版纳植物园交流学习合影 (2025)"
+          caption: "学习交流 (2025 西双版纳)"
         },
         {
           image: "assets/activities/TD.png",
-          caption: "实验室集体合影 (2026)"
+          caption: "欢送董文捷毕业 (2026 西南)"
         },
       ]
     },
@@ -43,7 +43,7 @@ window.PAGE_DATA.zh["activities"] = {
         },
         {
           image: "assets/activities/xshd1.jpg",
-          caption: "亚洲两栖爬行动物学国际前沿论坛-与实验室交流合影(2026.06)"
+          caption: "亚洲两栖爬行动物学国际前沿论坛-集体合影(2026.06)"
         },
           {
           image: "assets/activities/xshd2.png",
@@ -55,7 +55,7 @@ window.PAGE_DATA.zh["activities"] = {
         },
         {
           image: "assets/activities/xsbg4.png",
-          caption: "亚洲两栖爬行动物学国际前沿论坛-大会报告现场掠影(2026.06)"
+          caption: "亚洲两栖爬行动物学国际前沿论坛-大会报告现场(2026.06)"
         },
       ]
     },

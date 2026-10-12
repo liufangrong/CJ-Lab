@@ -547,36 +547,6 @@
         }
 
 
-        //   if (section.type === 'projects') {
-        //     body = `
-        //   <div class="project-list">
-        //     ${(section.items || []).map(item => `
-        //       <div class="project-card">
-        //
-        //         <div class="project-content ${item.reverse ? 'project-reverse' : ''}">
-        //
-        //           ${item.image ? `
-        //             <div class="project-card-photo">
-        //               <img src="${item.image}" alt="${section.title || ''}">
-        //             </div>
-        //           ` : ''}
-        //
-        //           <div class="project-card-text">
-        //             ${item.title ? `<h4>${item.title}</h4>` : ''}
-        //             ${item.text ? `<p>${item.text}</p>` : ''}
-        //             ${item.bullets
-        //         ? `<ul>${item.bullets.map(b => `<li>${b}</li>`).join('')}</ul>`
-        //         : ''}
-        //           </div>
-        //
-        //         </div>
-        //
-        //       </div>
-        //     `).join('')}
-        //   </div>
-        // `;
-        //   }
-
 
         /* =========================================================
            Projects：研究方向

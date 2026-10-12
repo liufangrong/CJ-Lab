@@ -368,9 +368,11 @@
 
 
 
-/* ================================================
+
+/* =========================================================
    出版著作：第一行三个分类，第二行一个分类
-   ================================================ */
+   保留原有卡片样式
+   ========================================================= */
 
 .section-books .books-layout {
   display: flex;
@@ -379,7 +381,7 @@
   width: 100%;
 }
 
-/* 第一行放三个分类 */
+/* 第一行三个分类 */
 
 .section-books .books-first-row {
   display: grid;
@@ -388,7 +390,7 @@
   align-items: start;
 }
 
-/* 分类标题 */
+/* 分类标题：保持原来的字号、颜色 */
 
 .section-books .books-category-title {
   margin: 0 0 18px;
@@ -400,7 +402,7 @@
   text-align: left;
 }
 
-/* 第一行每个分类只占一列 */
+/* 第一行每个分类占一列 */
 
 .section-books .books-first-row .book-grid {
   display: grid;
@@ -408,7 +410,7 @@
   gap: 30px;
 }
 
-/* 第二行仍然是原来的三列 */
+/* 第二行仍然使用三列 */
 
 .section-books .books-second-row .book-grid {
   display: grid;
@@ -416,9 +418,31 @@
   gap: 30px;
 }
 
-/* 平板和手机 */
+/* =========================================================
+   英文版标题换行时，卡片保持顶部对齐
+   中文版不额外增加标题高度
+   ========================================================= */
+
+/* 默认：中文标题自然高度 */
+
+.section-books .books-first-row .books-category-title {
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+/* 仅英文版：为可能换行的标题预留空间 */
+
+html[lang="en"] .section-books
+.books-first-row .books-category-title {
+  min-height: 2.8em;
+}
+
+/* =========================================================
+   响应式
+   ========================================================= */
 
 @media (max-width: 900px) {
+
   .section-books .books-first-row {
     grid-template-columns: 1fr;
   }
@@ -426,11 +450,25 @@
   .section-books .books-second-row .book-grid {
     grid-template-columns: 1fr;
   }
+
+  /* 单列时不需要统一标题高度 */
+  html[lang="en"] .section-books
+  .books-first-row .books-category-title {
+    min-height: 0;
+  }
 }
 
+/* =========================================================
+   原有标题下方装饰
+   ========================================================= */
 
-
-
+.pub-center-title::after,
+.section-books > .section-title::after,
+.section-publications > .section-title::after,
+.section-paperPublications > .section-title::after {
+  content: none !important;
+  display: none !important;
+}
 
 
 

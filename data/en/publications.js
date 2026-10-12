@@ -63,15 +63,15 @@ window.PAGE_DATA.en["publications"] = {
         {
           "items": [
             {
-              "achievement": "Top Ten Research Advances of 2025, Kunming Institute of Zoology, Chinese Academy of Sciences",
-              "award": "Integrative Analyses Across Multiple Taxa Reveal Distinct Patterns of Terrestrial Vertebrate Diversity Evolution in the Hengduan Mountains",
-              "date": "2026.01"
-            },
-            {
               "achievement": "First Prize, Natural Science Award, Yunnan Provincial Science and Technology Awards",
               "award": "Biodiversity Formation and Environmental Adaptation of Amphibians and Reptiles in the Mountains of Southwest China",
-              "date": "2025.05"
-            }
+              "date": "2025"
+            },
+            {
+              "achievement": "International Cooperation Award for Young Scientists, Chinese Academy of Sciences (CAS)",
+              "award": "",
+              "date": "2021"
+            },
           ]
         }
       ]

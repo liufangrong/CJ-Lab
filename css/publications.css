@@ -367,6 +367,77 @@
 }
 
 
+
+/* ================================================
+   出版著作：第一行三个分类，第二行一个分类
+   ================================================ */
+
+.section-books .books-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  width: 100%;
+}
+
+/* 第一行放三个分类 */
+
+.section-books .books-first-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  align-items: start;
+}
+
+/* 分类标题 */
+
+.section-books .books-category-title {
+  margin: 0 0 18px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: #083b66;
+  text-align: left;
+}
+
+/* 第一行每个分类只占一列 */
+
+.section-books .books-first-row .book-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 30px;
+}
+
+/* 第二行仍然是原来的三列 */
+
+.section-books .books-second-row .book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+/* 平板和手机 */
+
+@media (max-width: 900px) {
+  .section-books .books-first-row {
+    grid-template-columns: 1fr;
+  }
+
+  .section-books .books-second-row .book-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
    主要获奖标题
    居中标题 + 下方深蓝色短横线

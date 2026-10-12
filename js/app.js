@@ -890,29 +890,73 @@
   `;
         }
 
+
+
+        /* =========================================================
+           出版著作：四个分类，两行展示
+           第一行：第1、3、4类
+           第二行：第2类（三本书）
+           保留原有图书卡片样式
+           ========================================================= */
+
         if (section.type === "books") {
-            body = `
-    <div class="book-grid">
-      ${(section.items || []).map(item => `
+
+            const groups = section.groups || [];
+
+            const renderBook = item => `
         <div class="book-card">
+            ${item.image ? `
+                <div class="book-cover">
+                    <img src="${item.image}" alt="${item.title || ""}">
+                </div>
+            ` : ""}
 
-          ${item.image ? `
-            <div class="book-cover">
-              <img src="${item.image}" alt="${item.title}">
+            <div class="book-info">
+                <h4>《${item.title || ""}》</h4>
+                <p class="book-author">
+                    ${boldLabMemberNames(item.author || "")}
+                </p>
+                <p class="book-publisher">
+                    ${item.publisher || ""}，${item.year || ""}
+                </p>
             </div>
-          ` : ""}
+        </div>
+    `;
 
-          <div class="book-info">
-            <h4>《${item.title}》</h4>
-            <p class="book-author">${boldLabMemberNames(item.author || "")}</p>
-            <p class="book-publisher">${item.publisher}，${item.year}</p>
-          </div>
+            const renderGroup = index => {
+                const group = groups[index];
+                if (!group) return "";
+
+                return `
+            <div class="books-group">
+                <h3 class="books-category-title">
+                    ${index + 1}. ${group.title || ""}
+                </h3>
+                <div class="book-grid">
+                    ${(group.items || []).map(renderBook).join("")}
+                </div>
+            </div>
+        `;
+            };
+
+            body = `
+        <div class="books-layout">
+
+            <div class="books-first-row">
+                ${renderGroup(0)}
+                ${renderGroup(1)}
+                ${renderGroup(2)}
+            </div>
+
+            <div class="books-second-row">
+                ${renderGroup(3)}
+            </div>
 
         </div>
-      `).join("")}
-    </div>
-  `;
+    `;
         }
+
+
 
 
         /* =========================================================

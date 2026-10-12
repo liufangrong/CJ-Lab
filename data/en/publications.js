@@ -3,59 +3,82 @@ window.PAGE_DATA.en["publications"] = {
   "badge": "Publications",
   "title": "Representative Research Achievements",
   "desc": "Representative research papers from the laboratory, systematically presenting research progress, innovative highlights, and academic contributions.",
+
   "sections": [
+    // ==================== Published Books ====================
     {
       "type": "books",
       "title": "Published Books",
-      "items": [
+      "groups": [
         {
-          "image": "assets/books/book4.png",
-          "title": "Amphibians of the Qinghai–Tibet Plateau",
-          "author": "Jing Che, Chen-Qi Lu",
-          "publisher": "Science Press",
-          "year": "2026"
+          "title": "Amphibians and Reptiles of Tibet",
+          "items": [
+            {
+              "image": "assets/books/book1.webp",
+              "title": "Amphibians and Reptiles of Tibet: Diversity and Evolution",
+              "author": "Jing Che, Ke Jiang, Fang Yan, Ya-Ping Zhang",
+              "publisher": "Science Press",
+              "year": "2020"
+            }
+          ]
         },
         {
-          "image": "assets/books/book2.png",
-          "title": "Lizards of the Qinghai–Tibet Plateau",
-          "author": "Jing Che, Kai Wang",
-          "publisher": "Science Press",
-          "year": "2026"
+          "title": "Amphibians and Reptiles of Yunnan",
+          "items": [
+            {
+              "image": "assets/books/book6.png",
+              "title": "Key Protected Amphibians and Reptiles of Yunnan",
+              "author": "Kai Wang, Jing Che",
+              "publisher": "Yunnan Science Press",
+              "year": "2025"
+            }
+          ]
         },
         {
-          "image": "assets/books/book3.png",
-          "title": "Snakes of the Qinghai–Tibet Plateau",
-          "author": "Peng Guo, Jing Che",
-          "publisher": "Science Press",
-          "year": "2024"
+          "title": "The Series of Biodiversity in Gaoligong Mountain",
+          "items": [
+            {
+              "image": "assets/books/book5.png",
+              "title": "Amphibians of the Gaoligong Mountains",
+              "author": "Jing Che, Zhong-Bin Yu",
+              "publisher": "Yunnan Science Press",
+              "year": "2025–2026"
+            }
+          ]
         },
         {
-          "image": "assets/books/book1.webp",
-          "title": "Amphibians and Reptiles of Tibet: Diversity and Evolution",
-          "author": "Jing Che, Ke Jiang, Fang Yan, Ya-Ping Zhang",
-          "publisher": "Science Press",
-          "year": "2020"
-        },
-        {
-          "image": "assets/books/book5.png",
-          "title": "Amphibians of the Gaoligong Mountains",
-          "author": "Jing Che, Zhong-Bin Yu",
-          "publisher": "Yunnan Science Press",
-          "year": "2025–2026"
-        },
-        {
-          "image": "assets/books/book6.png",
-          "title": "Key Protected Amphibians and Reptiles of Yunnan",
-          "author": "Kai Wang, Jing Che",
-          "publisher": "Yunnan Science Press",
-          "year": "2025"
+          "title": "Series on the Diversity of Amphibians and Reptiles in the Qinghai-Tibet Plateau",
+          "items": [
+            {
+              "image": "assets/books/book4.png",
+              "title": "Amphibians of the Qinghai–Tibet Plateau",
+              "author": "Jing Che, Chen-Qi Lu",
+              "publisher": "Science Press",
+              "year": "2026"
+            },
+            {
+              "image": "assets/books/book2.png",
+              "title": "Lizards of the Qinghai–Tibet Plateau",
+              "author": "Jing Che, Kai Wang",
+              "publisher": "Science Press",
+              "year": "2026"
+            },
+            {
+              "image": "assets/books/book3.png",
+              "title": "Snakes of the Qinghai–Tibet Plateau",
+              "author": "Peng Guo, Jing Che",
+              "publisher": "Science Press",
+              "year": "2024"
+            }
+          ]
         }
       ]
     },
 
 
 
-    /* ==================== Awards ==================== */
+
+/* ==================== Awards ==================== */
     {
       "type": "awards",
       "title": "Major Awards",

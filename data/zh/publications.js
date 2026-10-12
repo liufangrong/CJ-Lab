@@ -20,58 +20,80 @@ window.PAGE_DATA.zh["publications"] = {
   "badge": "科研动态",
   "title": "",
   "desc":  "",
+
   "sections": [
-      // ==================== 出版著作 ====================
+    // ==================== 出版著作 ====================
     {
       "type": "books",
       "title": "出版著作",
-      "items": [
+      "groups": [
         {
-          "image": "assets/books/book4.png",
-          "title": "青藏高原两栖类",
-          "author": "车静，卢宸祺",
-          "publisher": "科学出版社",
-          "year": "2026"
+          "title": "西藏两栖爬行动物",
+          "items": [
+            {
+              "image": "assets/books/book1.webp",
+              "title": "西藏两栖爬行动物——多样性与进化",
+              "author": "车静，蒋珂，颜芳，张亚平",
+              "publisher": "科学出版社",
+              "year": "2020"
+            }
+          ]
         },
         {
-          "image": "assets/books/book2.png",
-          "title": "青藏高原蜥蜴类",
-          "author": "车静，王剀",
-          "publisher": "科学出版社",
-          "year": "2026"
+          "title": "云南两栖爬行动物",
+          "items": [
+            {
+              "image": "assets/books/book6.png",
+              "title": "云南重点保护两栖爬行动物",
+              "author": "王剀，车静",
+              "publisher": "云南省科学出版社",
+              "year": "2025"
+            }
+          ]
         },
         {
-          "image": "assets/books/book3.png",
-          "title": "青藏高原蛇类",
-          "author": "郭鹏，车静",
-          "publisher": "科学出版社",
-          "year": "2024"
+          "title": "高黎贡山生物多样性丛书",
+          "items": [
+            {
+              "image": "assets/books/book5.png",
+              "title": "高黎贡山两栖类",
+              "author": "车静，于中斌",
+              "publisher": "云南省科学出版社",
+              "year": "2025–2026"
+            }
+          ]
         },
         {
-          "image": "assets/books/book1.webp",
-          "title": "西藏两栖爬行动物——多样性与进化",
-          "author": "车静，蒋珂，颜芳，张亚平",
-          "publisher": "科学出版社",
-          "year": "2020"
+          "title": "青藏高原两栖爬行动物多样性丛书",
+          "items": [
+            {
+              "image": "assets/books/book4.png",
+              "title": "青藏高原两栖类",
+              "author": "车静，卢宸祺",
+              "publisher": "科学出版社",
+              "year": "2026"
+            },
+            {
+              "image": "assets/books/book2.png",
+              "title": "青藏高原蜥蜴类",
+              "author": "车静，王剀",
+              "publisher": "科学出版社",
+              "year": "2026"
+            },
+            {
+              "image": "assets/books/book3.png",
+              "title": "青藏高原蛇类",
+              "author": "郭鹏，车静",
+              "publisher": "科学出版社",
+              "year": "2024"
+            }
+          ]
         },
-        {
-          "image": "assets/books/book5.png",
-          "title": "高黎贡山两栖类",
-          "author": "车静，于中斌",
-          "publisher": "云南省科学出版社",
-          "year": "2025–2026"
-        },
-        {
-          "image": "assets/books/book6.png",
-          "title": "云南重点保护两栖爬行动物",
-          "author": "王剀，车静",
-          "publisher": "云南省科学出版社",
-          "year": "2025"
-        }
       ]
     },
 
-    // ==================== 科普读物 ====================
+
+// ==================== 科普读物 ====================
     // {
     //   "type": "publications",
     //   "title": "科普读物",

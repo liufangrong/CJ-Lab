@@ -413,7 +413,7 @@ window.PAGE_DATA.zh["people"] = {
           "image": ""
         },
         {
-          "name": "丁力民",
+          "name": "丁利民",
           "title": "硕士毕业生（云大联合培养）",
           "lab": "",
           "research": "",

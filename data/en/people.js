@@ -46,8 +46,8 @@ window.PAGE_DATA.en["people"] = {
         {
           "name": "ZHE Mengqing",
           "title": "Assistant Researcher",
-          "email": "xxx",
-          "image": "assets/people/image/xxx"
+          "email": "zhemengqing@163.com",
+          "image": "assets/people/image/zmq.jpg"
         },
         {
           "name": "JIN Jieqiong",

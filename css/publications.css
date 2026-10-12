@@ -471,6 +471,53 @@ html[lang="en"] .section-books
 }
 
 
+/* =========================================================
+   图书封面点击放大
+   仅作用于预览层，不影响图书卡片
+   ========================================================= */
+
+#bookImageOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+  box-sizing: border-box;
+
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#bookImageOverlay .book-image-large {
+  display: block;
+
+  max-width: 150vw;
+  max-height: 150vh;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+}
+
+#bookImageOverlay .book-image-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+
+  border: none;
+  background: transparent;
+
+  color: white;
+  font-size: 40px;
+
+  cursor: pointer;
+}
+
+
 
 
 

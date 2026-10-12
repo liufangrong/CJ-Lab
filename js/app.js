@@ -411,7 +411,7 @@
         });
     }
 
-    /* =========================================================*
+    /* =========================================================
      实验室成员姓名自动加粗
      所有 section 都可以调用
      ========================================================= */
@@ -428,7 +428,7 @@
         }
 
         const escapeRegExp = text =>
-            String(text).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+            String(text).replace(/[.*+?^${}()|[\\]\\\\]/g, "\\\\$&");
 
         const regex = new RegExp(
             `(${names.map(escapeRegExp).join("|")})`,
@@ -618,7 +618,7 @@
         // }
         if (section.type === "paperPublications" || section.type === "allPublications") {
             const escapeRegExp = value =>
-                String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+                String(value).replace(/[.*+?^${}()|[\\]\\\\]/g, "\\\\$&");
 
             const boldLabMembers = value => {
                 return (section.labMembers || []).reduce((result, name) => {
@@ -792,7 +792,7 @@
 
                   ${item.doi
                     ? '<a class="pub-doi-button all-pub-doi-button"' +
-                    ' href="https://doi.org/' + item.doi + '"' +
+                    ' href="https\://doi.org/' + item.doi + '"' +
                     ' target="_blank"' +
                     ' rel="noopener noreferrer">DOI</a>'
                     : ""
@@ -821,7 +821,7 @@
             if (!names.length) return text;
 
             const escapedNames = names.map(name =>
-                name.replace(/[.*+?^${}()|[\]\\]/g, "\\\\$&")
+                name.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\\\\\\\$&")
             );
 
             const regex = new RegExp(`(${escapedNames.join("|")})`, "g");
@@ -833,93 +833,95 @@
         }
 
 
-        if (section.type === "books") {
-            const items = (section.groups || []).flatMap(group => group.items || []);
-
-            body = `
-    <ol class="pub-inline-list">
-      ${items.map(item => `
-        <li class="pub-inline-item">
-
-          <span class="pub-inline-text">
-            ${boldLabMemberNames(item.meta || "")}
-            ${item.title || ""}
-            ${item.text || ""}
-          </span>
-
-          ${item.url ? `
-            <a href="${item.url}"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="pub-inline-link">🔗</a>
-          ` : ""}
-
-        </li>
-      `).join("")}
-    </ol>
-  `;
-        }
-
-
 
         /* =========================================================
-           出版著作：四个分类，两行展示
-           第一行：第1、3、4类
-           第二行：第2类（三本书）
-           保留原有图书卡片样式
+           CJ Lab · 出版著作 Books
+           第一行：三个分类，各展示一本
+           第二行：青藏高原丛书，展示三本
+           保留原有卡片样式
+           支持点击封面放大
            ========================================================= */
 
         if (section.type === "books") {
 
             const groups = section.groups || [];
 
+            // 单本图书卡片
             const renderBook = item => `
         <div class="book-card">
+
             ${item.image ? `
                 <div class="book-cover">
-                    <img src="${item.image}" alt="${item.title || ""}">
-                </div>
+    <img
+        src="${item.image}"
+        alt="${item.title || ""}"
+        class="book-zoom-image"
+       role="button" tabindex="0"
+        style="cursor: zoom-in;"
+        onclick="openBookImage(this)"
+    >
+</div>
             ` : ""}
 
             <div class="book-info">
+
                 <h4>《${item.title || ""}》</h4>
+
                 <p class="book-author">
                     ${boldLabMemberNames(item.author || "")}
                 </p>
+
                 <p class="book-publisher">
                     ${item.publisher || ""}，${item.year || ""}
                 </p>
+
             </div>
+
         </div>
     `;
 
-            const renderGroup = index => {
+            // 单个图书分类
+            const renderGroup = (index, number) => {
+
                 const group = groups[index];
+
                 if (!group) return "";
 
                 return `
             <div class="books-group">
+
                 <h3 class="books-category-title">
-                    ${index + 1}. ${group.title || ""}
+                    ${number}. ${group.title || ""}
                 </h3>
+
                 <div class="book-grid">
                     ${(group.items || []).map(renderBook).join("")}
                 </div>
+
             </div>
         `;
             };
 
+            // 出版著作整体布局
             body = `
         <div class="books-layout">
 
+            <!-- 第一行：三个分类 -->
             <div class="books-first-row">
-                ${renderGroup(0)}
-                ${renderGroup(1)}
-                ${renderGroup(2)}
+
+                ${renderGroup(0, 1)}
+
+                ${renderGroup(1, 2)}
+
+                ${renderGroup(2, 3)}
+
             </div>
 
+            <!-- 第二行：青藏高原丛书 -->
             <div class="books-second-row">
-                ${renderGroup(3)}
+
+                ${renderGroup(3, 4)}
+
             </div>
 
         </div>
@@ -1032,7 +1034,7 @@
   `;
         }
 
-        /* home 代表性成果  图片设置  */
+        /* home 代表性成果  图片设置 */
         if (section.type === "timeline") {
             body = `
     <div class="timeline">
@@ -1322,7 +1324,7 @@
     //   const script = document.createElement('script');
     //   script.id = 'busuanzi-script';
     //   script.async = true;
-    //   script.src = 'https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
+    //   script.src = 'https\://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
     //   document.body.appendChild(script);
     // }
 
@@ -1552,4 +1554,56 @@ document.getElementById("imageLightbox")?.addEventListener("click", e => {
 
 document.addEventListener("keydown", e => {
     if (e.key === "Escape") closeLightbox();
+});
+
+/* 书籍封面放大：对动态渲染的中英文页面均有效 */
+window.openBookImage = function (img) {
+    let overlay = document.getElementById("bookImageOverlay");
+    if (!overlay) {
+        overlay = document.createElement("div");
+        overlay.id = "bookImageOverlay";
+        overlay.style.cssText = "position:fixed;inset:0;z-index:999999;display:none;align-items:center;justify-content:center;padding:24px;box-sizing:border-box;background:rgba(0,0,0,.9)";
+        overlay.setAttribute("role", "dialog");
+        overlay.setAttribute("aria-modal", "true");
+        overlay.setAttribute("aria-label", "Book cover preview");
+        overlay.innerHTML = `
+            <button class="book-image-close" type="button" aria-label="Close">×</button>
+            <img class="book-image-large" alt="">
+        `;
+        document.body.appendChild(overlay);
+        overlay.querySelector(".book-image-large").style.cssText = "display:block;max-width:95vw;max-height:90vh;width:auto;height:auto;object-fit:contain";
+        overlay.querySelector(".book-image-close").style.cssText = "position:absolute;top:20px;right:30px;background:transparent;border:0;color:white;font-size:40px;cursor:pointer";
+        overlay.addEventListener("click", function (event) {
+            if (event.target === overlay || event.target.closest(".book-image-close")) {
+                window.closeBookImage();
+            }
+        });
+    }
+    const largeImage = overlay.querySelector(".book-image-large");
+    largeImage.src = img.currentSrc || img.src;
+    largeImage.alt = img.alt || "";
+    overlay.style.display = "flex";
+    document.body.classList.add("book-image-open");
+    document.body.style.overflow = "hidden";
+    overlay.querySelector(".book-image-close").focus();
+};
+
+window.closeBookImage = function () {
+    const overlay = document.getElementById("bookImageOverlay");
+    if (overlay) {
+        overlay.style.display = "none";
+        const img = overlay.querySelector(".book-image-large");
+        img.removeAttribute("src");
+    }
+    document.body.classList.remove("book-image-open");
+    document.body.style.overflow = "";
+};
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") window.closeBookImage();
+    if ((event.key === "Enter" || event.key === " ") &&
+        event.target.matches(".book-zoom-image")) {
+        event.preventDefault();
+        window.openBookImage(event.target);
+    }
 });

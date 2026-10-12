@@ -43,8 +43,8 @@ window.PAGE_DATA.zh["people"] = {
         {
           "name": "者孟青",
           "title": "助理研究员",
-          "email": "xxx",
-          "image": "assets/people/image/xxx"
+          "email": "zhemengqing@163.com",
+          "image": "assets/people/image/zmq.jpg"
         },
         {
           "name": "金洁琼",

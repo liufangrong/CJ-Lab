@@ -39,7 +39,7 @@ window.PAGE_DATA.zh["activities"] = {
       items: [
         {
           image: "assets/activities/cj2.jpeg",
-          caption: "车静老师参加第四届全国动物声学科学与应用大会做报告 (2026.04)"
+          caption: "车静老师在第四届全国动物声学科学与应用大会做报告 (2026.04)"
         },
         {
           image: "assets/activities/xshd1.jpg",
@@ -47,7 +47,7 @@ window.PAGE_DATA.zh["activities"] = {
         },
           {
           image: "assets/activities/xshd2.png",
-          caption: "亚洲两栖爬行动物学国际前沿论坛-实验室在专题报告与墙报交流现场(2026.06)"
+          caption: "亚洲两栖爬行动物学国际前沿论坛-Che Lab成员专题报告与墙报交流(2026.06)"
         },
         {
           image: "assets/activities/xsbg3.png",

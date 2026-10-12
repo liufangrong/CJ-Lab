@@ -470,13 +470,19 @@ body[data-page="people"]
   text-align: center;
 }
 
+
+/* 已毕业 / 出站成员：姓名样式 */
+
 body[data-page="people"]
 .people-section.former-members .person-name {
   margin-top: 8px;
 
-  font-weight: 700;
+  font-size: 20px;      /* 姓名字号，在这里修改 */
+  font-weight: 700;     /* 字体加粗 */
+  line-height: 1.5;
   color: #243447;
 }
+
 
 body[data-page="people"]
 .people-section.former-members .person-title {

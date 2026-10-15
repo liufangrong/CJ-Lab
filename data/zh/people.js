@@ -214,7 +214,7 @@ window.PAGE_DATA.zh["people"] = {
       "items": [
         {
           "name": "陈益静",
-          "title": "出站博士后（云大联合培养）",
+          "title": "2026出站博后（云大联培）",
           "lab": "",
           "research": "",
           "email": "",
@@ -222,7 +222,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "吴云鹤",
-          "title": "博士毕业生",
+          "title": "2020届博士毕业生",
           "lab": "",
           "research": "",
           "email": "",
@@ -230,7 +230,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "袁智勇",
-          "title": "博士毕业生",
+          "title": "2016届博士毕业生",
           "lab": "",
           "research": "",
           "email": "",
@@ -238,7 +238,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "董文捷",
-          "title": "博士毕业生",
+          "title": "2026届博士毕业生",
           "lab": "",
           "research": "",
           "email": "",

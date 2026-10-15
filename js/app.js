@@ -887,21 +887,23 @@
             body = `
         <div class="books-layout">
 
-            <!-- 第一行：三个分类 -->
-            <div class="books-first-row">
-
-                ${renderGroup(0, 1)}
-
-                ${renderGroup(1, 2)}
-
-                ${renderGroup(2, 3)}
-
-            </div>
+            
 
             <!-- 第二行：青藏高原丛书 -->
             <div class="books-second-row">
 
-                ${renderGroup(3, 4)}
+                ${renderGroup(3, 1)}
+
+            </div>
+            
+            <!-- 第一行：三个分类 -->
+            <div class="books-first-row">
+
+                ${renderGroup(0, 2)}
+
+                ${renderGroup(2, 3)}
+                
+                ${renderGroup(1, 4)}
 
             </div>
 

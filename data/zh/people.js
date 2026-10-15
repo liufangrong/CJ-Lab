@@ -246,7 +246,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "周炜帏",
-          "title": "博士毕业生",
+          "title": "2012届博士毕业生",
           "lab": "",
           "research": "",
           "email": "",
@@ -270,7 +270,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "陈进民",
-          "title": "博士毕业生",
+          "title": "2019届博士毕业生",
           "lab": "",
           "research": "",
           "email": "",
@@ -278,7 +278,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "张宝林",
-          "title": "博士毕业生",
+          "title": "2018届博士毕业生",
           "lab": "",
           "research": "",
           "email": "",

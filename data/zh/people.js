@@ -176,13 +176,13 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "范浩然",
-          "title": "2025级硕士研究生，主要研究方向为XXX",
+          "title": "2025级动物学专业硕士研究生 主要研究方向为印缅生物多样性热点地区陆生脊椎动物多样性格局形成与演化。",
           "email": "fanhaoran25@mails.ucas.ac.cn",
           "image": "assets/people/image/范浩然 1.jpg"
         },
         {
           "name": "王宇晨",
-          "title": "2025级生态学硕士研究生（云南大学联合培养）.主要研究方向为XXX",
+          "title": "2025级动物学专业硕士研究生（云南大学联合培养）.主要研究方向为荒漠沙蜥性别决定方式",
           "email": "ycwang@stu.ynu.edu.cn",
           "image": "assets/people/image/王宇晨 1.png"
         },

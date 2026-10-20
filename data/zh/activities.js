@@ -38,8 +38,8 @@ window.PAGE_DATA.zh["activities"] = {
       title: "学术交流",
       items: [
         {
-          image: "assets/activities/cj2.jpeg",
-          caption: "车静老师在第四届全国动物声学科学与应用大会做报告 (2026.04)"
+          image: "assets/activities/xsbg5.jpg",
+          caption: "Che Lab成员参加中国遗传学会进化遗传学分会2026年学术年会 (2026.10)"
         },
         {
           image: "assets/activities/xshd1.jpg",
@@ -56,6 +56,10 @@ window.PAGE_DATA.zh["activities"] = {
         {
           image: "assets/activities/xsbg4.png",
           caption: "亚洲两栖爬行动物学国际前沿论坛-大会报告现场(2026.06)"
+        },
+        {
+          image: "assets/activities/cj2.jpeg",
+          caption: "车静老师在第四届全国动物声学科学与应用大会做报告 (2026.04)"
         },
       ]
     },

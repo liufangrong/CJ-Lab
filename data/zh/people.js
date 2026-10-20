@@ -36,7 +36,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "Alex Plimo Karuno",
-          "title": "博士后研究人员，主要研究方向包括生物多样性保护、气候适应生态基因组学和物种形成基因组学。目前主要研究气候变化背景下青藏高原高海拔物种的气候适应机制，结合基因组学与生态学方法，探究高海拔两栖爬行动物对环境变化的响应及适应机制，为山地生态系统的生物多样性保护与管理提供科学依据。主要研究项目包括：青藏高原高海拔物种的气候适应生态基因组学研究，以及青藏高原沙蜥属（Phrynocephalus）物种形成过程中基因组分化机制研究。已在Conservation Biology 等期刊发表 SCI 论文 5 篇。",
+          "title": "助理研究员，主要研究方向包括生物多样性保护、气候适应生态基因组学和物种形成基因组学。目前主要研究气候变化背景下青藏高原高海拔物种的气候适应机制，结合基因组学与生态学方法，探究高海拔两栖爬行动物对环境变化的响应及适应机制，为山地生态系统的生物多样性保护与管理提供科学依据。主要研究项目包括：青藏高原高海拔物种的气候适应生态基因组学研究，以及青藏高原沙蜥属（Phrynocephalus）物种形成过程中基因组分化机制研究。已在Conservation Biology 等期刊发表 SCI 论文 5 篇。",
           "email": "alexplimo@hotmail.com",
           "image": "assets/people/image/Alex 2.jpg"
         },
@@ -134,7 +134,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "朱光福",
-          "title": "朱光福，2025 级生态学博士生（云南大学联合培养）。主要聚焦水网环境 DNA（eDNA）、物种分布建模与系统保护规划等交叉研究。曾任中科院昆明植物所科研助理（2021–2025），从事植物群体遗传研究。以共一在 Global Change Biology、Conservation Biology 等期刊发表论文，累计参研发表论文 23 篇，Google Scholar 引用 780 余次。",
+          "title": "2025 级生态学博士生（云南大学联合培养）。主要聚焦水网环境 DNA（eDNA）、物种分布建模与系统保护规划等交叉研究。曾任中科院昆明植物所科研助理（2021–2025），从事植物群体遗传研究。以共一在 Global Change Biology、Conservation Biology 等期刊发表论文，累计参研发表论文 23 篇，Google Scholar 引用 780 余次。",
           "email": "1661837506@qq.com",
           "image": "assets/people/image/朱光福 2.png"
         },

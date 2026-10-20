@@ -17,14 +17,14 @@ window.PAGE_DATA.en["people"] = {
         },
         {
           "name": "CHAI Jing",
-          "title": "Associate Research Professor",
+          "title": "Associate Researcher and Master's Supervisor. His research focuses on animal biodiversity and evolutionary biology, as well as conservation genetics of rare and endangered animals. In recent years, he has served as principal investigator of projects funded by the Regional Science Fund of the National Natural Science Foundation of China (NSFC) and the China Postdoctoral Science Foundation. He has also led a special project on basic resource surveys funded by the Ministry of Science and Technology of China and participated as a key research team member in projects including the Major Research Program and Integration Project of the NSFC, as well as the Chinese Academy of Sciences (CAS) Strategic Priority Research Program (Class B). He has published 11 SCI-indexed papers in journals including PNAS, Science Advances, Science Bulletin, and Zoological Research.",
           "email": "chaijing@mail.kiz.ac.cn",
           "image": "assets/people/image/柴静 1.jpg",
           "profileUrl": "profile.html?id=cj"
         },
         {
           "name": "GAO Wei",
-          "title": "Associate Research Professor",
+          "title": "Associate Researcher and Master's Supervisor. His research focuses on the mechanisms underlying biodiversity formation and phenotypic evolution, with a particular emphasis on amphibians and reptiles. He has published multiple research papers as first or co-first author in leading scientific journals, including PNAS and Molecular Biology and Evolution. He currently leads a project funded by the Young Scientists Fund of the National Natural Science Foundation of China (NSFC) and serves as a subproject leader for the National Key R&D Program of China and the Key R&D Program of the Yunnan Provincial Department of Science and Technology. He has been selected for support under the Chinese Academy of Sciences (CAS) Special Research Assistant Program and the Young Talent Program of Yunnan Province's Xingdian Talent Support Plan. He also serves as a Young Editorial Board Member of Integrative Zoology.",
           "email": "gaowei@mail.kiz.ac.cn",
           "image": "assets/people/image/高伟 1.jpg",
           "profileUrl": "profile.html?id=gw"
@@ -38,14 +38,14 @@ window.PAGE_DATA.en["people"] = {
         },
         {
           "name": "KARUNO Alex Plimo",
-          "title": "Assistant Researcher",
+          "title": "Postdoctoral Researcher. His main research interests include biodiversity conservation, ecological genomics of climate adaptation, and speciation genomics. His current research focuses on the mechanisms of climate adaptation in high-elevation species on the Qinghai–Tibetan Plateau in the context of climate change. By integrating genomic and ecological approaches, he investigates the responses and adaptive mechanisms of high-elevation herpetofauna to environmental change, aiming to provide scientific evidence for biodiversity conservation and management. His main research projects include ecological genomics of climate adaptation in high-elevation species on the Qinghai–Tibetan Plateau and the mechanisms of genomic differentiation during speciation in the genus Phrynocephalus on the Qinghai–Tibetan Plateau. He has published five papers in SCI-indexed journals, including Conservation Biology.",
           "email": "alexplimo@hotmail.com",
           "image": "assets/people/image/Alex 2.jpg",
           "profileUrl": "profile.html?id=Alex"
         },
         {
           "name": "ZHE Mengqing",
-          "title": "Assistant Researcher",
+          "title": "Assistant Researcher. Research focuses on responses of herpetofauna to climate change. Research interests cover environment driven genetic differentiation and local adaptation, species climate vulnerability, and physiological responses and molecular adaptive mechanisms of herpetofauna under extreme climate. First-author research papers have been published in journals including Integrative Zoology and Plant Diversity. Research projects undertaken include the Scientific Research Foundation of the Yunnan Provincial Department of Education (2024) and the 15th Graduate Research Innovation Project of Yunnan University. Contributed to research conducted under the Strategic Priority Research Program (Category B) of the Chinese Academy of Sciences and Yunnan Fundamental Research Projects. Received the Second Prize for Academic Presentation at the 2025 Symposium of the Herpetological Branch of the Zoological Society of China.",
           "email": "zhemengqing@163.com",
           "image": "assets/people/image/zmq.jpg"
         },
@@ -80,7 +80,7 @@ window.PAGE_DATA.en["people"] = {
       "items": [
         {
           "name": "LU Chenqi",
-          "title": "Ph.D. Candidate",
+          "title": "Chenqi Lu, Ph.D. candidate in Zoology, enrolled in 2022. His research focuses on the formation, evolution, and conservation of large-scale biodiversity patterns. As first author or co-first author, he has published six papers in academic journals including Science, National Science Review, Biological Conservation, Zoological Research, Chinese Science Bulletin, and Biodiversity Science. In addition, he has edited a popular science book and a field guide. He has received honors including the President's Award of the Chinese Academy of Sciences (Excellent Prize) and the National Scholarship for Doctoral Students.",
           "email": "luchenqi1997@163.com",
           "image": "assets/people/image/卢宸祺 1.jpg",
           "profileUrl": "profile.html?id=lcq"
@@ -115,7 +115,7 @@ window.PAGE_DATA.en["people"] = {
         },
         {
           "name": "Manh Le Van",
-          "title": "Ph.D. Candidate",
+          "title": "Ph.D. Candidate. His research focuses on the taxonomy, evolutionary biology, biogeography, and conservation of amphibians and reptiles, with a long-standing interest in their species diversity and evolutionary history in Vietnam and across Asia. To date, he has published more than 35 scientific papers in this field, making significant contributions to the description of new species and the resolution of long-standing taxonomic problems. In recent years, he has expanded his research into genomics, focusing on the mechanisms of speciation in the presence of gene flow and introgression, as well as the genomic barriers that maintain species integrity despite ongoing hybridization. By integrating genome-scale data, taxonomic expertise, and fieldwork, he aims to elucidate the mechanisms underlying the origin and maintenance of amphibian diversity across Asia and provide a scientific basis for biodiversity conservation in Southeast Asia.",
           "email": "leemanh94@gmail.com",
           "image": "assets/people/image/Manh 1.jpg",
           "profileUrl": "profile.html?id=manh"
@@ -178,7 +178,7 @@ window.PAGE_DATA.en["people"] = {
         },
         {
           "name": "WANG Yuwen",
-          "title": "M.S. Candidate",
+          "title": "M.S. Candidate. I am studying the molecular basis of convergent gular spot coloration in three blue lineages of mountain dragon lizards (Diploderma) from the Hengduan Mountains. These lizards exhibit remarkable diversity in gular spot color, with similar color phenotypes evolving repeatedly in different evolutionary lineages. By combining histological and genomic analyses, we aim to understand how these color differences are produced and identify the genes underlying repeated color evolution, test three evolutionary hypotheses: independent genetic evolution, repeated recruitment of shared ancestral variation, and introgression. ",
           "email": "yuwen030129@163.com",
           "image": "assets/people/image/王钰文 3.png",
           "profileUrl": "profile.html?id=wyw"

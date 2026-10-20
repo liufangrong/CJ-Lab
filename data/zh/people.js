@@ -92,13 +92,13 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "尹浩萍",
-          "title": "2023级动物学专业博士研究生。主要研究方向为XXX",
+          "title": "2023级遗传学专业博士研究生。主要研究方向为珍稀濒危大鲵的保护生物学研究：1. 基于整合行为和遗传方法探讨大鲵的繁殖行为，对于中国大鲵人工保育作出的启示。2. 构建大鲵不同支系物种间的杂交实验体系验证合子后隔离及其程度，为中国大鲵物种界定及保护单元确立作出提示。3. 基于基因组学数据评估养殖大鲵的遗传资源现状，为人为介导下的物种杂交的保护策略提供参考。科研成果：主导：Integrated behavioral and genetic evidence reveals mating tactics in Chinese giant salamander (under review); 参与：江西大鲵野外种群现状及栖息地评估(2025),生物多样性；参与：中国特有“活化石”: 扬子鳄与大鲵的研究进展与保护启示(2026), 科学通报；获得中国动物学会第十四届全国动物生理生态学术研讨会优秀墙报奖。科普成果：获得2026年“中国科学院第二十二届公众科学日”科普志愿者；参与拍摄：江西大鲵——世界新种大鲵发现始末。",
           "email": "1453584074@qq.com",
           "image": "assets/people/image/尹浩萍 3.png"
         },
         {
           "name": "荀皓",
-          "title": "2024级动物学专业博士研究生。主要研究方向为XXX",
+          "title": "2024级动物学专业博士研究生。主要研究方向为爬行动物分、物种形成与演化。目前以第一作者在Zootaxa期刊发表SCI论文1篇",
           "email": "xunhao@mail.kiz.ac.cn",
           "image": "assets/people/image/荀皓 3.png"
         },
@@ -122,7 +122,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "李柳林",
-          "title": "2025级动物学博士研究生。主要研究方向为XXX",
+          "title": "2025级动物学专业博士研究生。研究方向为进化生物学与保护基因组学。",
           "email": "liulinli0412@163.com",
           "image": "assets/people/image/李柳林 3.png"
         },
@@ -164,7 +164,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "金彦君",
-          "title": "2024级生态学硕士研究生（云南大学联合培养）。主要研究方向为XXX",
+          "title": "2024级动物学专业硕士研究生（云南大学联合培养）。主要研究生物多样性进化方向，关注物种分化、适应性进化及物种边界的维持机制等方面研究",
           "email": "jinyj@stu.ynu.edu.cn",
           "image": "assets/people/image/金彦君 1.jpg"
         },

@@ -30,7 +30,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "王剀",
-          "title": "副研究员，",
+          "title": "副研究员，长期致力于中国横断山地区两栖爬行动物的研究，已描述发表中国两栖爬行动物新物种6种，其中包括澜沧江上游攀蜥属新种2个。尤其在澜沧江滇藏流域有着持续超过2年的野外考察经验。也是一位两栖爬行动物摄影师，曾获中国科学院成都生物研究所第一届两栖爬行动物摄影大赛优秀奖。",
           "email": "wangkai@mail.kiz.ac.cn",
           "image": "assets/people/image/王剀 2.jpg"
         },
@@ -92,13 +92,13 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "尹浩萍",
-          "title": "2023级动物学专业博士研究生",
+          "title": "2023级动物学专业博士研究生。主要研究方向为XXX",
           "email": "1453584074@qq.com",
           "image": "assets/people/image/尹浩萍 3.png"
         },
         {
           "name": "荀皓",
-          "title": "2024级动物学专业博士研究生",
+          "title": "2024级动物学专业博士研究生。主要研究方向为XXX",
           "email": "xunhao@mail.kiz.ac.cn",
           "image": "assets/people/image/荀皓 3.png"
         },
@@ -116,13 +116,13 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "李凌",
-          "title": "2024级生态学专业博士研究生（云南大学联合培养），主要研究方向为两栖爬行动物分类学、行为生态学与适应性进化。已发表学术论文9篇，其中以第一作者或共同第一作者发表5篇，相关成果发表于 Zootaxa、Asian Herpetological Research、Herpetological Journal、ZooKeys 和 Ecology and Evolution 等期刊。研究内容涵盖龙蜥属及拟蜥属物种分类与新种描述、形态分化与咬合力、逃逸行为、栖息地选择及生态适应等，致力于揭示两栖爬行动物的物种多样性及其演化与适应机制。",
+          "title": "2024级生态学专业博士研究生（云南大学联合培养）。主要研究方向为两栖爬行动物分类学、行为生态学与适应性进化。已发表学术论文9篇，其中以第一作者或共同第一作者发表5篇，相关成果发表于 Zootaxa、Asian Herpetological Research、Herpetological Journal、ZooKeys 和 Ecology and Evolution 等期刊。研究内容涵盖龙蜥属及拟蜥属物种分类与新种描述、形态分化与咬合力、逃逸行为、栖息地选择及生态适应等，致力于揭示两栖爬行动物的物种多样性及其演化与适应机制。",
           "email": "liling8514@163.com",
           "image": "assets/people/image/李凌 1.jpg"
         },
         {
           "name": "李柳林",
-          "title": "2025级动物学博士研究生。主要研究方向为",
+          "title": "2025级动物学博士研究生。主要研究方向为XXX",
           "email": "liulinli0412@163.com",
           "image": "assets/people/image/李柳林 3.png"
         },
@@ -134,13 +134,14 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "朱光福",
-          "title": "2025级生态学博士研究生（云南大学联合培养）。主要研究方向为",
+          "title": "2025级生态学专业博士研究生（云南大学联合培养）。主要从事环境DNA、空间数据分析和生物多样性保护等研究。2021至2025年在中国科学院昆明植物研究所李德铢研究员科研助理，主要从事植物群体遗传数据的Meta分析工作。目前已参与在Plant Communications等期刊发表了SCI论文12篇和中文核心论文3篇，谷歌学术的用户名是 Guang-Fu Zhu，已\n" +
+              "累计引用 306 次。",
           "email": "1661837506@qq.com",
           "image": "assets/people/image/朱光福 2.png"
         },
         {
           "name": "毛熠轩",
-          "title": "2026级动物学博士研究生。主要研究方向为",
+          "title": "2026级动物学博士研究生。主要研究方向为XXX",
           "email": "myx_basil@163.com",
           "image": "assets/people/image/毛熠轩 3.png"
         },
@@ -200,7 +201,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "郑方圆",
-          "title": "2026级硕士研究生（云大联合培养），当前进行课程任务学习，主要研究方向待定",
+          "title": "2026级硕士研究生（云大联合培养），当前进行课程任务学习，主要研究方向待定。",
           "email": "zfydhr@126.com",
           "image": "assets/people/image/郑方圆1.jpg"
         },

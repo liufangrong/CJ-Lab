@@ -87,7 +87,7 @@ window.PAGE_DATA.en["people"] = {
         },
         {
           "name": "FENG Xiaogang",
-          "title": "Ph.D. Candidate",
+          "title": "Ph.D. Candidate in Zoology (2022 cohort). His research focuses on the convergent evolution of viviparity in Phrynocephalus lizards and its underlying molecular mechanisms, with particular emphasis on the molecular and cellular mechanisms of uterine remodeling in viviparous lizards and comparative studies across amniotes. He has published one first-author paper in Integrative Zoology. In 2025, he was selected for the Doctoral Student Special Program of the China Association for Science and Technology's Young Science and Technology Talent Cultivation Project, with the China Association of Life Science Societies serving as the supporting society. He received Second Prize for Outstanding Oral Presentation at both the Biomedical Innovation Summit on Complex Trait-Driven Research and the 2025 Academic Symposium of the Herpetological Society of China. His honors include the National Graduate Scholarship, the Second-Class KASMA Research Support Scholarship for Doctoral Students, and the Outstanding Student Award from the University of Chinese Academy of Sciences, among other distinctions.",
           "email": "fengxiaogang@mail.kiz.ac.cn",
           "image": "assets/people/image/冯小刚 3.png",
           "profileUrl": "profile.html?id=fxg"
@@ -122,7 +122,7 @@ window.PAGE_DATA.en["people"] = {
         },
         {
           "name": "CAO Rujun",
-          "title": "Ph.D. Candidate",
+          "title": "Ph.D. Candidate in Zoology (2024 cohort). Her research focuses on the evolutionary and developmental biology of the Chinese giant salamander and amphibian biodiversity conservation. She has participated in research projects supported by the Chinese Academy of Sciences (CAS), including the Strategic Priority Research Program (Class B) and the Science and Technology Service Network Initiative (STS Program), as well as a subproject on risk assessment and early warning systems for important strategic biological resources. She has contributed to two journal articles published in *Zoological Research* and *Biodiversity Science*, and one conference abstract. Her research covers Chinese giant salamander conservation, amphibian diversity surveys, and assessments of wild salamander populations and their habitats. Her honors include two awards from the Kunming Institute of Zoology in 2020 and a Second Prize in the “Creative KIZ” Cultural and Creative Design Competition in 2025.",
           "email": "caorj915@foxmail.com",
           "image": "assets/people/image/曹如君 3.png",
           "profileUrl": "profile.html?id=crj"
@@ -171,7 +171,7 @@ window.PAGE_DATA.en["people"] = {
         },
         {
           "name": "FAN Zhikang",
-          "title": "M.S. Candidate",
+          "title": "M.S. Candidate in Zoology (Class of 2024), whose primary research interest is amphibian and reptile species diversity. His research focuses on taxonomy, phylogenetics, biodiversity surveys, and ecology of amphibians and reptiles, with particular emphasis on species composition, geographical distribution, evolutionary relationships, and habitat characteristics.",
           "email": "18937342432@163.com",
           "image": "assets/people/image/范志康.png",
           "profileUrl": "profile.html?id=fzk"

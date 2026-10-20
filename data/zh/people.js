@@ -80,25 +80,25 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "冯小刚",
-          "title": "2022级博士研究生",
+          "title": "2022级动物学专业博士研究生，主要研究方向为沙蜥胎生的趋同演化及其分子机制，重点关注胎生沙蜥子宫重塑的分子细胞机制及跨羊膜动物比较研究。以第一作者在 Integrative Zoology 发表论文1篇。2025年入选中国科协青年科技人才培育工程博士生专项计划，托举学会为中国科协生命科学学会联合体。在复杂性状驱动的生物医药创新峰会及中国动物学会两栖爬行学分会2025年学术研讨会上均获优秀报告二等奖。曾获中国科学院大学研究生国家奖学金、博士生喀斯玛助力科研奖学金二等奖和中国科学院大学“三好学生”等多个荣誉奖项。",
           "email": "fengxiaogang@mail.kiz.ac.cn",
           "image": "assets/people/image/冯小刚 3.png"
         },
         {
           "name": "万涵",
-          "title": "2023级博士研究生",
+          "title": "2023级动物学专业博士研究生",
           "email": "wanhan@mail.kiz.ac.cn",
           "image": "assets/people/image/万涵 1.jpg"
         },
         {
           "name": "尹浩萍",
-          "title": "2023级博士研究生",
+          "title": "2023级动物学专业博士研究生",
           "email": "1453584074@qq.com",
           "image": "assets/people/image/尹浩萍 3.png"
         },
         {
           "name": "荀皓",
-          "title": "2024级博士研究生",
+          "title": "2024级动物学专业博士研究生",
           "email": "xunhao@mail.kiz.ac.cn",
           "image": "assets/people/image/荀皓 3.png"
         },
@@ -110,19 +110,19 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "曹如君",
-          "title": "2024级博士研究生",
+          "title": "2024级动物学专业博士研究生，主要研究方向为中国大鲵进化与发育及两栖动物多样性保护。参与中国科学院战略性先导科技专项（B类）、中国科学院科技服务网络计划（STS计划）区域重点项目及重要战略生物资源安全风险评估与预警体系研究相关项目。已参与发表期刊论文2篇，发表于 Zoological Research 和《生物多样性》，另有学术会议论文摘要1篇，研究成果涉及野生中国大鲵保护、两栖动物物种多样性调查及大鲵野外种群与栖息地评估。曾获昆明动物研究所“我爱我所”书画摄影比赛绘画组二等奖、研究生公共事务“工作标兵”三等奖，以及“灵韵焕新，创绘KIZ”文创设计大赛二等奖。",
           "email": "caorj915@foxmail.com",
           "image": "assets/people/image/曹如君 3.png"
         },
         {
           "name": "李凌",
-          "title": "2024级博士研究生（云大联合培养）",
+          "title": "2024级生态学专业博士研究生（云南大学联合培养），主要研究方向为两栖爬行动物分类学、行为生态学与适应性进化。已发表学术论文9篇，其中以第一作者或共同第一作者发表5篇，相关成果发表于 Zootaxa、Asian Herpetological Research、Herpetological Journal、ZooKeys 和 Ecology and Evolution 等期刊。研究内容涵盖龙蜥属及拟蜥属物种分类与新种描述、形态分化与咬合力、逃逸行为、栖息地选择及生态适应等，致力于揭示两栖爬行动物的物种多样性及其演化与适应机制。",
           "email": "liling8514@163.com",
           "image": "assets/people/image/李凌 1.jpg"
         },
         {
           "name": "李柳林",
-          "title": "2025级博士研究生",
+          "title": "2025级动物学博士研究生",
           "email": "liulinli0412@163.com",
           "image": "assets/people/image/李柳林 3.png"
         },
@@ -134,25 +134,25 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "朱光福",
-          "title": "2025级博士研究生（云大联合培养）",
+          "title": "2025级生态学博士研究生（云南大学联合培养）。",
           "email": "1661837506@qq.com",
           "image": "assets/people/image/朱光福 2.png"
         },
         {
           "name": "毛熠轩",
-          "title": "2026级博士研究生",
+          "title": "2026级动物学博士研究生",
           "email": "myx_basil@163.com",
           "image": "assets/people/image/毛熠轩 3.png"
         },
         {
           "name": "刘方荣",
-          "title": "2026级生态学博士研究生（云南大学联合培养），软件设计师（中级），主要研究方向为演化生物学、计算生物学、自然语言处理与深度学习等; 以第一作者（含共一）在《BMC Genomics》等期刊发表SCI论文4篇，登记软件著作权7项，主持省教育厅自然科学基金项目1项（研究生类），曾获本科生国家奖学金、研究生国家奖学金等多个荣誉奖项；",
+          "title": "2026级生态学博士研究生（云南大学联合培养），软件设计师（中级），主要研究方向为羊膜动物的胎生趋同进化、计算生物学、自然语言处理与深度学习等; 以第一作者（含共一）在《BMC Genomics》等期刊发表SCI论文4篇，登记软件著作权7项，主持省教育厅自然科学基金项目1项（研究生类），曾获省级三好学生、省级优秀学生干部、省政府奖学金、国家奖学金、研究生国家奖学金等多个荣誉奖项。",
           "email": "liufangrong@stu.ynu.edu.cn",
           "image": "assets/people/image/lfr3.png"
         },
         {
           "name": "范志康",
-          "title": "2024级硕士研究生",
+          "title": "2024级动物学专业硕士研究生，主要研究方向为两栖爬行动物物种多样性。研究内容主要涉及两栖爬行动物的物种分类、系统发育、生物多样性调查及生态学研究，重点关注两栖爬行动物的物种组成、地理分布、系统演化关系及其生境特征。",
           "email": "18937342432@163.com",
           "image": "assets/people/image/范志康.png"
         },
@@ -164,7 +164,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "金彦君",
-          "title": "2024级硕士研究生（云大联合培养）",
+          "title": "2024级生态学硕士研究生（云南大学联合培养）。主要研究方向为",
           "email": "jinyj@stu.ynu.edu.cn",
           "image": "assets/people/image/金彦君 1.jpg"
         },
@@ -182,7 +182,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "王宇晨",
-          "title": "2025级硕士研究生（云大联合培养）",
+          "title": "2025级生态学硕士研究生（云南大学联合培养）",
           "email": "ycwang@stu.ynu.edu.cn",
           "image": "assets/people/image/王宇晨 1.png"
         },

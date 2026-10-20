@@ -422,6 +422,5 @@ window.PAGE_DATA.zh["people"] = {
         },
       ]
     },
-
   ]
 };

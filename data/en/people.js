@@ -192,7 +192,7 @@ window.PAGE_DATA.en["people"] = {
         },
         {
           "name": "GAO Zishuo",
-          "title": "M.S. Candidate",
+          "title": "M.S. Candidate in Zoology, enrolled in 2025. His primary research focuses on the evolution of olfactory receptors in amphibians and reptiles.",
           "email": "gzs12345678900922@163.com",
           "image": "assets/people/image/高梓硕 2.png",
           "profileUrl": "profile.html?id=gzs"

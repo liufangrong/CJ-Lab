@@ -170,7 +170,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "高梓硕",
-          "title": "2025级硕士研究生。主要研究方向为XXX",
+          "title": "2025级动物学专业硕士研究生，主要研究方向两栖爬行类嗅觉受体的演化",
           "email": "gzs12345678900922@163.com",
           "image": "assets/people/image/高梓硕 2.png"
         },

@@ -122,7 +122,7 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "李柳林",
-          "title": "2025级动物学博士研究生",
+          "title": "2025级动物学博士研究生。主要研究方向为",
           "email": "liulinli0412@163.com",
           "image": "assets/people/image/李柳林 3.png"
         },
@@ -134,19 +134,19 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "朱光福",
-          "title": "2025级生态学博士研究生（云南大学联合培养）。",
+          "title": "2025级生态学博士研究生（云南大学联合培养）。主要研究方向为",
           "email": "1661837506@qq.com",
           "image": "assets/people/image/朱光福 2.png"
         },
         {
           "name": "毛熠轩",
-          "title": "2026级动物学博士研究生",
+          "title": "2026级动物学博士研究生。主要研究方向为",
           "email": "myx_basil@163.com",
           "image": "assets/people/image/毛熠轩 3.png"
         },
         {
           "name": "刘方荣",
-          "title": "2026级生态学博士研究生（云南大学联合培养），软件设计师（中级），主要研究方向为羊膜动物的胎生趋同进化、计算生物学、自然语言处理与深度学习等; 以第一作者（含共一）在《BMC Genomics》等期刊发表SCI论文4篇，登记软件著作权7项，主持省教育厅自然科学基金项目1项（研究生类），曾获省级三好学生、省级优秀学生干部、省政府奖学金、国家奖学金、研究生国家奖学金等多个荣誉奖项。",
+          "title": "2026级生态学博士研究生（云南大学联合培养）。软件设计师（中级），主要研究方向为羊膜动物的胎生趋同进化、计算生物学、自然语言处理与深度学习等; 以第一作者（含共一）在《BMC Genomics》等期刊发表SCI论文4篇，登记软件著作权7项，主持省教育厅自然科学基金项目1项（研究生类），曾获省级三好学生、省级优秀学生干部、省级优秀毕业生、省政府奖学金、国家奖学金、研究生国家奖学金等多个荣誉奖项。",
           "email": "liufangrong@stu.ynu.edu.cn",
           "image": "assets/people/image/lfr3.png"
         },
@@ -164,43 +164,43 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "金彦君",
-          "title": "2024级生态学硕士研究生（云南大学联合培养）。主要研究方向为",
+          "title": "2024级生态学硕士研究生（云南大学联合培养）。主要研究方向为XXX",
           "email": "jinyj@stu.ynu.edu.cn",
           "image": "assets/people/image/金彦君 1.jpg"
         },
         {
           "name": "高梓硕",
-          "title": "2025级硕士研究生",
+          "title": "2025级硕士研究生。主要研究方向为XXX",
           "email": "gzs12345678900922@163.com",
           "image": "assets/people/image/高梓硕 2.png"
         },
         {
           "name": "范浩然",
-          "title": "2025级硕士研究生",
+          "title": "2025级硕士研究生，主要研究方向为XXX",
           "email": "fanhaoran25@mails.ucas.ac.cn",
           "image": "assets/people/image/范浩然 1.jpg"
         },
         {
           "name": "王宇晨",
-          "title": "2025级生态学硕士研究生（云南大学联合培养）",
+          "title": "2025级生态学硕士研究生（云南大学联合培养）.主要研究方向为XXX",
           "email": "ycwang@stu.ynu.edu.cn",
           "image": "assets/people/image/王宇晨 1.png"
         },
         {
           "name": "郑雨涵",
-          "title": "郑雨菡,2026级动物学专业硕士研究生",
+          "title": "2026级动物学专业硕士研究生。当前进行课程任务学习，主要研究方向待定。",
           "email": "zyhzyh_yuhanzheng@163.com",
           "image": "assets/people/image/郑雨涵1.jpg"
         },
         {
           "name": "龙仪",
-          "title": "2026级硕士研究生",
+          "title": "2026级动物学专业硕士研究生。当前进行课程任务学习，主要研究方向待定。",
           "email": "longyi_8882026@qq.com",
           "image": "assets/people/image/龙仪1.jpg"
         },
         {
           "name": "郑方圆",
-          "title": "2026级硕士研究生（云大联合培养），目前在云南大学进行专业课程学习",
+          "title": "2026级硕士研究生（云大联合培养），当前进行课程任务学习，主要研究方向待定",
           "email": "zfydhr@126.com",
           "image": "assets/people/image/郑方圆1.jpg"
         },

@@ -196,7 +196,7 @@ body[data-page="people"]
 
   grid-template-columns: minmax(0, 1fr);
 
-  gap: 16px;
+  gap: 40px;
 
   width: 100%;
 }
@@ -610,4 +610,59 @@ body[data-page="people"]:lang(en)
   height: 0;
   padding: 0;
   margin: 0;
+}
+
+
+/* 已毕业/出站成员：内部分类小标题 */
+.people-section.former-members .people-subgroup {
+  margin-top: 28px;
+}
+
+.people-section.former-members .people-subgroup-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 18px;
+  color: #174b78;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.people-section.former-members .people-subgroup-title::before {
+  content: "";
+  display: block;
+  flex: 0 0 7px;
+  height: 26px;
+  border-radius: 4px;
+  background: linear-gradient(
+          to bottom,
+          #d84a4a 0%,
+          #174b78 100%
+  );
+}
+
+.people-section.former-members .people-subgroup:first-of-type {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .people-section.former-members .people-subgroup-title {
+    font-size: 21px;
+  }
+}
+
+/* 个人主页按钮：移动到左侧姓名下方，仅作用于人员页面 */
+body[data-page="people"]
+.people-section.current-members .person-personal .person-homepage-button {
+  display: block;
+  width: 100%;
+  max-width: var(--people-photo-width, 160px);
+  box-sizing: border-box;
+  margin-top: 12px;
+  padding: 8px 5px;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+  overflow-wrap: anywhere;
 }

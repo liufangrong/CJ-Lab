@@ -34,37 +34,37 @@ window.PAGE_DATA.zh["people"] = {
         },
         {
           "name": "王剀",
-          "title": "副研究员，长期致力于中国横断山地区两栖爬行动物的研究，已描述发表中国两栖爬行动物新物种6种，其中包括澜沧江上游攀蜥属新种2个。尤其在澜沧江滇藏流域有着持续超过2年的野外考察经验。也是一位两栖爬行动物摄影师，曾获中国科学院成都生物研究所第一届两栖爬行动物摄影大赛优秀奖。",
+          "title": "副研究员。XXX",
           "email": "wangkai@mail.kiz.ac.cn",
           "image": "assets/people/image/王剀 2.jpg"
         },
         {
           "name": "Alex Plimo Karuno",
-          "title": "助理研究员，主要研究方向包括生物多样性保护、气候适应生态基因组学和物种形成基因组学。目前主要研究气候变化背景下青藏高原高海拔物种的气候适应机制，结合基因组学与生态学方法，探究高海拔两栖爬行动物对环境变化的响应及适应机制，为山地生态系统的生物多样性保护与管理提供科学依据。主要研究项目包括：青藏高原高海拔物种的气候适应生态基因组学研究，以及青藏高原沙蜥属（Phrynocephalus）物种形成过程中基因组分化机制研究。已在Conservation Biology 等期刊发表 SCI 论文 5 篇。",
+          "title": "助理研究员。主要研究方向包括生物多样性保护、气候适应生态基因组学和物种形成基因组学。目前主要研究气候变化背景下青藏高原高海拔物种的气候适应机制，结合基因组学与生态学方法，探究高海拔两栖爬行动物对环境变化的响应及适应机制，为山地生态系统的生物多样性保护与管理提供科学依据。主要研究项目包括：青藏高原高海拔物种的气候适应生态基因组学研究，以及青藏高原沙蜥属（Phrynocephalus）物种形成过程中基因组分化机制研究。已在Conservation Biology 等期刊发表 SCI 论文 5 篇。",
           "email": "alexplimo@hotmail.com",
           "image": "assets/people/image/Alex 2.jpg"
         },
         {
           "name": "者孟青",
-          "title": "助理研究员，主要从事两栖爬行动物对气候变化的响应研究。研究方向涵盖环境变化介导的遗传分化与局域适应、物种气候脆弱性，以及极端气候下两栖动物的生理应答与分子适应机制。以第一作者在 Integrative Zoology 和Plant diversity等学术期刊上发表相关研究论文。承担了云南省教育厅科学研究基金项目（2024）和云南大学第十五届研究生科研创新项目各1项；参与了中国科学院战略性先导科技专项B类子课题和云南省基础研究专项重大项目的研究。荣获2025年中国动物学会两栖爬行学分会学术报告二等奖。",
+          "title": "助理研究员。主要从事两栖爬行动物对气候变化的响应研究。研究方向涵盖环境变化介导的遗传分化与局域适应、物种气候脆弱性，以及极端气候下两栖动物的生理应答与分子适应机制。以第一作者在 Integrative Zoology 和Plant diversity等学术期刊上发表相关研究论文。承担了云南省教育厅科学研究基金项目（2024）和云南大学第十五届研究生科研创新项目各1项；参与了中国科学院战略性先导科技专项B类子课题和云南省基础研究专项重大项目的研究。荣获2025年中国动物学会两栖爬行学分会学术报告二等奖。",
           "email": "zhemengqing@163.com",
           "image": "assets/people/image/zmq.jpg"
         },
         {
           "name": "金洁琼",
-          "title": "高级工程师",
+          "title": "高级工程师。",
           "email": "jinjq@mail.kiz.ac.cn",
           "image": "assets/people/image/金洁琼 1.jpg"
         },
         {
           "name": "朱娜",
-          "title": "助理工程师",
+          "title": "助理工程师。",
           "email": "zhuna@mail.kiz.ac.cn",
           "image": "assets/people/image/朱娜 1.jpg"
         },
         {
           "name": "陆卓雨",
-          "title": "科研助理",
+          "title": "科研助理。",
           "email": "luzhuoyu@mail.kiz.ac.cn",
           "image": "assets/people/image/陆卓雨 1.png"
         },
@@ -78,7 +78,9 @@ window.PAGE_DATA.zh["people"] = {
       "items": [
         {
           "name": "卢宸祺",
-          "title": "2022级动物学专业博士研究生。研究方向为大尺度生物多样性格局的形成、演化与保护。相关研究成果以第一作者（含共同第一作者）发表于Science、National Science Review、Biological Conservation、Zoological Research以及《科学通报》《生物多样性》等国内外期刊（共6篇）；主编科普图书及学术图志各1部。曾获中国科学院院长优秀奖、博士研究生国家奖学金等。",
+
+          "title": "2022级动物学专业博士研究生（中国科学院大学）。研究方向为大尺度生物多样性格局的形成、演化与保护。相关研究成果以第一作者（含共同第一作者）发表于Science、National Science Review、Biological Conservation、Zoological Research以及《科学通报》《生物多样性》等国内外期刊（共6篇）；主编科普图书及学术图志各1部。" +
+              "<br>获奖情况：中国科学院院长优秀奖、博士研究生国家奖学金等。",
           "email": "luchenqi1997@163.com",
           "image": "assets/people/image/卢宸祺 1.jpg"
         },
@@ -210,221 +212,50 @@ window.PAGE_DATA.zh["people"] = {
         },
       ]
     },
+
     {
       "type": "peopleGrid",
       "title": "已毕业/出站成员",
       "contactFields": ["lab", "research", "email"],
-      "items": [
+      "groups": [
         {
-          "name": "陈益静",
-          "title": "2026出站博后（云大联培）",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
+          "title": "博士后及博士毕业生",
+          "items": [
+            {"name":"陈益静","title":"2026年出站博后（云南大学）"},
+            {"name":"董文捷","title":"2026届"},
+            {"name":"易木荣","title":"2026届"},
+            {"name":"Felista Kasyoka Kilunda","title":"2026届"},
+            {"name":"侯绍兵","title":"2023届"},
+            {"name":"张 毅","title":"2022届"},
+            {"name":"吴云鹤","title":"2021届"},
+            {"name":"付婷婷","title":"2021届"},
+            {"name":"徐 伟","title":"2021届"},
+            {"name":"Md Mizanur Rahman","title":"2021届"},
+            {"name":"陈进民","title":"2019届"},
+            {"name":"张宝林","title":"2019届"},
+            {"name":"Lotanna Micah Nneji","title":"2018届"},
+            {"name":"袁智勇","title":"2016届"},
+            {"name":"杨军校","title":"2015届"},
+            {"name":"Sang Nguyen Ngoc","title":"2014届"},
+            {"name":"颜 芳","title":"2013届"},
+            {"name":"周炜帏","title":"2012届"}
+          ]
         },
         {
-          "name": "吴云鹤",
-          "title": "2020届博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "袁智勇",
-          "title": "2016届博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "董文捷",
-          "title": "2026届博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "周炜帏",
-          "title": "2012届博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "颜芳",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "杨军校",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "陈进民",
-          "title": "2019届博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "张宝林",
-          "title": "2018届博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "付婷婷",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "徐伟",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "张毅",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "侯绍兵",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "易木荣",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "Sang Nguyen Ngoc",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "Lotanna Micah Nneji",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "Md Mizanur Rahman",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "Felista Kasyoka Kilunda",
-          "title": "博士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-
-        {
-          "name": "米雪",
           "title": "硕士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "徐凯",
-          "title": "硕士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "涂小龙",
-          "title": "硕士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "于中斌",
-          "title": "硕士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "余传鑫",
-          "title": "硕士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "刘逸涵",
-          "title": "硕士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "牟皓楠",
-          "title": "硕士毕业生",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
-        {
-          "name": "丁利民",
-          "title": "硕士毕业生（云大联合培养）",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": ""
-        },
+          "items": [
+            {"name":"余传鑫","title":"2025届"},
+            {"name":"刘逸涵","title":"2025届"},
+            {"name":"牟皓楠","title":"2025届"},
+            {"name":"于中斌","title":"2022届"},
+            {"name":"徐 凯","title":"2019届"},
+            {"name":"米 雪","title":"2018届"},
+            {"name":"涂小龙","title":"2014届"},
+            {"name":"丁利民","title":"2014届（云南大学）"}
+          ]
+        }
       ]
-    },
+    }
+
   ]
 };

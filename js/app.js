@@ -225,71 +225,123 @@
     }
 
 
+
     function renderPeopleGrid(section, lang) {
-        const isFormerMembers = /已毕业|出站|former|alumni/i.test(section.title || '');
-        // 只有下列三位研究人员保留个人主页入口。
-        const allowedProfiles = new Set(['车静', '柴静', '高伟', 'CHE Jing']);
-        const profileLabel = lang === 'zh' ? 'KIZ 个人主页' : 'KIZ - Personal Homepage';
+        const isFormerMembers =
+            /已毕业|出站|former|alumni/i.test(section.title || '');
 
-        const cards = (section.items || []).map(item => {
+        const allowedProfiles = new Set([
+            '车静', '柴静', '高伟', 'CHE Jing'
+        ]);
 
-            // 已毕业/出站成员：从米雪开始另起一行
-            const breakBefore = isFormerMembers &&
-                (item.name === "米雪" || item.name === "MI Xue" );
+        const profileLabel = lang === 'zh'
+            ? 'KIZ 个人主页'
+            : 'KIZ - Personal Homepage';
 
-            if (isFormerMembers) {
-                return `
-            ${breakBefore ? '<div class="former-row-break"></div>' : ''}
+        function renderCards(items) {
+            return (items || []).map(item => {
+                if (isFormerMembers) {
+                    return `
+                    <div class="person-card">
+                        <div class="person-name">${item.name}</div>
+                        <div class="person-title">${item.title || ''}</div>
+                    </div>
+                `;
+                }
 
-            <div class="person-card">
-                <div class="person-name">${item.name}</div>
-                <div class="person-title">${item.title || ''}</div>
+                const homepage =
+                    allowedProfiles.has(item.name) &&
+                    item.profileUrl &&
+                    item.profileUrl !== '#'
+                        ? item.profileUrl
+                        : null;
+
+                const rawSummary = String(
+                    item.description || item.bio ||
+                    [item.title, item.research]
+                        .filter(Boolean)
+                        .join('。')
+                ).trim();
+
+                const summary = rawSummary
+                    .replace(
+                        /(?:联系邮箱|电子邮箱|邮箱|Email)\s*[：:]\s*[^\s。；;，,]+/gi,
+                        ''
+                    )
+                    .replace(/[。；;，,\s]+$/g, '')
+                    .trim();
+
+                const paragraph = summary
+                    ? `<p class="person-paragraph">${
+                        /[。！？.!?]$/.test(summary)
+                            ? summary
+                            : summary + (lang === 'en' ? '.' : '。')
+                    }</p>`
+                    : '';
+
+                const emailParagraph = item.email
+                    ? `<p class="person-email">${
+                        lang === 'zh' ? '联系邮箱' : 'Email'
+                    }：<a href="mailto:${item.email}">${item.email}</a></p>`
+                    : '';
+
+                const avatar = item.image
+                    ? `<img class="person-avatar"
+                        src="${item.image}"
+                        alt="${item.name}"
+                        loading="lazy">`
+                    : '';
+
+                const homepageButton = homepage
+                    ? `<a class="person-homepage-button"
+                      href="${homepage}"
+                      target="_blank"
+                      rel="noopener noreferrer">${profileLabel}</a>`
+                    : '';
+
+                return `<div class="person-card">
+    <div class="person-personal">
+        <div class="person-avatar-wrap">${avatar}</div>
+        <div class="person-name">${item.name}</div>
+        ${homepageButton}
+    </div>
+    <div class="person-info">
+        ${paragraph}
+        ${emailParagraph}
+    </div>
+</div>`;
+            }).join('');
+        }
+
+        // 如果配置了 groups，就分别渲染每个小组；
+        // 没有 groups 时，继续使用原来的普通成员布局。
+        const content = Array.isArray(section.groups)
+            ? section.groups.map(group => `
+            <div class="people-subgroup">
+                <h3 class="people-subgroup-title">${group.title}</h3>
+                <div class="people-grid">
+                    ${renderCards(group.items)}
+                </div>
+            </div>
+        `).join('')
+            : `
+            <div class="people-grid">
+                ${renderCards(section.items)}
             </div>
         `;
-            }
 
-            const homepage = allowedProfiles.has(item.name) &&
-            item.profileUrl && item.profileUrl !== '#' ? item.profileUrl : null;
-            // 简介只显示正文，邮箱另成一段，避免重复。
-            const rawSummary = String(item.description || item.bio || [
-                item.title,
-                item.research
-            ].filter(Boolean).join('。')).trim();
-            const summary = rawSummary
-                .replace(/(?:联系邮箱|电子邮箱|邮箱|Email)\s*[：:]\s*[^\s。；;，,]+/gi, '')
-                .replace(/[。；;，,\s]+$/g, '')
-                .trim();
-            const paragraph = summary
-                ? `<p class="person-paragraph">${/[。！？.!?]$/.test(summary.trim()) ? summary.trim() : summary.trim() + (lang === 'en' ? '.' : '。')}</p>`
-                : '';
-            const emailParagraph = item.email && String(item.email).trim()
-                ? `<p class="person-email">${lang === 'zh' ? '联系邮箱' : 'Email'}：<a href="mailto:${item.email}">${item.email}</a></p>`
-                : '';
-            const avatar = item.image
-                ? `<img class="person-avatar" src="${item.image}" alt="${item.name}" loading="lazy">`
-                : '';
-            const homepageButton = homepage
-                ? `<a class="person-homepage-button" href="${homepage}" target="_blank" rel="noopener noreferrer">${profileLabel}</a>`
-                : '';
-
-            return `<div class="person-card">
-        <div class="person-personal">
-          <div class="person-avatar-wrap">${avatar}</div>
-          <div class="person-name">${item.name}</div>
-        </div>
-        <div class="person-info">
-          ${paragraph}
-          ${emailParagraph}
-          ${homepageButton}
-        </div>
-      </div>`;
-        }).join('');
-
-        return `<section class="people-section ${isFormerMembers ? 'former-members' : 'current-members'}">
-      ${section.title ? `<h2 class="section-title">${section.title}</h2>` : ''}
-      <div class="people-grid">${cards}</div>
-    </section>`;
+        return `
+        <section class="people-section ${
+            isFormerMembers ? 'former-members' : 'current-members'
+        }">
+            ${section.title
+            ? `<h2 class="section-title">${section.title}</h2>`
+            : ''}
+            ${content}
+        </section>
+    `;
     }
+
 
     function renderActivitySlider(images = []) {
         if (!images.length) {

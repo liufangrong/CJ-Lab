@@ -244,244 +244,48 @@ window.PAGE_DATA.en["people"] = {
         "research",
         "email"
       ],
-      "items": [
-        {
-          "name": "CHEN Yijing",
-          "title": "Postdoc (Co-supervision with Yunnan University)",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member01.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "WU Yunhe",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member14.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "YUAN Zhiyong",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member07.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "DONG Wenjie",
-          "title": "Ph.D",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/董文捷 1.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "ZHOU Weiwei",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member01.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "YAN Fang",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member02.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "Sang Nguyen Ngoc",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member03.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "YANG Junxiao",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member06.jpg",
-          "profileUrl": "#"
-        },
 
+      "groups": [
         {
-          "name": "CHEN Jinmin",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member08.jpg",
-          "profileUrl": "#"
+          "title": "Former Postdoctoral Researchers and Ph.D. Graduates",
+          "items": [
+            {"name": "CHEN Yijing", "title": "Postdoc (Yunnan University)"},
+            {"name": "DONG Wenjie", "title": "Class of 2026"},
+            {"name": "YI Murong", "title": "Class of 2026"},
+            {"name": "KILUNDA Felista Kasyoka", "title": "Class of 2026"},
+            {"name": "HOU Shaobin", "title": "Class of 2023"},
+            {"name": "ZHANG Yi", "title": "Class of 2022"},
+            {"name": "WU Yunhe", "title": "Class of 2021"},
+            {"name": "FU Tingting", "title": "Class of 2021"},
+            {"name": "XU Wei", "title": "Class of 2021"},
+            {"name": "RAHMAN Md Mizanur", "title": "Class of 2021"},
+            {"name": "CHEN Jinmin", "title": "Class of 2019"},
+            {"name": "ZHANG Baolin", "title": "Class of 2019"},
+            {"name": "NNEJI Lotanna Micah", "title": "Class of 2018"},
+            {"name": "YUAN Zhiyong", "title": "Class of 2016"},
+            {"name": "YANG Junxiao", "title": "Class of 2015"},
+            {"name": "Sang Nguyen Ngoc", "title": "Class of 2014"},
+            {"name": "YAN Fang", "title": "Class of 2013"},
+            {"name": "ZHOU Weiwei", "title": "Class of 2012"}
+          ]
         },
         {
-          "name": "ZHANG Baolin",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member09.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "NNEJI Lotanna Micah",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member10.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "RAHMAN Md Mizanur",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member13.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "FU Tingting",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member15.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "XU Wei",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member16.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "ZHANG Yi",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member17.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "HOU Shaobin",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member18.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "KILUNDA Felista Kasyoka",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member23.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "YI Murong",
-          "title": "Ph.D.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member24.jpg",
-          "profileUrl": "#"
-        },
-
-        {
-          "name": "MI Xue",
-          "title": "M.S.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member11.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "XU Kai",
-          "title": "M.S.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member12.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "TU Xiaolong",
-          "title": "M.S.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member05.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "YU Zhongbin",
-          "title": "M.S.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member19.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "YU Chuanxin",
-          "title": "M.S.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member20.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "LIU Yihan",
-          "title": "M.S.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member21.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "MU Haonan",
-          "title": "M.S.",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member22.jpg",
-          "profileUrl": "#"
-        },
-        {
-          "name": "DING Limin",
-          "title": "M.S. (Co-supervision with Yunnan University)",
-          "lab": "",
-          "research": "",
-          "email": "",
-          "image": "assets/people/image/member04.jpg",
-          "profileUrl": "#"
-        },
+          "title": "M.S. Graduates",
+          "items": [
+            {"name": "YU Chuanxin", "title": "Class of 2025"},
+            {"name": "LIU Yihan", "title": "Class of 2025"},
+            {"name": "MU Haonan", "title": "Class of 2025"},
+            {"name": "YU Zhongbin", "title": "Class of 2022"},
+            {"name": "XU Kai", "title": "Class of 2019"},
+            {"name": "MI Xue", "title": "Class of 2018"},
+            {"name": "TU Xiaolong", "title": "Class of 2014"},
+            {"name": "DING Limin", "title": "Class of 2014 (Yunnan University)"}
+          ]
+        }
       ]
     }
+
   ]
 };
+
+

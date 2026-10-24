@@ -59,24 +59,6 @@ window.PAGE_DATA.en["home"] = {
           "alt": "",
           "href": "http://www.amphibiachina.org/"
         },
-        {
-          "title": "State Key Laboratory of Genetic Evolution and Animal Models",
-          "image": "assets/geam.png",
-          "alt": "",
-          "href": "https://www.kiz.ac.cn/GEAM/geam3/geam32/geam321/"
-        },
-        {
-          "title": "Yunnan Key Laboratory of Gaoligong Mountain Biodiversity and Ecological Security",
-          "image": "assets/",
-          "alt": "",
-          "href": ""
-        },
-        {
-          "title": "Che Lab WeChat Official Account",
-          "image": "assets/",
-          "alt": "",
-          "href": ""
-        }
       ]
     }
   ]

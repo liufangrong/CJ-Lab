@@ -58,24 +58,7 @@ window.PAGE_DATA.zh["home"] = {
           "alt": "",
           "href": "http://www.amphibiachina.org/"
         },
-        {
-          "title": "遗传进化与动物模型全国重点实验室",
-          "image": "assets/geam.png",
-          "alt": "",
-          "href": "https://www.kiz.ac.cn/GEAM/geam3/geam32/geam321/"
-        },
-        {
-          "title": "云南省高黎贡山生物多样性与生态安全重点实验室",
-          "image": "",
-          "alt": "",
-          "href": ""
-        },
-        {
-          "title": "Che Lab 微信公众号",
-          "image": "assets/",
-          "alt": "",
-          "href": ""
-        },
+
       ]
     }
   ]

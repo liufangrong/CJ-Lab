@@ -65,8 +65,6 @@
   color: #7a869a;
 }
 
-
-
 /* news card*/
 .latest-slide-link {
   display: block;
@@ -83,9 +81,6 @@
 .latest-slide-link:hover {
   background: #f6faf7;
 }
-
-
-
 
 /* ==================== 代表性成果 Timeline ==================== */
 
@@ -130,11 +125,11 @@
 
 /* ==================== 正文区域 ==================== */
 
-/*
-  这里不要使用 grid / flex。
-  block + float 才能让文字绕图片，
-  从而填充图片下方的空白区域。
-*/
+/**
+*  这里不要使用 grid / flex。*
+*  block + float 才能让文字绕图片，*
+*  从而填充图片下方的空白区域。*
+**/
 .timeline-content {
   display: block;
   width: 100%;
@@ -229,11 +224,11 @@ html[lang="en"] .timeline-title {
     padding: 18px;
   }
 
-  /*
-    手机端取消 float，
-    图片直接放在标题和正文之间
-  */
-  .timeline-photo,
+  /**
+*    手机端取消 float，*
+*    图片直接放在标题和正文之间*
+*  */
+  *  *.timeline-photo,
   .timeline-reverse .timeline-photo {
     float: none;
     width: 100%;
@@ -258,10 +253,9 @@ html[lang="en"] .timeline-title {
   }
 }
 
-
-/* =========================================================
-   Home page: clean institutional layout
-   ========================================================= */
+/* =========================================================*
+*   Home page: clean institutional layout*
+*   ========================================================= */
 
 body[data-page="home"] {
   background: #f3f6f9;
@@ -285,6 +279,15 @@ body[data-page="home"] .section {
 
 body[data-page="home"] .section:last-child {
   margin-bottom: 0;
+}
+
+/* Keep the gallery closer to the introduction text. */
+body[data-page="home"] .section-home-intro {
+  margin-bottom: 20px;
+}
+
+body[data-page="home"] .section-image-gallery {
+  margin-top: 0;
 }
 
 body[data-page="home"] .section-title {
@@ -576,10 +579,9 @@ html[lang="en"] body[data-page="home"] .section-timeline .timeline-content p {
   }
 }
 
-
-/* =========================================================
-   Home page: introduction -> image gallery -> linked logos
-   ========================================================= */
+/* =========================================================*
+*   Home page: introduction -> image gallery -> linked logos*
+*   ========================================================= */
 
 body[data-page="home"] {
   background: #ffffff;
@@ -637,9 +639,14 @@ body[data-page="home"] .section-logo-links .section-title::before {
 }
 
 /* Introduction */
-body[data-page="home"] .home-intro-copy {
+body[data-page="home"] .home-intro-copy,
+body[data-page="home"] .section-image-gallery,
+body[data-page="home"] .section-logo-links {
+  width: 100%;
   max-width: 1120px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
 body[data-page="home"] .home-intro-copy p {
@@ -658,8 +665,10 @@ body[data-page="home"] .home-intro-copy p:last-child {
 /* Research image gallery */
 body[data-page="home"] .home-image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 body[data-page="home"] .home-image-item {
@@ -703,7 +712,7 @@ body[data-page="home"] .home-image-item figcaption {
 
 /* Linked research-platform logos */
 body[data-page="home"] .section-logo-links {
-  padding: 38px 34px 40px;
+  padding: 28px 24px;
   border: 1px solid #dfe8e8;
   border-radius: 10px;
   background: #f7faf9;
@@ -723,15 +732,17 @@ body[data-page="home"] .section-logo-links .section-intro {
 }
 
 body[data-page="home"] .home-logo-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+  width: 100%;
 }
 
 body[data-page="home"] .home-logo-card {
-  width: min(100%, 340px);
-  min-height: 136px;
+  width: 100%;
+  min-width: 0;
+  min-height: 90px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -792,17 +803,16 @@ html[lang="en"] body[data-page="home"] .home-intro-copy p {
     line-height: 1.9;
   }
 
-  body[data-page="home"] .home-image-grid {
+  body[data-page="home"] .home-image-grid,
+  body[data-page="home"] .home-logo-grid {
     grid-template-columns: 1fr;
   }
 
   body[data-page="home"] .section-logo-links {
-    padding: 30px 18px 32px;
+    padding: 24px 16px;
   }
 
   body[data-page="home"] .section-logo-links .section-title {
     font-size: 23px;
   }
 }
-
-

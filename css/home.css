@@ -692,7 +692,7 @@ body[data-page="home"] .home-image-link {
 
 body[data-page="home"] .home-image-item img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -854,6 +854,7 @@ body[data-page="home"] .home-gallery-track .home-image-item {
 body[data-page="home"] .home-gallery-track .home-image-item img {
   display: block;
   width: 100%;
+  height: 230px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }

@@ -409,7 +409,7 @@
         }
 
         const escapeRegExp = text =>
-            String(text).replace(/[.*+?^${}()|[\\]\\\\]/g, "\\\\$&");
+            String(text).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
         const regex = new RegExp(
             `(${names.map(escapeRegExp).join("|")})`,
@@ -485,11 +485,11 @@
 
         <button type="button"
                 class="home-gallery-arrow home-gallery-prev"
-                aria-label="Previous image">&#8249;</button>
+                aria-label="Previous image">‹</button>
 
         <button type="button"
                 class="home-gallery-arrow home-gallery-next"
-                aria-label="Next image">&#8250;</button>
+                aria-label="Next image">›</button>
     </div>`;
         }
 
@@ -619,7 +619,7 @@
         // }
         if (section.type === "paperPublications" || section.type === "allPublications") {
             const escapeRegExp = value =>
-                String(value).replace(/[.*+?^${}()|[\\]\\\\]/g, "\\\\$&");
+                String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
             const boldLabMembers = value => {
                 return (section.labMembers || []).reduce((result, name) => {
@@ -793,7 +793,7 @@
 
                   ${item.doi
                     ? '<a class="pub-doi-button all-pub-doi-button"' +
-                    ' href="https\://doi.org/' + item.doi + '"' +
+                    ' href="https\\://doi.org/' + item.doi + '"' +
                     ' target="_blank"' +
                     ' rel="noopener noreferrer">DOI</a>'
                     : ""
@@ -822,7 +822,7 @@
             if (!names.length) return text;
 
             const escapedNames = names.map(name =>
-                name.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\\\\\\\$&")
+                name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
             );
 
             const regex = new RegExp(`(${escapedNames.join("|")})`, "g");
@@ -1361,70 +1361,6 @@
 
 
 
-        function bindHomeGalleryLightbox() {
-            if (document.body.dataset.page !== 'home') return;
-            if (window.__homeGalleryLightboxBound) return;
-
-            window.__homeGalleryLightboxBound = true;
-
-            // 创建大图预览层
-            const overlay = document.createElement('div');
-            overlay.className = 'home-image-lightbox';
-
-            overlay.innerHTML = `
-        <button type="button"
-                class="home-lightbox-close"
-                aria-label="关闭大图">&times;</button>
-        <img class="home-lightbox-image" alt="大图预览">
-    `;
-
-            document.body.appendChild(overlay);
-
-            const preview = overlay.querySelector('.home-lightbox-image');
-            const closeButton = overlay.querySelector('.home-lightbox-close');
-
-            function closeLightbox() {
-                overlay.classList.remove('is-visible');
-                document.body.style.overflow = '';
-                preview.removeAttribute('src');
-            }
-
-            // 直接监听首页照片，不依赖轮播容器
-            document.addEventListener('click', function (event) {
-                if (!(event.target instanceof Element)) return;
-
-                const img = event.target.closest(
-                    'body[data-page="home"] .home-image-item img'
-                );
-
-                if (!img) return;
-
-                event.preventDefault();
-
-                preview.src = img.currentSrc || img.src;
-                preview.alt = img.alt || '大图预览';
-
-                overlay.classList.add('is-visible');
-                document.body.style.overflow = 'hidden';
-            }, true);
-
-            closeButton.addEventListener('click', closeLightbox);
-
-            overlay.addEventListener('click', function (event) {
-                if (event.target === overlay) {
-                    closeLightbox();
-                }
-            });
-
-            document.addEventListener('keydown', function (event) {
-                if (event.key === 'Escape') {
-                    closeLightbox();
-                }
-            });
-        }
-
-
-
         function moveTo(targetIndex, animate = true) {
             const first = track.querySelector('.home-image-item');
             if (!first) return;
@@ -1531,6 +1467,69 @@
 
 
 
+    function bindHomeGalleryLightbox() {
+        if (document.body.dataset.page !== 'home') return;
+        if (window.__homeGalleryLightboxBound) return;
+
+        window.__homeGalleryLightboxBound = true;
+
+        // 创建大图预览层
+        const overlay = document.createElement('div');
+        overlay.className = 'home-image-lightbox';
+
+        overlay.innerHTML = `
+        <button type="button"
+                class="home-lightbox-close"
+                aria-label="关闭大图">×</button>
+        <img class="home-lightbox-image" alt="大图预览">
+    `;
+
+        document.body.appendChild(overlay);
+
+        const preview = overlay.querySelector('.home-lightbox-image');
+        const closeButton = overlay.querySelector('.home-lightbox-close');
+
+        function closeLightbox() {
+            overlay.classList.remove('is-visible');
+            document.body.style.overflow = '';
+            preview.removeAttribute('src');
+        }
+
+        // 直接监听首页照片，不依赖轮播容器
+        document.addEventListener('click', function (event) {
+            if (!(event.target instanceof Element)) return;
+
+            const img = event.target.closest(
+                'body[data-page="home"] .home-image-item img'
+            );
+
+            if (!img) return;
+
+            event.preventDefault();
+
+            preview.src = img.currentSrc || img.src;
+            preview.alt = img.alt || '大图预览';
+
+            overlay.classList.add('is-visible');
+            document.body.style.overflow = 'hidden';
+        }, true);
+
+        closeButton.addEventListener('click', closeLightbox);
+
+        overlay.addEventListener('click', function (event) {
+            if (event.target === overlay) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    }
+
+
     function render(lang) {
         const pageKey = getPageKey();
         const pageBundle = getPageBundle(lang, pageKey);
@@ -1555,6 +1554,7 @@
         bindBackTop();
         bindLatestSlider();
         bindActivitySliders();
+        bindHomeGallerySlider();
         bindHomeGalleryLightbox();
         updateVisitCount();
 

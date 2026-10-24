@@ -283,7 +283,7 @@ body[data-page="home"] .section:last-child {
 
 /* Keep the gallery closer to the introduction text. */
 body[data-page="home"] .section-home-intro {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 body[data-page="home"] .section-image-gallery {
@@ -815,4 +815,13 @@ html[lang="en"] body[data-page="home"] .home-intro-copy p {
   body[data-page="home"] .section-logo-links .section-title {
     font-size: 23px;
   }
+}
+
+/* 调整实验室简介文字与下方图片之间的距离 */
+body[data-page="home"] .section-home-intro {
+  margin-bottom: 20px;
+}
+
+body[data-page="home"] .section-image-gallery {
+  margin-top: 0;
 }

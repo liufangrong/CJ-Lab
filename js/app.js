@@ -453,26 +453,46 @@
             body = `<div class="home-intro-copy">${paragraphs}</div>`;
         }
 
+
         if (section.type === 'image-gallery') {
             const galleryItems = (section.items || []).map(item => {
                 const image = `
-          <img src="${item.image}"
-               alt="${item.alt || item.caption || ''}"
-               loading="lazy"
-               decoding="async">`;
+            <img src="${item.image}"
+                 alt="${item.alt || item.caption || ''}"
+                 loading="lazy"
+                 decoding="async">`;
+
                 const media = item.href
-                    ? `<a class="home-image-link" href="${item.href}" target="_blank" rel="noopener noreferrer">${image}</a>`
+                    ? `<a class="home-image-link" href="${item.href}"
+                  target="_blank" rel="noopener noreferrer">${image}</a>`
                     : image;
 
                 return `
-          <figure class="home-image-item">
-            ${media}
-            ${item.caption ? `<figcaption>${item.caption}</figcaption>` : ''}
-          </figure>`;
+            <figure class="home-image-item">
+                ${media}
+                ${item.caption
+                    ? `<figcaption>${item.caption}</figcaption>`
+                    : ''}
+            </figure>`;
             }).join('');
 
-            body = `<div class="home-image-grid">${galleryItems}</div>`;
+
+            body = `
+    <div class="home-gallery-viewport">
+        <div class="home-image-grid home-gallery-track">
+            ${galleryItems}
+        </div>
+
+        <button type="button"
+                class="home-gallery-arrow home-gallery-prev"
+                aria-label="Previous image">&#8249;</button>
+
+        <button type="button"
+                class="home-gallery-arrow home-gallery-next"
+                aria-label="Next image">&#8250;</button>
+    </div>`;
         }
+
 
         if (section.type === 'logo-links') {
             const logoItems = (section.items || []).map(item => {
@@ -1300,16 +1320,216 @@
     }
 
 
-    // function loadBusuanzi() {
-    //   const oldScript = document.getElementById('busuanzi-script');
-    //   if (oldScript) oldScript.remove();
-    //
-    //   const script = document.createElement('script');
-    //   script.id = 'busuanzi-script';
-    //   script.async = true;
-    //   script.src = 'https\://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
-    //   document.body.appendChild(script);
-    // }
+
+
+    function bindHomeGallerySlider() {
+        const viewport = document.querySelector(
+            'body[data-page="home"] .home-gallery-viewport'
+        );
+
+        if (!viewport) return;
+
+        if (window.__homeGalleryCleanup) {
+            window.__homeGalleryCleanup();
+        }
+
+        const track = viewport.querySelector('.home-gallery-track');
+        if (!track) return;
+
+        const originals = Array.from(track.children);
+        const total = originals.length;
+
+        if (total < 2) return;
+
+        // 克隆开头的图片，实现循环播放
+        originals.slice(0, Math.min(3, total)).forEach(function (item) {
+            const clone = item.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            track.appendChild(clone);
+        });
+
+        let index = 0;
+        let timer = null;
+        let resetTimer = null;
+
+        function stop() {
+            if (timer !== null) {
+                window.clearInterval(timer);
+                timer = null;
+            }
+        }
+
+
+
+        function bindHomeGalleryLightbox() {
+            if (document.body.dataset.page !== 'home') return;
+            if (window.__homeGalleryLightboxBound) return;
+
+            window.__homeGalleryLightboxBound = true;
+
+            // 创建大图预览层
+            const overlay = document.createElement('div');
+            overlay.className = 'home-image-lightbox';
+
+            overlay.innerHTML = `
+        <button type="button"
+                class="home-lightbox-close"
+                aria-label="关闭大图">&times;</button>
+        <img class="home-lightbox-image" alt="大图预览">
+    `;
+
+            document.body.appendChild(overlay);
+
+            const preview = overlay.querySelector('.home-lightbox-image');
+            const closeButton = overlay.querySelector('.home-lightbox-close');
+
+            function closeLightbox() {
+                overlay.classList.remove('is-visible');
+                document.body.style.overflow = '';
+                preview.removeAttribute('src');
+            }
+
+            // 直接监听首页照片，不依赖轮播容器
+            document.addEventListener('click', function (event) {
+                if (!(event.target instanceof Element)) return;
+
+                const img = event.target.closest(
+                    'body[data-page="home"] .home-image-item img'
+                );
+
+                if (!img) return;
+
+                event.preventDefault();
+
+                preview.src = img.currentSrc || img.src;
+                preview.alt = img.alt || '大图预览';
+
+                overlay.classList.add('is-visible');
+                document.body.style.overflow = 'hidden';
+            }, true);
+
+            closeButton.addEventListener('click', closeLightbox);
+
+            overlay.addEventListener('click', function (event) {
+                if (event.target === overlay) {
+                    closeLightbox();
+                }
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape') {
+                    closeLightbox();
+                }
+            });
+        }
+
+
+
+        function moveTo(targetIndex, animate = true) {
+            const first = track.querySelector('.home-image-item');
+            if (!first) return;
+
+            const style = window.getComputedStyle(track);
+            const gap = parseFloat(style.columnGap || style.gap) || 0;
+            const step = first.getBoundingClientRect().width + gap;
+
+            track.style.transition = animate
+                ? 'transform 0.5s ease'
+                : 'none';
+
+            track.style.transform =
+                'translateX(-' + (targetIndex * step) + 'px)';
+        }
+
+        function next() {
+            index += 1;
+            moveTo(index);
+
+            if (index >= total) {
+                if (resetTimer !== null) {
+                    window.clearTimeout(resetTimer);
+                }
+
+                resetTimer = window.setTimeout(function () {
+                    index = 0;
+                    moveTo(index, false);
+                    resetTimer = null;
+                }, 520);
+            }
+        }
+
+        function previous() {
+            stop();
+
+            if (resetTimer !== null) {
+                window.clearTimeout(resetTimer);
+                resetTimer = null;
+            }
+
+            if (index <= 0) {
+                index = total - 1;
+                moveTo(index, false);
+            } else {
+                index -= 1;
+                moveTo(index);
+            }
+
+            start();
+        }
+
+        function start() {
+            stop();
+
+            if (!viewport.matches(':hover')) {
+                timer = window.setInterval(next, 3200);
+            }
+        }
+
+        const prevBtn = viewport.querySelector('.home-gallery-prev');
+        const nextBtn = viewport.querySelector('.home-gallery-next');
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', previous);
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function () {
+                stop();
+
+                if (resetTimer !== null) {
+                    window.clearTimeout(resetTimer);
+                    resetTimer = null;
+                }
+
+                next();
+                start();
+            });
+        }
+
+        viewport.addEventListener('mouseenter', stop);
+        viewport.addEventListener('mouseleave', start);
+
+        function handleResize() {
+            moveTo(index, false);
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        window.__homeGalleryCleanup = function () {
+            stop();
+
+            if (resetTimer !== null) {
+                window.clearTimeout(resetTimer);
+                resetTimer = null;
+            }
+
+            window.removeEventListener('resize', handleResize);
+        };
+
+        start();
+    }
+
+
 
     function render(lang) {
         const pageKey = getPageKey();
@@ -1330,11 +1550,14 @@
             '<button class="back-top" id="backTop" aria-label="back to top">↑</button>'
         ].join('');
 
+
         bindLanguageButtons();
         bindBackTop();
         bindLatestSlider();
         bindActivitySliders();
+        bindHomeGalleryLightbox();
         updateVisitCount();
+
     }
 
     function bindLanguageButtons() {

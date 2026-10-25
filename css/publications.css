@@ -755,3 +755,638 @@ html[lang="en"] .section-books
   }
 }
 
+
+/* ==============================
+   获奖模块：卡片化展示
+   仅作用于 awards 类型
+   ============================== */
+
+.section-awards {
+  margin-top: 30px;
+  margin-bottom: 32px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* 模块标题与内容的距离 */
+.section-awards > .section-title {
+  margin-bottom: 26px;
+}
+
+/* 奖项列表 */
+.section-awards .award-simple-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* 单个奖项 */
+.section-awards .award-simple-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 18px 20px;
+  background: #f7faf9;
+  border: 1px solid #e0ebe6;
+  border-radius: 10px;
+  transition: background 0.2s ease,
+  border-color 0.2s ease,
+  transform 0.2s ease;
+}
+
+.section-awards .award-simple-item:hover {
+  background: #f0f7f4;
+  border-color: #b9d9ca;
+  transform: translateY(-2px);
+}
+
+/* 年份徽章 */
+.section-awards .award-simple-year {
+  flex: 0 0 66px;
+  min-width: 66px;
+  box-sizing: border-box;
+  padding: 8px 6px;
+  border-radius: 8px;
+  background: #e3f2eb;
+  color: #176c59;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* 奖项名称与说明 */
+/* 奖项名称和成果说明显示在同一行 */
+.section-awards .award-simple-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 0;
+}
+
+.section-awards .award-simple-name {
+  display: inline;
+  margin: 0;
+  color: #18394b;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.section-awards .award-simple-desc {
+  display: inline;
+  margin: 0;
+  color: #18394b;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+
+
+/* 手机端 */
+@media (max-width: 600px) {
+  .section-awards {
+    padding: 20px 14px;
+  }
+
+  .section-awards .award-simple-item {
+    gap: 12px;
+    padding: 14px 12px;
+  }
+
+  .section-awards .award-simple-year {
+    flex-basis: 58px;
+    min-width: 58px;
+    font-size: 15px;
+  }
+
+  .section-awards .award-simple-name {
+    font-size: 16px;
+  }
+
+  .section-awards .award-simple-desc {
+    font-size: 16px;
+  }
+}
+
+
+/* 主要获奖：奖项名称与获奖成果使用完全一致的格式 */
+.section-awards .award-simple-name,
+.section-awards .award-simple-desc {
+  color: #18394b !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  font-family: inherit !important;
+  line-height: 1.8 !important;
+}
+
+/* 手机端也保持两部分样式一致 */
+@media (max-width: 600px) {
+  .section-awards .award-simple-name,
+  .section-awards .award-simple-desc {
+    font-size: 16px !important;
+  }
+}
+
+
+
+
+/* =========================================================
+   出版著作：木质书架布局
+   只作用于出版著作模块，不影响其他页面
+   ========================================================= */
+
+/* 书架整体背景 */
+.section-books .books-layout {
+  position: relative;
+  isolation: isolate;
+  box-sizing: border-box;
+  padding: 30px 24px 36px;
+  border: 1px solid #d9c2a2;
+  border-radius: 12px;
+  background:
+          linear-gradient(
+                  90deg,
+                  rgba(116, 75, 40, 0.10) 0,
+                  transparent 4%,
+                  transparent 96%,
+                  rgba(116, 75, 40, 0.10) 100%
+          ),
+          repeating-linear-gradient(
+                  90deg,
+                  rgba(153, 104, 58, 0.035) 0,
+                  rgba(153, 104, 58, 0.035) 2px,
+                  transparent 2px,
+                  transparent 42px
+          ),
+          linear-gradient(135deg, #f7efe2, #eee0ca);
+  box-shadow:
+          inset 0 0 0 5px rgba(255, 255, 255, 0.25),
+          0 8px 24px rgba(83, 57, 30, 0.08);
+}
+
+/* 两行布局：保持原有分组结构 */
+.section-books .books-first-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+.section-books .books-second-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+  margin-bottom: 36px;
+}
+
+/* 每个书籍分类 */
+.section-books .books-group {
+  position: relative;
+  min-width: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* 分类标题 */
+.section-books .books-category-title {
+  position: relative;
+  margin: 0 0 18px;
+  padding: 0 0 0 12px;
+  color: #174565;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.7;
+  border: none;
+}
+
+/* 标题左侧装饰线 */
+.section-books .books-category-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  bottom: 5px;
+  width: 4px;
+  border-radius: 3px;
+  background: #a87848;
+}
+
+/* 书籍网格：底部形成木质层板 */
+.section-books .book-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: end;
+  gap: 18px;
+  box-sizing: border-box;
+  padding: 12px 12px 30px;
+  background:
+          linear-gradient(
+                  to bottom,
+                  transparent calc(100% - 20px),
+                  #8a5a32 calc(100% - 20px),
+                  #c18a50 calc(100% - 10px),
+                  #714521 100%
+          );
+  border-radius: 3px;
+}
+
+/* 每本书：去除原来的白色卡片 */
+.section-books .book-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* 封面区域 */
+.section-books .book-cover {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  padding: 0 3px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: transparent;
+}
+
+/* 封面图片 */
+.section-books .book-cover img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 290px;
+  object-fit: contain;
+  object-position: center bottom;
+  cursor: zoom-in;
+  filter: drop-shadow(4px 7px 5px rgba(44, 29, 15, 0.24));
+  transform-origin: center bottom;
+  transition:
+          transform 0.25s ease,
+          filter 0.25s ease;
+}
+
+/* 鼠标悬停：书籍轻微向上移动 */
+.section-books .book-card:hover .book-cover img {
+  transform: translateY(-6px);
+  filter: drop-shadow(7px 12px 7px rgba(44, 29, 15, 0.30));
+}
+
+/* 书籍文字区域 */
+.section-books .book-info {
+  width: 100%;
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* 书名 */
+.section-books .book-info h4 {
+  margin: 0 0 10px;
+  color: #18394b;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* 作者 */
+.section-books .book-author {
+  margin: 0 0 6px;
+  color: #273b49;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* 出版社与年份 */
+.section-books .book-publisher {
+  margin: 0;
+  color: #657482;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   平板适配
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .section-books .books-layout {
+    padding: 24px 16px 30px;
+  }
+
+  .section-books .books-first-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 20px;
+  }
+
+  .section-books .books-second-row {
+    margin-bottom: 30px;
+  }
+
+  .section-books .book-cover {
+    height: 270px;
+  }
+
+  .section-books .book-cover img {
+    max-height: 260px;
+  }
+}
+
+/* =========================================================
+   手机适配
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .section-books .books-layout {
+    padding: 20px 12px 26px;
+  }
+
+  .section-books .books-first-row {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .section-books .books-second-row {
+    margin-bottom: 32px;
+  }
+
+  .section-books .books-category-title {
+    font-size: 17px;
+  }
+
+  .section-books .book-grid {
+    gap: 10px;
+    padding: 10px 8px 24px;
+  }
+
+  .section-books .book-cover {
+    height: 220px;
+  }
+
+  .section-books .book-cover img {
+    max-height: 210px;
+  }
+
+  .section-books .book-info {
+    margin-top: 12px;
+  }
+
+  .section-books .book-info h4 {
+    font-size: 15px;
+  }
+
+  .section-books .book-author {
+    font-size: 14px;
+  }
+
+  .section-books .book-publisher {
+    font-size: 13px;
+  }
+}
+
+
+
+
+
+/* ==========================================
+   出版著作：清爽现代书架配色
+   ========================================== */
+
+/* 书架整体：去掉发黄的米色和明显的条纹 */
+.section-books .books-layout {
+  background: #f7f9fa;
+  border: 1px solid #e0e8ec;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(35, 65, 80, 0.05);
+  padding: 30px 24px 32px;
+}
+
+/* 分类标题：延续网站的深蓝色 */
+.section-books .books-category-title {
+  color: #174565;
+}
+
+.section-books .books-category-title::before {
+  background: #4b9b86;
+}
+
+/* 书架横线：改为 3px 细线 */
+.section-books .book-grid {
+  background:
+          linear-gradient(
+                  to bottom,
+                  transparent calc(100% - 6px),
+                  #c8d6de calc(100% - 6px),
+                  #c8d6de 100%
+          ) !important;
+}
+
+/* 书封面：保留立体感，但减弱阴影 */
+.section-books .book-cover img {
+  filter: drop-shadow(3px 5px 4px rgba(30, 50, 65, 0.16));
+  transition:
+          transform 0.25s ease,
+          filter 0.25s ease;
+}
+
+/* 鼠标悬停 */
+.section-books .book-card:hover .book-cover img {
+  transform: translateY(-5px);
+  filter: drop-shadow(5px 9px 6px rgba(30, 50, 65, 0.20));
+}
+
+/* 书名 */
+.section-books .book-info h4 {
+  color: #174565;
+}
+
+/* 作者 */
+.section-books .book-author {
+  color: #344b5b;
+}
+
+/* 出版社和年份 */
+.section-books .book-publisher {
+  color: #71808a;
+}
+
+
+
+/* 仅调整出版著作模块的横向装饰线 */
+.section-books .books-second-row::after,
+.section-books .books-first-row::after,
+.section-books .books-group::after,
+.section-books .book-grid::after,
+.section-books .book-card::after {
+  height: 3px !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  background: #c8d6de !important;
+  border-radius: 2px !important;
+}
+
+/* 下方三本书之间不额外添加粗装饰线 */
+.section-books .books-bottom-list {
+  gap: 16px;
+}
+
+.section-books .book-horizontal-card::after {
+  display: none !important;
+}
+
+
+
+/* 只修复出版著作下方三本书 */
+.books-layout .books-bottom-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 18px !important;
+  width: 100%;
+}
+
+/* 每本书：左图右文 */
+.books-layout .books-bottom-list .book-horizontal-card {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 28px !important;
+  width: 100% !important;
+  min-height: 210px;
+  padding: 20px 26px !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #dce5ed;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(25, 55, 75, 0.05);
+}
+
+/* 左侧封面固定尺寸，防止图片放大撑开页面 */
+.books-layout .books-bottom-list .book-horizontal-cover {
+  flex: 0 0 145px !important;
+  width: 145px !important;
+  height: 175px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+
+/* 覆盖原有图片的全局宽高设置 */
+.books-layout .books-bottom-list .book-horizontal-cover img {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 140px !important;
+  max-height: 170px !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+}
+
+/* 右侧文字 */
+.books-layout .books-bottom-list .book-horizontal-info {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  text-align: left !important;
+}
+
+.books-layout .books-bottom-list .book-horizontal-info h4 {
+  margin: 0 0 12px !important;
+  color: #123b5b;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.books-layout .books-bottom-list .book-horizontal-author {
+  margin: 8px 0;
+  font-weight: 400;
+  text-align: left;
+}
+
+.books-layout .books-bottom-list .book-horizontal-publisher {
+  margin: 8px 0;
+  color: #718096;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .books-layout .books-bottom-list .book-horizontal-card {
+    gap: 14px !important;
+    padding: 14px !important;
+  }
+
+  .books-layout .books-bottom-list .book-horizontal-cover {
+    flex-basis: 100px !important;
+    width: 100px !important;
+    height: 135px !important;
+  }
+
+  .books-layout .books-bottom-list .book-horizontal-cover img {
+    max-width: 95px !important;
+    max-height: 130px !important;
+  }
+}
+
+
+/* 下方三本书：每本书单独一根分隔线 */
+.books-layout .books-bottom-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+}
+
+.books-layout .books-bottom-grid .book-card {
+  position: relative;
+  padding-bottom: 18px !important;
+  border-bottom: none !important;
+}
+
+.books-layout .books-bottom-grid .book-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #b8cbd2;
+  border-radius: 1px;
+}
+
+
+
+/* 调整出版著作中间的粗横板 */
+.books-second-row::after {
+  height: 3px !important;
+  min-height: 3px !important;
+  background: #c7d7dc !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+}
+
+
+
+

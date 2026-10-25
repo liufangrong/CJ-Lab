@@ -921,7 +921,7 @@
                 <h4>《${item.title || ""}》</h4>
 
                 <p class="book-author">
-                    ${boldLabMemberNames(item.author || "")}
+                    ${item.author || ""}
                 </p>
 
                 <p class="book-publisher">
@@ -933,74 +933,101 @@
         </div>
     `;
 
-            // 单个图书分类
-            const renderGroup = (index, number) => {
+            const renderHorizontalBook = item => {
+                if (!item) return "";
 
+                return `
+        <div class="book-horizontal-card">
+            ${item.image ? `
+                <div class="book-horizontal-cover">
+                    <img
+                        src="${item.image}"
+                        alt="${item.title || ""}"
+                        class="book-zoom-image"
+                        role="button"
+                        tabindex="0"
+                        style="cursor: zoom-in;"
+                        onclick="openBookImage(this)"
+                    >
+                </div>
+            ` : ""}
+
+            <div class="book-horizontal-info">
+                <h4>《${item.title || ""}》</h4>
+
+                <p class="book-horizontal-author">
+                    ${item.author || ""}
+                </p>
+
+                <p class="book-horizontal-publisher">
+                    ${item.publisher || ""}，${item.year || ""}
+                </p>
+            </div>
+        </div>
+    `;
+            };
+
+            // 单个图书分类
+
+            const renderGroup = (index, number = "") => {
                 const group = groups[index];
 
                 if (!group) return "";
 
+                const headingPrefix = number ? `${number}. ` : "";
+
                 return `
-            <div class="books-group">
+        <div class="books-group">
+            <h3 class="books-category-title">
+                ${headingPrefix}${group.title || ""}
+            </h3>
 
-                <h3 class="books-category-title">
-                    ${number}. ${group.title || ""}
-                </h3>
-
-                <div class="book-grid">
-                    ${(group.items || []).map(renderBook).join("")}
-                </div>
-
+            <div class="book-grid">
+                ${(group.items || []).map(renderBook).join("")}
             </div>
-        `;
-            };
-
-            // 出版著作整体布局
-            body = `
-        <div class="books-layout">
-
-            
-
-            <!-- 第二行：青藏高原丛书 -->
-            <div class="books-second-row">
-
-                ${renderGroup(3, 1)}
-
-            </div>
-            
-            <!-- 第一行：三个分类 -->
-            <div class="books-first-row">
-
-                ${renderGroup(0, 2)}
-
-                ${renderGroup(2, 3)}
-                
-                ${renderGroup(1, 4)}
-
-            </div>
-
         </div>
     `;
+            };
+
+
+            // 出版著作整体布局
+
+
+            body = `
+    <div class="books-layout">
+
+        <!-- 第一行：保持原来的三本书 -->
+        <div class="books-second-row">
+            ${renderGroup(3, "")}
+        </div>
+
+        <!-- 第二行：三本书使用原有卡片样式 -->
+        <div class="book-grid books-bottom-grid">
+            ${[
+                groups[1]?.items?.[0],
+                groups[2]?.items?.[0],
+                groups[0]?.items?.[0]
+            ]
+                .filter(Boolean)
+                .map(renderBook)
+                .join("")}
+        </div>
+
+    </div>
+`;
         }
 
-
-
-
         /* =========================================================
-           主要获奖：纯文字列表
+           主要获奖：卡片式列表
            年份 + 奖项名称 + 获奖成果
            ========================================================= */
-
         if (section.type === "awards") {
-
             const items = (section.groups || [])
                 .flatMap(group => group.items || []);
 
             body = `
-    <div class="award-simple-list">
-
-      ${items.map(item => {
-
+        <div class="award-simple-list">
+            ${items.map(item => {
                 const year = item.date
                     ? String(item.date).slice(0, 4)
                     : "";
@@ -1009,18 +1036,27 @@
                 const award = item.award || "";
 
                 return `
-          <div class="award-simple-item">
-            ${year ? `<span class="award-simple-year">${year}</span>` : ""}
-            ${achievement}
-            ${award ? `（${award}）` : ""}
-          </div>
-        `;
+                    <article class="award-simple-item">
+                        ${year
+                    ? `<span class="award-simple-year">${year}</span>`
+                    : ""}
 
+                        <div class="award-simple-content">
+                            <div class="award-simple-name">
+                                ${achievement}
+                            </div>
+
+                            ${award
+                    ? `<div class="award-simple-desc">${award}</div>`
+                    : ""}
+                        </div>
+                    </article>
+                `;
             }).join("")}
-
-    </div>
-  `;
+        </div>
+    `;
         }
+
 
 
         if (section.type === 'news') {

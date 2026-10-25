@@ -64,7 +64,7 @@ body[data-page="research-progress"] .news-card {
 
   grid-template-columns: 190px minmax(0, 1fr);
 
-  gap: 26px;
+  gap: 1px;
 
   align-items: start;
 
@@ -85,8 +85,8 @@ body[data-page="research-progress"] .news-card {
    ============================= */
 
 .research-news-cover {
-  width: 190px;
-  height: 125px;
+  width: 140px;
+  height: 100px;
 
   overflow: hidden;
 
@@ -127,7 +127,7 @@ body[data-page="research-progress"] .news-card {
 .research-news-content {
   min-width: 0;
 
-  padding-top: 2px;
+  padding-top: 10px;
 }
 
 
@@ -135,7 +135,7 @@ body[data-page="research-progress"] .news-card {
 .research-news-title {
   margin: 0 0 12px;
 
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.45;
 
@@ -170,7 +170,7 @@ body[data-page="research-progress"] .news-card {
 .research-news-meta {
   color: #7a8898;
 
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.5;
 }
 

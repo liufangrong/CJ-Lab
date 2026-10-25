@@ -862,15 +862,6 @@ window.CHE_LAB_ALL_PUBLICATIONS = [
     ]
   },
   {
-    "year": "2004",
-    "items": [
-      {
-        "citation": "刘绍龙, 王力军, 吕顺清, 赵蕙, 车静, 吴贯夫. 中国小树蛙属一新种及海南冬季两栖爬行动物调查, <em class=\"all-pub-journal\">四川动物</em>, 2004, 23(3), 202-206.",
-        "doi": ""
-      }
-    ]
-  },
-  {
     "year": "2002",
     "items": [
       {

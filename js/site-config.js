@@ -25,7 +25,7 @@ window.SITE_NAV = [
   },
   {
     "key": "research-progress",
-    "zh": "研究进展",
+    "zh": "新闻速递",
     "en": "News",
     "href": "research-progress.html"
   },

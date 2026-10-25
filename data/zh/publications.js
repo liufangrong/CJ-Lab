@@ -28,10 +28,10 @@ window.PAGE_DATA.zh["publications"] = {
       "title": "出版著作",
       "groups": [
         {
-          "title": "西藏两栖爬行动物",
+          "title": "",
           "items": [
             {
-              "image": "assets/books/book1.webp",
+              "image": "assets/books/book1.png",
               "title": "西藏两栖爬行动物——多样性与进化",
               "author": "车静，蒋珂，颜芳，张亚平",
               "publisher": "科学出版社",
@@ -40,7 +40,7 @@ window.PAGE_DATA.zh["publications"] = {
           ]
         },
         {
-          "title": "云南两栖爬行动物",
+          "title": "",
           "items": [
             {
               "image": "assets/books/book6.png",
@@ -52,19 +52,19 @@ window.PAGE_DATA.zh["publications"] = {
           ]
         },
         {
-          "title": "高黎贡山生物多样性丛书",
+          "title": "高黎贡山生物多样性丛书——",
           "items": [
             {
               "image": "assets/books/book5.png",
               "title": "高黎贡山两栖类",
               "author": "车静，于中斌",
               "publisher": "云南省科学出版社",
-              "year": "2025–2026"
+              "year": "2025（2026）"
             }
           ]
         },
         {
-          "title": "青藏高原两栖爬行动物多样性丛书",
+          "title": "青藏高原两栖爬行动物多样性丛书——",
           "items": [
             {
               "image": "assets/books/book4.png",
@@ -123,11 +123,6 @@ window.PAGE_DATA.zh["publications"] = {
               "achievement": "云南省自然科学一等奖",
               "award": "中国西南山区两栖爬行动物多样性形成与环境适应",
               "date": "2025"
-            },
-            {
-              "achievement": "中国科学院青年科学家国际合作伙伴奖",
-              "award": "",
-              "date": "2021"
             }
           ]
         }

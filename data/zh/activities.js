@@ -16,20 +16,8 @@ window.PAGE_DATA.zh["activities"] = {
           caption: "学习交流 (2022 楚雄)"
         },
         {
-          image: "assets/activities/hd3.jpg",
-          caption: "学习交流 (2022 楚雄)"
-        },
-        {
           image: "assets/activities/hd4.jpg",
           caption: "教师节徒步 (2024 林科院)"
-        },
-        {
-          image: "assets/activities/hd5.jpg",
-          caption: "学习交流 (2025 西双版纳)"
-        },
-        {
-          image: "assets/activities/TD.png",
-          caption: "欢送董文捷毕业 (2026 西南)"
         },
       ]
     },
@@ -40,22 +28,6 @@ window.PAGE_DATA.zh["activities"] = {
         {
           image: "assets/activities/xsbg5.jpg",
           caption: "Che Lab成员参加中国遗传学会进化遗传学分会2026年学术年会 (2026.10)"
-        },
-        {
-          image: "assets/activities/xshd1.jpg",
-          caption: "亚洲两栖爬行动物学国际前沿论坛-集体合影(2026.06)"
-        },
-          {
-          image: "assets/activities/xshd2.png",
-          caption: "亚洲两栖爬行动物学国际前沿论坛-Che Lab成员专题报告与墙报交流(2026.06)"
-        },
-        {
-          image: "assets/activities/xsbg3.png",
-          caption: "亚洲两栖爬行动物学国际前沿论坛-研究所实地参观考察(2026.06)"
-        },
-        {
-          image: "assets/activities/xsbg4.png",
-          caption: "亚洲两栖爬行动物学国际前沿论坛-大会报告现场(2026.06)"
         },
         {
           image: "assets/activities/cj2.jpeg",

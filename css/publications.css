@@ -1390,3 +1390,62 @@ html[lang="en"] .section-books
 
 
 
+
+/* 仅去掉出版著作下方三本书底部的横线，保留上方书架横板 */
+.section-books .books-bottom-grid {
+  background: none !important;
+}
+
+.section-books .books-bottom-grid .book-card {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+.section-books .books-bottom-grid .book-card::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+
+
+
+/* 缩小出版著作上下两排之间的空白 */
+
+/* 出版著作：修复分类标题位置，缩小两排书籍之间的空白 */
+.section-books .books-layout {
+  gap: 16px !important;
+}
+
+.section-books .books-second-row {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.section-books .books-first-row {
+  margin-top: 0 !important;
+}
+
+/* 分类标题始终保留在书架内部 */
+.section-books .books-second-row .books-category-title {
+  margin-top: 0 !important;
+}
+
+/* 手机和平板恢复自然排列 */
+@media (max-width: 900px) {
+  .section-books .books-layout {
+    gap: 24px !important;
+  }
+}
+
+
+/* 调整出版著作、主要获奖、发表论文三个模块之间的距离 */
+.section-awards {
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+}
+
+/* 避免发表论文模块额外增加顶部间4 */
+.section-publications {
+  margin-top: 0 !important;
+}

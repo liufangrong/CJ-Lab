@@ -1,10 +1,10 @@
-/* PUBLICATIONS PAGE
-   Load common.css before this file.
-*/
+/* PUBLICATIONS PAGE*
+*   Load common.css before this file.*
+**/
 
-/* =========================================================
-   代表性论文 / 全部论文：基础样式
-   ========================================================= */
+/* =========================================================*
+*   代表性论文 / 全部论文：基础样式*
+*   ========================================================= */
 
 .pub-modern-legend {
   margin: 14px 0 0;
@@ -62,9 +62,9 @@
 }
 
 
-/* =========================================================
-   DOI 按钮
-   ========================================================= */
+/* =========================================================*
+*   DOI 按钮*
+*   ========================================================= */
 
 .pub-doi-button {
   min-width: 54px;
@@ -86,9 +86,9 @@
 }
 
 
-/* =========================================================
-   代表性论文：单行文献样式
-   ========================================================= */
+/* =========================================================*
+*   代表性论文：单行文献样式*
+*   ========================================================= */
 
 .pub-representative-citation {
   min-width: 0;
@@ -115,9 +115,9 @@
 }
 
 
-/* =========================================================
-   更多论文 / 全部论文
-   ========================================================= */
+/* =========================================================*
+*   更多论文 / 全部论文*
+*   ========================================================= */
 
 .all-pub-groups {
   margin-top: 18px;
@@ -171,9 +171,9 @@
 }
 
 
-/* =========================================================
-   旧版论文列表兼容
-   ========================================================= */
+/* =========================================================*
+*   旧版论文列表兼容*
+*   ========================================================= */
 
 .pub-year-block {
   margin-top: 18px;
@@ -202,9 +202,9 @@
 }
 
 
-/* =========================================================
-   侧栏代表性专著
-   ========================================================= */
+/* =========================================================*
+*   侧栏代表性专著*
+*   ========================================================= */
 
 .info-grid {
   display: grid;
@@ -248,9 +248,9 @@
 }
 
 
-/* =========================================================
-   出版著作：3 列卡片
-   ========================================================= */
+/* =========================================================*
+*   出版著作：3 列卡片*
+*   ========================================================= */
 
 .book-grid {
   display: grid;
@@ -316,10 +316,10 @@
 }
 
 
-/* =========================================================
-   出版著作 / 发表论文
-   居中标题 + 下方深蓝色短横线
-   ========================================================= */
+/* =========================================================*
+*   出版著作 / 发表论文*
+*   居中标题 + 下方深蓝色短横线*
+*   ========================================================= */
 
 .pub-center-title,
 .section-books > .section-title,
@@ -369,10 +369,10 @@
 
 
 
-/* =========================================================
-   出版著作：第一行三个分类，第二行一个分类
-   保留原有卡片样式
-   ========================================================= */
+/* =========================================================*
+*   出版著作：第一行三个分类，第二行一个分类*
+*   保留原有卡片样式*
+*   ========================================================= */
 
 .section-books .books-layout {
   display: flex;
@@ -418,10 +418,10 @@
   gap: 30px;
 }
 
-/* =========================================================
-   英文版标题换行时，卡片保持顶部对齐
-   中文版不额外增加标题高度
-   ========================================================= */
+/* =========================================================*
+*   英文版标题换行时，卡片保持顶部对齐*
+*   中文版不额外增加标题高度*
+*   ========================================================= */
 
 /* 默认：中文标题自然高度 */
 
@@ -437,9 +437,9 @@ html[lang="en"] .section-books
   min-height: 2.8em;
 }
 
-/* =========================================================
-   响应式
-   ========================================================= */
+/* =========================================================*
+*   响应式*
+*   ========================================================= */
 
 @media (max-width: 900px) {
 
@@ -458,9 +458,9 @@ html[lang="en"] .section-books
   }
 }
 
-/* =========================================================
-   原有标题下方装饰
-   ========================================================= */
+/* =========================================================*
+*   原有标题下方装饰*
+*   ========================================================= */
 
 .pub-center-title::after,
 .section-books > .section-title::after,
@@ -471,10 +471,10 @@ html[lang="en"] .section-books
 }
 
 
-/* =========================================================
-   图书封面点击放大
-   仅作用于预览层，不影响图书卡片
-   ========================================================= */
+/* =========================================================*
+*   图书封面点击放大*
+*   仅作用于预览层，不影响图书卡片*
+*   ========================================================= */
 
 #bookImageOverlay {
   position: fixed;
@@ -523,10 +523,10 @@ html[lang="en"] .section-books
 
 
 
-/* =========================================================
-   主要获奖标题
-   居中标题 + 下方深蓝色短横线
-   ========================================================= */
+/* =========================================================*
+*   主要获奖标题*
+*   居中标题 + 下方深蓝色短横线*
+*   ========================================================= */
 
 .section-awards > .section-title {
   position: relative !important;
@@ -559,10 +559,10 @@ html[lang="en"] .section-books
 }
 
 
-/* =========================================================
-   代表性论文 + 更多论文
-   左对齐 + 左侧红蓝竖条
-   ========================================================= */
+/* =========================================================*
+*   代表性论文 + 更多论文*
+*   左对齐 + 左侧红蓝竖条*
+*   ========================================================= */
 
 .representative-title-wrap {
   width: 100% !important;
@@ -622,9 +622,9 @@ html[lang="en"] .section-books
 }
 
 
-/* =========================================================
-   普通 publications 内容
-   ========================================================= */
+/* =========================================================*
+*   普通 publications 内容*
+*   ========================================================= */
 
 .section-publications .pub-inline-list {
   display: block !important;
@@ -653,9 +653,9 @@ html[lang="en"] .section-books
 }
 
 
-/* =========================================================
-   更多论文：折叠 / 展开
-   ========================================================= */
+/* =========================================================*
+*   更多论文：折叠 / 展开*
+*   ========================================================= */
 
 .all-pub-details {
   width: 100%;
@@ -715,9 +715,9 @@ html[lang="en"] .section-books
 
 
 
-/* =========================================================
-   主要获奖：简洁纯文字列表
-   ========================================================= */
+/* =========================================================*
+*   主要获奖：简洁纯文字列表*
+*   ========================================================= */
 
 .award-simple-list {
   display: flex;
@@ -756,10 +756,10 @@ html[lang="en"] .section-books
 }
 
 
-/* ==============================
-   获奖模块：卡片化展示
-   仅作用于 awards 类型
-   ============================== */
+/* ==============================*
+*   获奖模块：卡片化展示*
+*   仅作用于 awards 类型*
+*   ============================== */
 
 .section-awards {
   margin-top: 30px;
@@ -898,10 +898,10 @@ html[lang="en"] .section-books
 
 
 
-/* =========================================================
-   出版著作：木质书架布局
-   只作用于出版著作模块，不影响其他页面
-   ========================================================= */
+/* =========================================================*
+*   出版著作：木质书架布局*
+*   只作用于出版著作模块，不影响其他页面*
+*   ========================================================= */
 
 /* 书架整体背景 */
 .section-books .books-layout {
@@ -1086,9 +1086,9 @@ html[lang="en"] .section-books
   line-height: 1.8;
 }
 
-/* =========================================================
-   平板适配
-   ========================================================= */
+/* =========================================================*
+*   平板适配*
+*   ========================================================= */
 
 @media (max-width: 900px) {
   .section-books .books-layout {
@@ -1113,9 +1113,9 @@ html[lang="en"] .section-books
   }
 }
 
-/* =========================================================
-   手机适配
-   ========================================================= */
+/* =========================================================*
+*   手机适配*
+*   ========================================================= */
 
 @media (max-width: 600px) {
   .section-books .books-layout {
@@ -1169,9 +1169,9 @@ html[lang="en"] .section-books
 
 
 
-/* ==========================================
-   出版著作：清爽现代书架配色
-   ========================================== */
+/* ==========================================*
+*   出版著作：清爽现代书架配色*
+*   ========================================== */
 
 /* 书架整体：去掉发黄的米色和明显的条纹 */
 .section-books .books-layout {
@@ -1448,4 +1448,135 @@ html[lang="en"] .section-books
 /* 避免发表论文模块额外增加顶部间4 */
 .section-publications {
   margin-top: 0 !important;
+}
+
+/* =========================================================
+   FINAL FIX: 出版著作只保留上下两个独立框
+   只影响出版著作模块；其他模块样式保持不变
+   ========================================================= */
+
+/* 去掉包住上下两排的最外层大框 */
+.section-books .books-layout {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+  width: 100% !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* 第一排独立成框：标题和三本书保持在同一个框内 */
+.section-books .books-first-row {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 24px 20px !important;
+  background: #f7f9fa !important;
+  border: 1px solid #dce6eb !important;
+  border-radius: 14px !important;
+  box-shadow: 0 4px 14px rgba(30, 60, 80, 0.04) !important;
+}
+
+/* 第一排三本书横向排列，避免被挤成竖排 */
+.section-books .books-first-row .book-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+  width: 100% !important;
+  background: none !important;
+  padding: 12px 0 0 !important;
+}
+
+/* 第二排若使用 books-second-row 容器，则整个第二排独立成框 */
+.section-books .books-second-row {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 24px 20px !important;
+  background: #f7f9fa !important;
+  border: 1px solid #dce6eb !important;
+  border-radius: 14px !important;
+  box-shadow: 0 4px 14px rgba(30, 60, 80, 0.04) !important;
+}
+
+.section-books .books-second-row .book-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+  width: 100% !important;
+  background: none !important;
+  padding: 12px 0 0 !important;
+}
+
+/* 如果第二排直接使用 books-bottom-grid，也让它成为独立框 */
+.section-books .books-layout > .books-bottom-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 24px 20px !important;
+  background: #f7f9fa !important;
+  border: 1px solid #dce6eb !important;
+  border-radius: 14px !important;
+  box-shadow: 0 4px 14px rgba(30, 60, 80, 0.04) !important;
+}
+
+/* 第二排容器存在时，取消内部网格的重复边框 */
+.section-books .books-second-row .books-bottom-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* 删除旧横线及伪元素装饰线 */
+.section-books .books-first-row::after,
+.section-books .books-second-row::after,
+.section-books .books-group::after,
+.section-books .book-grid::after,
+.section-books .book-card::after,
+.section-books .books-bottom-grid::after {
+  content: none !important;
+  display: none !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+@media (max-width: 900px) {
+  .section-books .books-first-row .book-grid,
+  .section-books .books-second-row .book-grid,
+  .section-books .books-layout > .books-bottom-grid,
+  .section-books .books-second-row .books-bottom-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-books .books-first-row,
+  .section-books .books-second-row,
+  .section-books .books-layout > .books-bottom-grid {
+    padding: 18px 12px !important;
+  }
+
+  .section-books .books-first-row .book-grid,
+  .section-books .books-second-row .book-grid,
+  .section-books .books-layout > .books-bottom-grid,
+  .section-books .books-second-row .books-bottom-grid {
+    grid-template-columns: 1fr !important;
+  }
 }

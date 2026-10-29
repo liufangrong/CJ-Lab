@@ -1037,18 +1037,20 @@
 
                 return `
                     <article class="award-simple-item">
-                        ${year
-                    ? `<span class="award-simple-year">${year}</span>`
-                    : ""}
-
                         <div class="award-simple-content">
-                            <div class="award-simple-name">
+                            ${year
+                    ? `<span class="award-simple-name">${year}</span>`
+                    : ""
+                }
+
+                            <span class="award-simple-name">
                                 ${achievement}
-                            </div>
+                            </span>
 
                             ${award
-                    ? `<div class="award-simple-desc">${award}</div>`
-                    : ""}
+                    ? `<span class="award-simple-desc">${award}</span>`
+                    : ""
+                }
                         </div>
                     </article>
                 `;
